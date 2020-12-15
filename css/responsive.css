@@ -535,7 +535,7 @@
 		right: -10%;
 	}
 	.contact {
-		padding-top: 7rem;
+		padding-top: 14rem; /* 7rem; */
 	}
 	.equalHeight {
 		height: auto !important;
