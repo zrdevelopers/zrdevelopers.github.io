@@ -70,6 +70,13 @@
 
     <!-- Responsive styling -->
     <link rel="stylesheet" type="text/css" href="css/responsive.css">
+    
+    <!-- jQuery -->
+    <script src="js/vendor/jquery-3.3.1.min.js"></script>
+    
+    <!-- Floating Whatsapp -->
+    <link rel="stylesheet" href="whatsapp/floating-wpp.css">
+    <script type="text/javascript" src="whatsapp/floating-wpp.js"></script>
 
     <!-- Global site tag (gtag.js) - Google Analytics -->
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-8Z94W6TM1Y"></script>
@@ -918,6 +925,8 @@
     </footer>
     <!-- End of footer -->
 
+    <div id="WAButton"></div>
+
     <!-- Case study modal -->
     <div class="modal fade case-study-modal" id="case-study-modal" tabindex="-1" role="dialog" aria-labelledby="case-study-modal"
         aria-hidden="true">
@@ -1494,11 +1503,9 @@
     </div>
     <!-- End of .team-modal -->
 
-
     <!-- Javascripts
     ======================================= -->
     <!-- jQuery -->
-    <script src="js/vendor/jquery-3.2.1.min.js"></script>
     <script src="js/vendor/jquery-migrate.min.js"></script>
     <!-- Bootstrap js -->
     <script src="js/vendor/bootstrap.bundle.min.js"></script>
@@ -1527,5 +1534,23 @@
     <!-- Custom js -->
     <script src="js/main.js"></script>
 </body>
+
+<script type="text/javascript">
+    $(function () {
+        $('#WAButton').floatingWhatsApp({
+            phone: '6281993477700',
+            popupMessage: 'Halo, ada yang bisa kami bantu?',
+            message: "",
+            showPopup: true,
+            showOnIE: false,
+            headerTitle: 'Chat with us on WhatsApp!',
+            headerColor: '#25d366',
+            backgroundColor: '',
+            buttonImage: '<img src="whatsapp/whatsapp.svg" />',
+            position: "right",
+            size: '60px',
+        });
+    });
+</script>
 
 </html>
