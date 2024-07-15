@@ -27,7 +27,7 @@ const Index = () => {
     <Fragment>
       <section className="latest-news section-padding light-grey-grad" id="news">
         <div className="container">
-          <h2>Latest News</h2>
+          <h2>Artikel Terbaru</h2>
         </div>
         {/* <!-- End of .container --> */}
 

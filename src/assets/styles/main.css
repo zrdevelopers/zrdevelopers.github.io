@@ -2930,7 +2930,7 @@ h1 {
 
 .pricing-block .price {
   font-family: 'Fira Sans', sans-serif;
-  font-size: 6rem;
+  font-size: 2.7rem; /*6rem*/
   line-height: 1.6;
   font-weight: 900;
   padding-top: 2px;

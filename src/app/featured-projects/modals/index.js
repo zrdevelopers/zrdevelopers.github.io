@@ -95,7 +95,7 @@ const Index = (props) => {
                   className="custom-btn btn-big grad-style-ef"
                   target="_blank"
                 >
-                  LAUNCH WEBSITE
+                  SITUS WEB
                 </a>
               )}
             </div>

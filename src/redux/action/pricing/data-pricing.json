@@ -3,8 +3,8 @@
   "plans": [
     {
       "id": 1,
-      "type": "BASIC PRO",
-      "price": "let's Talk",
+      "type": "Paket Website",
+      "price": "BASIC PRO",
       "features": [
         "Standart 5 Judul Menu",
         "1 kali Perbaikan / Revisi",
@@ -20,9 +20,8 @@
     },
     {
       "id": 2,
-      "type": "ENTREPRENEUR PRO",
-      "icon": "02",
-      "price": "let's Talk",
+      "type": "Paket Website",
+      "price": "ENTREPRENEUR PRO",
       "features": [
         "Standart 7 Judul Menu",
         "2 kali Perbaikan / Revisi",
@@ -38,9 +37,8 @@
     },
     {
       "id": 3,
-      "type": "BUSINESS PRO",
-      "icon": "03",
-      "price": "let's Talk",
+      "type": "Paket Website",
+      "price": "BUSINESS PRO",
       "features": [
         "Standart 15 - 20 Judul Menu",
         "3 kali Perbaikan / Revisi",

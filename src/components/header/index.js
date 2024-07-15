@@ -46,7 +46,7 @@ const Index = () => {
             dangerouslySetInnerHTML={{ __html: headerList.description }}
           ></p>
           <a href="#projects" className="custom-btn btn-big grad-style-ef page-scroll">
-            OUR PORTFOLIO
+            PORTOFOLIO KAMI
           </a>
         </div>
         {/* <!-- End of .banner-content --> */}

@@ -63,7 +63,7 @@ const Index = () => {
           />
         </svg>
         <div className="container">
-          <h2 className="text-center">Featured Projects</h2>
+          <h2 className="text-center">Proyek Unggulan</h2>
 
           <div className="project-showcase text-center">
             {/* <div className="filter-button-group">

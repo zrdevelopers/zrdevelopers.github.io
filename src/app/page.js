@@ -124,6 +124,7 @@ export default function Home() {
           border: '0'
         }}
         className="custom-whatsapp-button"
+        placeholder="Ketik pesan..."
       />
     </Fragment>
   );

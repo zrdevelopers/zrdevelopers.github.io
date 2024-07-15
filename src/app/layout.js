@@ -35,8 +35,7 @@ export const metadata = {
   openGraph: {
     url: 'https://zrdevelopers.github.io',
     images: 'https://zrdevelopers.github.io/assets/images/512x512.png'
-  },
-  
+  }
 };
 
 export const viewport = {
