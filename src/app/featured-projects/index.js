@@ -6,6 +6,9 @@ import { getListFeaturedProjects } from '@/redux/action/featured-projects/creato
 
 import FeaturedProjectsModal from '@/app/featured-projects/modals';
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const Index = () => {
   const featuredProjectsList = useSelector((state) => state.featuredProjects.featuredProjectsList);
   const dispatch = useDispatch();
@@ -63,7 +66,7 @@ const Index = () => {
           />
         </svg>
         <div className="container">
-          <h2 className="text-center">Featured Projects</h2>
+          <h2 className="text-center">Proyek Unggulan</h2>
 
           <div className="project-showcase text-center">
             {/* <div className="filter-button-group">
@@ -103,9 +106,10 @@ const Index = () => {
                     onClick={() => handleProjectModal(item)}
                   >
                     <div className="img-container">
-                      <img
-                        src={item.banner}
+                      <LazyLoadImage
+                        effect="blur"
                         alt="Jasa Pembuatan Website | ZRDevelopers"
+                        src={item.banner}
                         className="img-fluid"
                       />
                     </div>

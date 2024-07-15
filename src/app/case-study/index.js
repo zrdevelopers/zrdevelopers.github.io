@@ -6,6 +6,9 @@ import { getListCaseStudy } from '@/redux/action/case-study/creator';
 
 // import CaseStudyModal from '@/app/case-study/modals';
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const Index = () => {
   const caseStudyList = useSelector((state) => state.caseStudy.caseStudyList);
   const dispatch = useDispatch();
@@ -70,7 +73,12 @@ const Index = () => {
               {/* <!-- End of .case-study-slider --> */}
             </div>
             <div className="img-container col-lg-6">
-              <img src={caseStudyList?.image} alt="case study image" className="img-fluid" />
+              <LazyLoadImage
+                effect="blur"
+                alt="Jasa Pembuatan Website | ZRDevelopers"
+                src={caseStudyList?.image}
+                className="img-fluid"
+              />
             </div>
           </div>
         </div>

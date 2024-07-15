@@ -54,25 +54,25 @@ const Index = () => {
                 <div className="counter-block d-block txt-grad-ef">
                   <span className="counter">{aboutUsList.happy_clients}</span>+
                 </div>
-                HAPPY
+                KLIEN
                 <br />
-                CLIENTS
+                BAHAGIA
               </div>
               <div className="inner-block">
                 <div className="counter-block d-block txt-grad-ab">
                   <span className="counter">{aboutUsList.projects_completed}</span>+
                 </div>
-                PROJECTS
+                PROYEK
                 <br />
-                COMPLETED
+                SELESAI
               </div>
               <div className="inner-block">
                 <div className="counter-block d-block txt-grad-cd">
                   <span className="counter">{aboutUsList.running_projects}</span>+
                 </div>
-                RUNNING
+                PROYEK
                 <br />
-                PROJECTS
+                BERLANGSUNG
               </div>
             </div>
             {/* <!-- End of .counter-block --> */}

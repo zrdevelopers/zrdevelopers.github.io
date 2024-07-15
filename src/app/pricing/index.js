@@ -19,7 +19,7 @@ const Index = () => {
   return (
     <section className="pricing section-padding" id="pricing">
       <div className="container">
-        <h2 className="text-center">Pricing</h2>
+        <h2 className="text-center">Harga</h2>
         {pricingList.subtitle && (
           <p className="section-subheading text-center">{pricingList.subtitle}</p>
         )}
@@ -30,7 +30,7 @@ const Index = () => {
                 <span className="icon-container grad-style-cd-light">
                   <i className="txt-grad-cd">0{i + 1}</i>
                 </span>
-                <h6>{item.type}</h6>
+                <small>{item.type}</small>
                 <div className="price txt-grad-ef">{item.price}</div>
                 <div className="facilities">
                   {item.features.map((feat, i) => (

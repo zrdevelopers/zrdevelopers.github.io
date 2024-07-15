@@ -1,5 +1,8 @@
 import Modals from '@/components/modals';
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const Index = (props) => {
   const { dataItem } = props;
 
@@ -52,10 +55,11 @@ const Index = (props) => {
               <div className="carousel-inner">
                 {dataItem?.carousel_images?.map((item, i) => (
                   <div class={`carousel-item ${i === 0 ? 'active' : ''}`} key={item?.id || i}>
-                    <img
-                      className="d-block w-100 img-fluid"
-                      src={item}
+                    <LazyLoadImage
+                      effect="blur"
                       alt="Jasa Pembuatan Website | ZRDevelopers"
+                      src={item}
+                      className="d-block w-100 img-fluid"
                     />
                   </div>
                 ))}
@@ -95,7 +99,7 @@ const Index = (props) => {
                   className="custom-btn btn-big grad-style-ef"
                   target="_blank"
                 >
-                  LAUNCH WEBSITE
+                  SITUS WEB
                 </a>
               )}
             </div>

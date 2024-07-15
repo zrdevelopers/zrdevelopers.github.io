@@ -1,16 +1,21 @@
 import Modals from '@/components/modals';
 import { Fragment } from 'react';
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const Index = (props) => {
-  const { dataItem } = props;
+  const { dataItem, onClose, slug } = props;
 
   return (
     <Modals
-      classModal={'news-modal' + dataItem?.id}
+      classModal={`news-modal ${slug && "show"} ${dataItem?.id}`}
       idModal={'news-modal' + dataItem?.id}
       modalBg={null}
       modalHeading={null}
       btnClose={false}
+      onClose={onClose}
+      style={slug && {display: "block", overflowX: "hidden", overflowY: "auto"}}
       modalHeader={
         <Fragment>
           <svg
@@ -58,7 +63,7 @@ const Index = (props) => {
       modalBody={
         <Fragment>
           <div className="text-center">
-            <img
+            <LazyLoadImage
               src={dataItem?.image}
               alt="Jasa Pembuatan Website | ZRDevelopers"
               className="img-fluid modal-feat-img w-100"

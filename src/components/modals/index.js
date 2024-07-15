@@ -1,14 +1,16 @@
 const Index = (props) => {
-  const { classModal, idModal, modalHeader, modalBg, modalHeading, modalBody, btnClose } = props;
+  const { classModal, idModal, modalHeader, modalBg, modalHeading, modalBody, btnClose, onClose, style } =
+    props;
 
   return (
     <div
-      className={'modal fade ' + classModal}
+      className={`modal fade ${classModal}`}
       id={idModal}
       tabIndex="-1"
       role="dialog"
       aria-labelledby={idModal}
       aria-hidden="true"
+      style={style}
     >
       <div className="modal-dialog modal-dialog-centered" role="document">
         <div className="modal-content">
@@ -16,7 +18,13 @@ const Index = (props) => {
             <div className="modal-header">
               {modalHeader}
 
-              <button type="button" className="close" data-dismiss="modal" aria-label="Close">
+              <button
+                type="button"
+                className="close"
+                data-dismiss="modal"
+                aria-label="Close"
+                onClick={onClose}
+              >
                 <i className="ml-symtwo-24-multiply-cross-math"></i>
               </button>
               {/* <!-- End of .close --> */}

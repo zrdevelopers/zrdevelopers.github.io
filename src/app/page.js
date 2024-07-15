@@ -26,12 +26,22 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { useSelector, useDispatch } from 'react-redux';
 import { getListFloatingWhatsapp } from '@/redux/action/floating-whatsapp/creator';
 
-export default function Home() {
+export default function Home(props) {
+  const { slug } = props;
+
   const floatingWhatsappList = useSelector((state) => state.floatingWhatsapp.floatingWhatsappList);
   const dispatch = useDispatch();
 
   const fetchFloatingWhatsapp = async () => {
     dispatch(getListFloatingWhatsapp());
+  };
+
+  // Load Jquery
+  const loadJquery = () => {
+    const script = document.createElement('script');
+    script.src = '/assets/js/vendor/jquery-3.3.1.min.js';
+    script.async = true;
+    document.head.appendChild(script);
   };
 
   // Load Google Analytics
@@ -70,9 +80,63 @@ export default function Home() {
     document.head.appendChild(gtmScript);
   };
 
+  // Load Meta Pixel
+  const loadFacebookPixel = () => {
+    const fbScript = document.createElement('script');
+    fbScript.innerHTML = `
+    !function(f,b,e,v,n,t,s)
+    {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+    n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+    if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+    n.queue=[];t=b.createElement(e);t.async=!0;
+    t.src=v;s=b.getElementsByTagName(e)[0];
+    s.parentNode.insertBefore(t,s)}(window, document,'script',
+    'https://connect.facebook.net/en_US/fbevents.js');
+    fbq('init', '488966464627479');
+    fbq('track', 'PageView');
+    `;
+    document.head.appendChild(fbScript);
+
+    const noScript = document.createElement('noscript');
+    noScript.innerHTML = `
+    <img height="1" width="1" style="display:none"
+    src="https://www.facebook.com/tr?id=488966464627479&ev=PageView&noscript=1"
+    />
+    `;
+    document.body.appendChild(noScript);
+  };
+
+  // Load TikTok Pixel
+  const loadTiktokPixel = () => {
+    const ttScript = document.createElement('script');
+    ttScript.innerHTML = `
+    !function (w, d, t) {
+      w.TiktokAnalyticsObject=t;
+      var ttq=w[t]=w[t]||[];
+      ttq.methods=["page","track","identify","instances","debug","on","off","once","ready","alias","group","enableCookie","disableCookie","holdConsent","revokeConsent","grantConsent"];
+      ttq.setAndDefer=function(t,e){t[e]=function(){t.push([e].concat(Array.prototype.slice.call(arguments,0)))}};
+      for(var i=0;i<ttq.methods.length;i++)ttq.setAndDefer(ttq,ttq.methods[i]);
+      ttq.instance=function(t){for(var e=ttq._i[t]||[],n=0;n<ttq.methods.length;n++)ttq.setAndDefer(e,ttq.methods[n]);return e};
+      ttq.load=function(e,n){var r="https://analytics.tiktok.com/i18n/pixel/events.js",o=n&&n.partner;
+        ttq._i=ttq._i||{},ttq._i[e]=[],ttq._i[e]._u=r,ttq._t=ttq._t||{},ttq._t[e]=+new Date,ttq._o=ttq._o||{},ttq._o[e]=n||{};
+        n=document.createElement("script");
+        n.type="text/javascript",n.async=!0,n.src=r+"?sdkid="+e+"&lib="+t;
+        e=document.getElementsByTagName("script")[0];
+        e.parentNode.insertBefore(n,e)
+      };
+      ttq.load('CQCCUQJC77U89M86NUT0');
+      ttq.page();
+    }(window, document, 'ttq');
+  `;
+    document.head.appendChild(ttScript);
+  };
+
   useEffect(() => {
+    loadJquery();
     loadGoogleAnalytics();
     loadGoogleTagManager();
+    loadFacebookPixel();
+    loadTiktokPixel();
     fetchFloatingWhatsapp();
   }, []);
 
@@ -98,7 +162,7 @@ export default function Home() {
       {/* <Team /> */}
       <Pricing />
       <Partners />
-      <LatestNews />
+      <LatestNews slug={slug} />
       <Contactus />
       <Footer />
 
@@ -124,6 +188,7 @@ export default function Home() {
           border: '0'
         }}
         className="custom-whatsapp-button"
+        placeholder="Ketik pesan..."
       />
     </Fragment>
   );
