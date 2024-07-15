@@ -32,8 +32,11 @@ export const metadata = {
   title: 'Jasa Pembuatan Website | ZRDevelopers',
   description:
     'ZRDevelopers adalah penyedia pembuatan website yang akan membantu Anda mewujudkan keinginan dan kebutuhan tanpa perlu melakukan coding sendiri.',
-  url: 'https://zrdevelopers.github.io',
-  image: '/assets/images/512x512.png'
+  openGraph: {
+    url: 'https://zrdevelopers.github.io',
+    images: '/assets/images/512x512.png'
+  },
+  
 };
 
 export const viewport = {
@@ -50,8 +53,8 @@ export default function RootLayout({ children }) {
         keywords={metadata.keywords}
         themecolor={viewport.themeColor}
         manifest={metadata.manifest}
-        url={metadata.url}
-        image={metadata.image}
+        url={metadata.openGraph.url}
+        image={metadata.openGraph.images}
       />
       <body>
         <ReduxProvider>
