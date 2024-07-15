@@ -1,16 +1,24 @@
 'use client';
 
-import React, { Fragment, useEffect, useState } from 'react';
+import React, { Fragment, useEffect, useState, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getListFeaturedProjects } from '@/redux/action/featured-projects/creator';
 
 import FeaturedProjectsModal from '@/app/featured-projects/modals';
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
+import IconScroll from '@/components/iconScroll';
 
 const Index = () => {
   const featuredProjectsList = useSelector((state) => state.featuredProjects.featuredProjectsList);
   const dispatch = useDispatch();
   // const [groupFeaturedProjectsList, setGroupFeaturedProjectsList] = useState([]);
   const [dataItem, setDataItem] = useState({});
+
+  const [showScrollIcon, setShowScrollIcon] = useState(true);
+  const scrollContainerRef = useRef(null);
 
   const fetchFeaturedProjectsList = async () => {
     dispatch(getListFeaturedProjects());
@@ -63,9 +71,9 @@ const Index = () => {
           />
         </svg>
         <div className="container">
-          <h2 className="text-center">Featured Projects</h2>
+          <h2 className="text-center">Proyek Unggulan</h2>
 
-          <div className="project-showcase text-center">
+          <div className="project-showcase text-center position-relative">
             {/* <div className="filter-button-group">
               {groupFeaturedProjectsList.map((item, i) => (
                 <Fragment key={item?.id || i}>
@@ -91,10 +99,19 @@ const Index = () => {
             </div> */}
             {/* <!-- filter-button-group ends --> */}
 
-            <div className="grid row equalHeightWrapper">
+            <div
+              ref={scrollContainerRef}
+              className="grid d-flex equalHeightWrapper"
+              style={{ overflowX: 'auto', scrollBehavior: 'smooth' }}
+            >
               {/* More Items can be added. --> */}
               {featuredProjectsList.map((item, i) => (
-                <div key={item?.id || i} className="a1 grid-item col-md-6 col-lg-4">
+                <div
+                  key={item?.id || i}
+                  className="a1 grid-item col-md-6 col-lg-4 col-11"
+                  data-aos="fade-left"
+                  data-aos-delay={i * 100}
+                >
                   <a
                     href="#"
                     className="featured-content-block content-block"
@@ -103,25 +120,36 @@ const Index = () => {
                     onClick={() => handleProjectModal(item)}
                   >
                     <div className="img-container">
-                      <img
-                        src={item.banner}
+                      <LazyLoadImage
+                        effect="blur"
                         alt="Jasa Pembuatan Website | ZRDevelopers"
+                        src={item.banner}
                         className="img-fluid"
                       />
                     </div>
                     {/* <!-- End of .img-container --> */}
                     <h5 className="equalHeight">
-                      <span className="content-block__sub-title">{item.category}</span>
+                      <span className="content-block__sub-title">{item?.service}</span>
                       {item.title}
                     </h5>
                   </a>
                 </div>
               ))}
             </div>
+            {/* Right Arrow Icon */}
+            {featuredProjectsList?.length > 3 && showScrollIcon && (
+              <IconScroll
+                scrollContainerRef={scrollContainerRef}
+                setShowScrollIcon={setShowScrollIcon}
+                querySelector=".equalHeightWrapper"
+              />
+            )}
             {/* <!-- End of .grid --> */}
             <a
               href="https://bit.ly/Chat-ZRDevelopers"
               className="custom-btn btn-big grad-style-ef btn-full"
+              data-aos="fade-down"
+              data-aos-delay={`${featuredProjectsList?.length}00`}
             >
               Buatkan Saya Website
             </a>

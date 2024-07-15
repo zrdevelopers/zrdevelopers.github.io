@@ -1,16 +1,24 @@
-import Modals from '@/components/modals';
 import { Fragment } from 'react';
 
+import Modals from '@/components/modals';
+
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+import ShareButtons from './ShareButtons';
+import BeritaTerkait from './BeritaTerkait';
+
 const Index = (props) => {
-  const { dataItem } = props;
+  const { dataItem, onClose, slug, showModal, setShowModal } = props;
 
   return (
     <Modals
-      classModal={'news-modal' + dataItem?.id}
+      classModal={`news-modal ${slug && 'show'} ${dataItem?.id}`}
       idModal={'news-modal' + dataItem?.id}
       modalBg={null}
       modalHeading={null}
       btnClose={false}
+      onClose={onClose}
+      style={slug && { display: 'block', overflowX: 'hidden', overflowY: 'auto' }}
       modalHeader={
         <Fragment>
           <svg
@@ -58,17 +66,26 @@ const Index = (props) => {
       modalBody={
         <Fragment>
           <div className="text-center">
-            <img
+            <LazyLoadImage
               src={dataItem?.image}
               alt="Jasa Pembuatan Website | ZRDevelopers"
-              className="img-fluid modal-feat-img w-100"
+              className="img-fluid modal-feat-img" //w-100
               style={{ maxHeight: '425px' }}
             />
           </div>
+          <ShareButtons
+            title={dataItem?.title}
+            url={`https://zrdevelopers.github.io/latest-news/${dataItem?.slug}`}
+          />
           <h3>
-            <span>{dataItem.date}</span> {dataItem.title}
+            {/* <span>{dataItem.date}</span>  */}
+            {dataItem.title}
           </h3>
           <div dangerouslySetInnerHTML={{ __html: dataItem.description }}></div>
+          <div className="pt-5">
+            <h5 className="mb-4">Artikel Terkait</h5>
+            <BeritaTerkait slug={slug} showModal={showModal} setShowModal={setShowModal} />
+          </div>
         </Fragment>
       }
     />

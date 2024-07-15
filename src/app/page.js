@@ -26,7 +26,20 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { useSelector, useDispatch } from 'react-redux';
 import { getListFloatingWhatsapp } from '@/redux/action/floating-whatsapp/creator';
 
-export default function Home() {
+import {
+  loadJquery,
+  loadGoogleAnalytics,
+  loadGoogleTagManager,
+  loadFacebookPixel,
+  loadTiktokPixel
+} from '@/lib/loadAnalytic';
+
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
+const Home = (props) => {
+  const { slug } = props;
+
   const floatingWhatsappList = useSelector((state) => state.floatingWhatsapp.floatingWhatsappList);
   const dispatch = useDispatch();
 
@@ -34,45 +47,13 @@ export default function Home() {
     dispatch(getListFloatingWhatsapp());
   };
 
-  // Load Google Analytics
-  const loadGoogleAnalytics = () => {
-    const gaScript = document.createElement('script');
-    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-8Z94W6TM1Y';
-    gaScript.async = true;
-    document.head.appendChild(gaScript);
-
-    gaScript.onload = () => {
-      const gaScriptInit = document.createElement('script');
-      gaScriptInit.innerHTML = `
-        window.dataLayer = window.dataLayer || [];
-        function gtag(){dataLayer.push(arguments);}
-        gtag('js', new Date());
-        gtag('config', 'G-8Z94W6TM1Y');
-      `;
-      document.head.appendChild(gaScriptInit);
-    };
-
-    gaScript.onerror = (error) => {
-      console.error('Failed to load Google Analytics:', error);
-    };
-  };
-
-  // Load Google Tag Manager
-  const loadGoogleTagManager = () => {
-    const gtmScript = document.createElement('script');
-    gtmScript.innerHTML = `
-      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      'https://www.googletagmanager.com/gtm.js?id=GTM-59BFX4S'+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-59BFX4S');
-    `;
-    document.head.appendChild(gtmScript);
-  };
-
   useEffect(() => {
+    AOS.init();
+    loadJquery();
     loadGoogleAnalytics();
     loadGoogleTagManager();
+    loadFacebookPixel();
+    loadTiktokPixel();
     fetchFloatingWhatsapp();
   }, []);
 
@@ -98,7 +79,7 @@ export default function Home() {
       {/* <Team /> */}
       <Pricing />
       <Partners />
-      <LatestNews />
+      <LatestNews slug={slug} />
       <Contactus />
       <Footer />
 
@@ -124,7 +105,10 @@ export default function Home() {
           border: '0'
         }}
         className="custom-whatsapp-button"
+        placeholder="Ketik pesan..."
       />
     </Fragment>
   );
-}
+};
+
+export default Home;

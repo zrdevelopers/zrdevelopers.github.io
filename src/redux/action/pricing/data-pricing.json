@@ -4,9 +4,16 @@
     {
       "id": 1,
       "type": "BASIC PRO",
-      "price": "let's Talk",
+      "price": "Hubungi Kami",
       "features": [
+        "Template dari Kami",
+        "CMS",
+        "Modul Website Admin Panel",
         "Standart 5 Judul Menu",
+        "Pemasangan Link Whatsapp",
+        "Pemasangan Link Akun Media Sosial",
+        "Pemasangan Google Map",
+        "-",
         "1 kali Perbaikan / Revisi",
         "Responsive <br/>(Desktop maupun Mobile)",
         "Gratis Domain 1 Tahun [.com]",
@@ -16,15 +23,21 @@
         "Unlimited Bandwidth"
       ],
       "cta_text": "Pesan Sekarang",
-      "cta_link": "https://bit.ly/BasicProZRdeveloper"
+      "cta_link": "https://tinyurl.com/BasicProZRDevelopers"
     },
     {
       "id": 2,
-      "type": "ENTREPRENEUR PRO",
-      "icon": "02",
-      "price": "let's Talk",
+      "type": "PREMIUM PRO",
+      "price": "Hubungi Kami",
       "features": [
+        "Template dari Kami",
+        "CMS",
+        "Modul Website Admin Panel",
         "Standart 7 Judul Menu",
+        "Pemasangan Link Whatsapp",
+        "Pemasangan Link Akun Media Sosial",
+        "Pemasangan Google Map",
+        "-",
         "2 kali Perbaikan / Revisi",
         "Responsive <br/>(Desktop maupun Mobile)",
         "Gratis Domain 1 Tahun [.com]",
@@ -34,15 +47,21 @@
         "Unlimited Bandwidth"
       ],
       "cta_text": "Pesan Sekarang",
-      "cta_link": "https://bit.ly/EntrepreneurProZRDevelopers"
+      "cta_link": "https://tinyurl.com/PremiumProZRDevelopers"
     },
     {
       "id": 3,
-      "type": "BUSINESS PRO",
-      "icon": "03",
-      "price": "let's Talk",
+      "type": "CUSTOM PRO",
+      "price": "Hubungi Kami",
       "features": [
-        "Standart 15 - 20 Judul Menu",
+        "Template dari Kami <small>(Sesuai Kebutuhan)</small>",
+        "CMS Buatan Kami",
+        "Modul Website Admin Panel",
+        "Judul Menu <small>(Sesuai Kebutuhan)</small>",
+        "Pemasangan Link Whatsapp",
+        "Pemasangan Link Akun Media Sosial",
+        "Pemasangan Google Map",
+        "Pemasangan Web App",
         "3 kali Perbaikan / Revisi",
         "Responsive <br/>(Desktop maupun Mobile)",
         "Gratis Domain 1 Tahun [.com]",
@@ -52,7 +71,7 @@
         "Unlimited Bandwidth"
       ],
       "cta_text": "Pesan Sekarang",
-      "cta_link": "https://bit.ly/BusinessProZRDevelopers"
+      "cta_link": "https://tinyurl.com/CustomProZRDevelopers"
     }
   ]
 }

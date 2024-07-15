@@ -6,6 +6,9 @@ import { getListCaseStudy } from '@/redux/action/case-study/creator';
 
 // import CaseStudyModal from '@/app/case-study/modals';
 
+import { LazyLoadImage } from 'react-lazy-load-image-component';
+import 'react-lazy-load-image-component/src/effects/blur.css';
+
 const Index = () => {
   const caseStudyList = useSelector((state) => state.caseStudy.caseStudyList);
   const dispatch = useDispatch();
@@ -46,13 +49,18 @@ const Index = () => {
               <div className="case-study-slider">
                 {caseStudyList?.case_studies?.map((item, i) => (
                   <div key={item?.id || i} className="item">
-                    <h2>{item.title}</h2>
-                    <p>{item.description}</p>
-                    <div className="btn-container">
+                    <h2 data-aos="fade-left" data-aos-delay="0">
+                      {item.title}
+                    </h2>
+                    <p data-aos="fade-left" data-aos-delay="100">
+                      {item.description}
+                    </p>
+                    <div className="btn-container" data-aos="fade-left" data-aos-delay="200">
                       <a
                         href={item.link_whatsapp}
                         target="_blank"
                         className="custom-btn btn-big grad-style-ab"
+
                         // data-toggle="modal"
                         // data-target={'#case-study-modal' + item?.id}
                         // onClick={() => handleCaseStudyModal(item)}
@@ -70,7 +78,12 @@ const Index = () => {
               {/* <!-- End of .case-study-slider --> */}
             </div>
             <div className="img-container col-lg-6">
-              <img src={caseStudyList?.image} alt="case study image" className="img-fluid" />
+              <LazyLoadImage
+                effect="blur"
+                alt="Jasa Pembuatan Website | ZRDevelopers"
+                src={caseStudyList?.image}
+                className="img-fluid"
+              />
             </div>
           </div>
         </div>

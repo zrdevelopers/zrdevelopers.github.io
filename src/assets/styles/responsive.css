@@ -57,7 +57,7 @@
 
 @media screen and (min-width: 1600px) {
   .banner::after {
-    background: #fff url(/assets/images/banner/banner-round-img.jpg) calc(100% - 308px) 370px
+    background: #fff url(/assets/images/banner/banner-round-img.webp) calc(100% - 308px) 370px
       no-repeat;
     background-size: 93%;
     top: -46%;
@@ -151,7 +151,7 @@
     overflow: hidden;
   }
   .pricing-block .price {
-    font-size: 4rem;
+    font-size: 2.3rem; /*4rem;*/
   }
   .small-agency-case-study::before,
   .small-agency-case-study::after {
@@ -186,12 +186,12 @@
     width: 100%;
     padding: 0 10%;
   }
-  .pricing-wrapper {
+  /* .pricing-wrapper {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    /* Firefox 20+, Opera 12.10, IE Not supported. */
-  }
+    Firefox 20+, Opera 12.10, IE Not supported.
+  } */
   .pricing-block {
     height: auto;
     margin-bottom: 102px;
@@ -801,5 +801,20 @@
   }
   .inner-page-pricing .pricing-wrapper {
     padding-top: 9.3rem;
+  }
+}
+
+/* For devices with a max width of 768px (up to tablets) */
+@media screen and (max-width: 768px) {
+  .d-xs-flex {
+    display: flex; /* Apply flex display */
+  }
+}
+
+/* For devices wider than 768px */
+@media screen and (min-width: 769px) {
+  .sm-row {
+    display: flex;
+    flex-wrap: wrap;
   }
 }
