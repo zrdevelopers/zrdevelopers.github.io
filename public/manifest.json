@@ -1,0 +1,52 @@
+{
+  "short_name": "ZRDevelopers",
+  "name": "ZRDevelopers",
+  "icons": [
+    {
+      "src": "/assets/images/512x512.png",
+      "type": "image/png",
+      "sizes": "512x512"
+    },
+    {
+      "src": "/assets/images/192x192.png",
+      "type": "image/png",
+      "sizes": "192x192"
+    }
+  ],
+  "id": "/",
+  "start_url": "/",
+  "background_color": "#ffffff",
+  "display": "standalone",
+  "scope": "/",
+  "theme_color": "#ffffff",
+  "shortcuts": [
+    {
+      "name": "ZRDevelopers",
+      "short_name": "ZRDevelopers",
+      "description": "Jasa Pembuatan Website",
+      "url": "/today?source=pwa",
+      "icons": [
+        {
+          "src": "/assets/images/192x192.png",
+          "type": "image/png",
+          "sizes": "192x192"
+        }
+      ]
+    }
+  ],
+  "description": "Jasa Pembuatan Website",
+  "screenshots": [
+    {
+      "src": "/assets/images/featured-project-540.png",
+      "type": "image/png",
+      "sizes": "540x720",
+      "form_factor": "narrow"
+    },
+    {
+      "src": "/assets/images/featured-project-720.png",
+      "type": "image/png",
+      "sizes": "720x540",
+      "form_factor": "wide"
+    }
+  ]
+}

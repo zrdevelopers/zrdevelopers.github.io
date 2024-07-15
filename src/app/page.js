@@ -1,95 +1,130 @@
-import Image from "next/image";
-import styles from "./page.module.css";
+'use client';
+
+import React, { Fragment, useEffect } from 'react';
+
+// Components
+import Navbar from '@/components/navbar';
+import Header from '@/components/header';
+import Footer from '@/components/footer';
+
+// Page
+import Services from '@/app/services';
+import Aboutus from '@/app/about-us';
+import FeaturedProjects from '@/app/featured-projects';
+import CaseStudy from '@/app/case-study';
+// import Team from '@/app/team';
+import Pricing from '@/app/pricing';
+import Partners from '@/app/partners';
+import LatestNews from '@/app/latest-news';
+import Contactus from '@/app/contact-us';
+
+import PrivacyModal from '@/app/modals/privacy-modal';
+import TermsModal from '@/app/modals/terms-modal';
+
+import { FloatingWhatsApp } from 'react-floating-whatsapp';
+
+import { useSelector, useDispatch } from 'react-redux';
+import { getListFloatingWhatsapp } from '@/redux/action/floating-whatsapp/creator';
 
 export default function Home() {
+  const floatingWhatsappList = useSelector((state) => state.floatingWhatsapp.floatingWhatsappList);
+  const dispatch = useDispatch();
+
+  const fetchFloatingWhatsapp = async () => {
+    dispatch(getListFloatingWhatsapp());
+  };
+
+  // Load Google Analytics
+  const loadGoogleAnalytics = () => {
+    const gaScript = document.createElement('script');
+    gaScript.src = 'https://www.googletagmanager.com/gtag/js?id=G-8Z94W6TM1Y';
+    gaScript.async = true;
+    document.head.appendChild(gaScript);
+
+    gaScript.onload = () => {
+      const gaScriptInit = document.createElement('script');
+      gaScriptInit.innerHTML = `
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
+        gtag('config', 'G-8Z94W6TM1Y');
+      `;
+      document.head.appendChild(gaScriptInit);
+    };
+
+    gaScript.onerror = (error) => {
+      console.error('Failed to load Google Analytics:', error);
+    };
+  };
+
+  // Load Google Tag Manager
+  const loadGoogleTagManager = () => {
+    const gtmScript = document.createElement('script');
+    gtmScript.innerHTML = `
+      (function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+      'https://www.googletagmanager.com/gtm.js?id=GTM-59BFX4S'+dl;f.parentNode.insertBefore(j,f);
+      })(window,document,'script','dataLayer','GTM-59BFX4S');
+    `;
+    document.head.appendChild(gtmScript);
+  };
+
+  useEffect(() => {
+    loadGoogleAnalytics();
+    loadGoogleTagManager();
+    fetchFloatingWhatsapp();
+  }, []);
+
   return (
-    <main className={styles.main}>
-      <div className={styles.description}>
-        <p>
-          Get started by editing&nbsp;
-          <code className={styles.code}>src/app/page.js</code>
-        </p>
-        <div>
-          <a
-            href="https://vercel.com?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-            target="_blank"
-            rel="noopener noreferrer"
-          >
-            By{" "}
-            <Image
-              src="/vercel.svg"
-              alt="Vercel Logo"
-              className={styles.vercelLogo}
-              width={100}
-              height={24}
-              priority
-            />
-          </a>
-        </div>
-      </div>
+    <Fragment>
+      {/* <!-- Google Tag Manager (noscript) --> */}
+      <noscript>
+        <iframe
+          src="https://www.googletagmanager.com/ns.html?id=GTM-59BFX4S"
+          height="0"
+          width="0"
+          style="display:none;visibility:hidden"
+        ></iframe>
+      </noscript>
+      {/* <!-- End Google Tag Manager (noscript) --> */}
 
-      <div className={styles.center}>
-        <Image
-          className={styles.logo}
-          src="/next.svg"
-          alt="Next.js Logo"
-          width={180}
-          height={37}
-          priority
-        />
-      </div>
+      <Navbar />
+      <Header />
+      <Services />
+      <Aboutus />
+      <FeaturedProjects />
+      <CaseStudy />
+      {/* <Team /> */}
+      <Pricing />
+      <Partners />
+      <LatestNews />
+      <Contactus />
+      <Footer />
 
-      <div className={styles.grid}>
-        <a
-          href="https://nextjs.org/docs?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Docs <span>-&gt;</span>
-          </h2>
-          <p>Find in-depth information about Next.js features and API.</p>
-        </a>
+      <PrivacyModal />
+      <TermsModal />
 
-        <a
-          href="https://nextjs.org/learn?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Learn <span>-&gt;</span>
-          </h2>
-          <p>Learn about Next.js in an interactive course with&nbsp;quizzes!</p>
-        </a>
-
-        <a
-          href="https://vercel.com/templates?framework=next.js&utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Templates <span>-&gt;</span>
-          </h2>
-          <p>Explore starter templates for Next.js.</p>
-        </a>
-
-        <a
-          href="https://vercel.com/new?utm_source=create-next-app&utm_medium=appdir-template&utm_campaign=create-next-app"
-          className={styles.card}
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          <h2>
-            Deploy <span>-&gt;</span>
-          </h2>
-          <p>
-            Instantly deploy your Next.js site to a shareable URL with Vercel.
-          </p>
-        </a>
-      </div>
-    </main>
+      <FloatingWhatsApp
+        avatar={floatingWhatsappList?.avatar}
+        phoneNumber={floatingWhatsappList?.phone_number}
+        accountName={floatingWhatsappList?.account_name}
+        chatMessage={floatingWhatsappList?.chat_message}
+        statusMessage={floatingWhatsappList?.status_message}
+        darkMode={true}
+        // allowEsc={true}
+        // allowClickAway
+        // notification
+        // notificationDelay={60000} // 1 minute
+        // notificationSound
+        styles={{
+          position: 'fixed',
+          bottom: '15px',
+          height: '0px !important',
+          border: '0'
+        }}
+        className="custom-whatsapp-button"
+      />
+    </Fragment>
   );
 }

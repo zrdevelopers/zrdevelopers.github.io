@@ -1,0 +1,58 @@
+{
+  "subtitle": null,
+  "plans": [
+    {
+      "id": 1,
+      "type": "BASIC PRO",
+      "price": "let's Talk",
+      "features": [
+        "Standart 5 Judul Menu",
+        "1 kali Perbaikan / Revisi",
+        "Responsive <br/>(Desktop maupun Mobile)",
+        "Gratis Domain 1 Tahun [.com]",
+        "Gratis Hosting 3 GB 1 Tahun",
+        "Gratis Maintenance 3 Bulan",
+        "Gratis 3 Akun Email",
+        "Unlimited Bandwidth"
+      ],
+      "cta_text": "Pesan Sekarang",
+      "cta_link": "https://bit.ly/BasicProZRdeveloper"
+    },
+    {
+      "id": 2,
+      "type": "ENTREPRENEUR PRO",
+      "icon": "02",
+      "price": "let's Talk",
+      "features": [
+        "Standart 7 Judul Menu",
+        "2 kali Perbaikan / Revisi",
+        "Responsive <br/>(Desktop maupun Mobile)",
+        "Gratis Domain 1 Tahun [.com]",
+        "Gratis Hosting 7 GB 1 Tahun",
+        "Gratis Maintenance 6 Bulan",
+        "Gratis 7 Akun Email",
+        "Unlimited Bandwidth"
+      ],
+      "cta_text": "Pesan Sekarang",
+      "cta_link": "https://bit.ly/EntrepreneurProZRDevelopers"
+    },
+    {
+      "id": 3,
+      "type": "BUSINESS PRO",
+      "icon": "03",
+      "price": "let's Talk",
+      "features": [
+        "Standart 15 - 20 Judul Menu",
+        "3 kali Perbaikan / Revisi",
+        "Responsive <br/>(Desktop maupun Mobile)",
+        "Gratis Domain 1 Tahun [.com]",
+        "Gratis Hosting 13 GB 1 Tahun",
+        "Gratis Maintenance 1 Tahun",
+        "Unlimited Email",
+        "Unlimited Bandwidth"
+      ],
+      "cta_text": "Pesan Sekarang",
+      "cta_link": "https://bit.ly/BusinessProZRDevelopers"
+    }
+  ]
+}
