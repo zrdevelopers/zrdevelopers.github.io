@@ -19,7 +19,7 @@ const Index = (props) => {
       {/* Facebook Open Graph */}
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:image" content={image} />
+      <meta property="og:image" content={url + image} />
       <meta property="og:image:alt" content={title} />
       <meta property="og:image:type" content="image/png" />
       <meta property="og:url" content={url} />
