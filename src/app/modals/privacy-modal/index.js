@@ -482,8 +482,8 @@ const Index = () => {
           <h6>Links to Other Websites</h6>
           <p>
             Our Service may contain links to other websites that are not operated by Us. If You
-            click on a third party link, You will be directed to that third partys site. We
-            strongly advise You to review the Privacy Policy of every site You visit.
+            click on a third party link, You will be directed to that third partys site. We strongly
+            advise You to review the Privacy Policy of every site You visit.
           </p>
           <p>
             We have no control over and assume no responsibility for the content, privacy policies

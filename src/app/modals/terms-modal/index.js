@@ -283,9 +283,9 @@ const Index = () => {
           <h6>Waiver</h6>
           <p>
             Except as provided herein, the failure to exercise a right or to require performance of
-            an obligation under these Terms shall not affect a partys ability to exercise such
-            right or require such performance at any time thereafter nor shall the waiver of a
-            breach constitute a waiver of any subsequent breach.
+            an obligation under these Terms shall not affect a partys ability to exercise such right
+            or require such performance at any time thereafter nor shall the waiver of a breach
+            constitute a waiver of any subsequent breach.
           </p>
           <h6>Translation Interpretation</h6>
           <p>
