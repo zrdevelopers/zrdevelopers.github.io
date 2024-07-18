@@ -34,7 +34,7 @@ export const metadata = {
     'ZRDevelopers adalah penyedia pembuatan website yang akan membantu Anda mewujudkan keinginan dan kebutuhan tanpa perlu melakukan coding sendiri.',
   openGraph: {
     url: 'https://zrdevelopers.github.io',
-    images: 'https://zrdevelopers.github.io/assets/images/512x512.png'
+    images: 'https://zrdevelopers.github.io/assets/images/meta.png'
   }
 };
 
