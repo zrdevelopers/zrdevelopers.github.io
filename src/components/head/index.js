@@ -26,8 +26,8 @@ const Index = (props) => {
       <meta property="og:type" content="website" />
 
       {/* Twitter Card */}
-      <meta property="twitter:image:alt" content="summary_large_image" />
-      <meta name="twitter:card" content={image} />
+      <meta property="twitter:image:alt" content={title} />
+      <meta name="twitter:card" content="summary_large_image"  />
       <meta name="twitter:title" content={title} />
       <meta name="twitter:description" content={description} />
       <meta name="twitter:image" content={image} />
