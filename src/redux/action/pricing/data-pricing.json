@@ -3,10 +3,14 @@
   "plans": [
     {
       "id": 1,
-      "type": "Paket Website",
-      "price": "BASIC PRO",
+      "type": "BASIC PRO",
+      "price": "Rp. 1,7 jt / thn",
       "features": [
+        "Themplate dari Kami",
         "Standart 5 Judul Menu",
+        "Pemasangan Link Whatsapp",
+        "Pemasangan Link Akun Media Sosial",
+        "Pemasangan Google Map",
         "1 kali Perbaikan / Revisi",
         "Responsive <br/>(Desktop maupun Mobile)",
         "Gratis Domain 1 Tahun [.com]",
@@ -20,10 +24,14 @@
     },
     {
       "id": 2,
-      "type": "Paket Website",
-      "price": "ENTREPRENEUR PRO",
+      "type": "PREMIUM PRO",
+      "price": "Rp. 2,7 jt / thn",
       "features": [
+        "Themplate dari Kami",
         "Standart 7 Judul Menu",
+        "Pemasangan Link Whatsapp",
+        "Pemasangan Link Akun Media Sosial",
+        "Pemasangan Google Map",
         "2 kali Perbaikan / Revisi",
         "Responsive <br/>(Desktop maupun Mobile)",
         "Gratis Domain 1 Tahun [.com]",
@@ -37,10 +45,14 @@
     },
     {
       "id": 3,
-      "type": "Paket Website",
-      "price": "BUSINESS PRO",
+      "type": "CUSTOM PRO",
+      "price": "Hubungi Kami",
       "features": [
-        "Standart 15 - 20 Judul Menu",
+        "Themplate dari Kami <small>(Sesuai Kebutuhan)</small>",
+        "Judul Menu <small>(Sesuai Kebutuhan)</small>",
+        "Pemasangan Link Whatsapp",
+        "Pemasangan Link Akun Media Sosial",
+        "Pemasangan Google Map",
         "3 kali Perbaikan / Revisi",
         "Responsive <br/>(Desktop maupun Mobile)",
         "Gratis Domain 1 Tahun [.com]",
