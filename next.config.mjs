@@ -8,6 +8,11 @@ const nextConfig = {
     path: ''
   },
   webpack: (config) => {
+    // Optimize and reduce bundle size
+    config.optimization.splitChunks = {
+      chunks: 'all',
+    };
+
     // Customize Webpack configuration if needed
     return config;
   },
