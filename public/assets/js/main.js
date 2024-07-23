@@ -58,25 +58,25 @@ jQuery(
     });
 
     //Video modal
-    $('.video-popup').magnificPopup({
-      type: 'iframe',
-      mainClass: 'mfp-with-zoom',
-      iframe: {
-        markup:
-          '<div class="mfp-iframe-scaler">' +
-          '<div class="mfp-close"></div>' +
-          '<iframe class="mfp-iframe" frameborder="0" allowFullScreen></iframe>' +
-          '</div>',
-        patterns: {
-          youtube: {
-            index: 'youtube.com/',
-            id: 'v=',
-            src: '//www.youtube.com/embed/%id%?autoplay=1'
-          }
-        },
-        srcAction: 'iframe_src'
-      }
-    });
+    // $('.video-popup').magnificPopup({
+    //   type: 'iframe',
+    //   mainClass: 'mfp-with-zoom',
+    //   iframe: {
+    //     markup:
+    //       '<div class="mfp-iframe-scaler">' +
+    //       '<div class="mfp-close"></div>' +
+    //       '<iframe class="mfp-iframe" frameborder="0" allowFullScreen></iframe>' +
+    //       '</div>',
+    //     patterns: {
+    //       youtube: {
+    //         index: 'youtube.com/',
+    //         id: 'v=',
+    //         src: '//www.youtube.com/embed/%id%?autoplay=1'
+    //       }
+    //     },
+    //     srcAction: 'iframe_src'
+    //   }
+    // });
 
     //script for page scroll to top and bottom
     $('.page-scroll').on('click', function () {

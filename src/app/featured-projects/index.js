@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 import React, { Fragment, useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getListFeaturedProjects } from '@/redux/action/featured-projects/creator';
@@ -63,7 +65,7 @@ const Index = () => {
           />
         </svg>
         <div className="container">
-          <h2 className="text-center">Featured Projects</h2>
+          <h2 className="text-center">Proyek Unggulan</h2>
 
           <div className="project-showcase text-center">
             {/* <div className="filter-button-group">
@@ -103,10 +105,14 @@ const Index = () => {
                     onClick={() => handleProjectModal(item)}
                   >
                     <div className="img-container">
-                      <img
+                      <Image
                         src={item.banner}
                         alt="Jasa Pembuatan Website | ZRDevelopers"
+                        layout="responsive"
+                        width={395} // Replace with actual width
+                        height={303} // Replace with actual height
                         className="img-fluid"
+                        loading="lazy"
                       />
                     </div>
                     {/* <!-- End of .img-container --> */}

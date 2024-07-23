@@ -73,7 +73,7 @@ const Index = () => {
             <div className="item" key={item?.id || i}>
               <a className="team-content-block content-block">
                 <div className="img-container">
-                  <img src={item.image} alt={item.alt} className="img-fluid" />
+                  <img src={item.image} alt={item.alt} className="img-fluid" loading="lazy" />
                   {/* http://placehold.it/390x480 images/team/team-member-1.jpg */}
                 </div>
               </a>

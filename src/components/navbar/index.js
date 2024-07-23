@@ -27,18 +27,18 @@ const Index = () => {
           <ul className="navbar-nav ml-md-auto typo-color-c align-items-center">
             <li className="nav-item active">
               <a className="nav-link page-scroll" href="#services">
-                Services
+                Layanan
                 <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link page-scroll" href="#about-us">
-                About us
+                Tentang kami
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link page-scroll" href="#projects">
-                Portfolio
+                Portofolio
               </a>
             </li>
             {/* <li className="nav-item">
@@ -51,17 +51,17 @@ const Index = () => {
               </li> --> */}
             <li className="nav-item">
               <a className="nav-link page-scroll" href="#pricing">
-                Pricing
+                Harga
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link page-scroll" href="#news">
-                News
+                Artikel
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link custom-btn btn-mid grad-style-cd page-scroll" href="#contact">
-                Contact Us
+                Kontak Kami
               </a>
             </li>
           </ul>

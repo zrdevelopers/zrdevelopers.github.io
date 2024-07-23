@@ -31,6 +31,7 @@ const Index = () => {
                     ? { filter: 'brightness(0.13)' }
                     : { filter: 'grayscale(1)' }
                 }
+                loading="lazy"
               />
             </div>
           ))}

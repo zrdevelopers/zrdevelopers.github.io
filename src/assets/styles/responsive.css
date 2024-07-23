@@ -57,7 +57,7 @@
 
 @media screen and (min-width: 1600px) {
   .banner::after {
-    background: #fff url(/assets/images/banner/banner-round-img.jpg) calc(100% - 308px) 370px
+    background: #fff url(/assets/images/banner/banner-round-img.webp) calc(100% - 308px) 370px
       no-repeat;
     background-size: 93%;
     top: -46%;
@@ -151,7 +151,7 @@
     overflow: hidden;
   }
   .pricing-block .price {
-    font-size: 4rem;
+    font-size: 2.3rem; /*4rem;*/
   }
   .small-agency-case-study::before,
   .small-agency-case-study::after {

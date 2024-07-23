@@ -8,11 +8,11 @@ const Index = () => {
           <p>&copy; 2019 - {currentYear} ZRDevelopers | All rights reserved</p>
           <p>
             <a href="#" data-toggle="modal" data-target="#privacy-modal">
-              Privacy Policy
+              Kebijakan Privasi
             </a>{' '}
             -{' '}
             <a href="#" data-toggle="modal" data-target="#terms-modal">
-              Terms &amp; Conditions
+              Syarat &amp; Ketentuan
             </a>
           </p>
         </div>

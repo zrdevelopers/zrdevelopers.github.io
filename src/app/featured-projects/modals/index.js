@@ -1,3 +1,5 @@
+import Image from 'next/image';
+
 import Modals from '@/components/modals';
 
 const Index = (props) => {
@@ -52,10 +54,14 @@ const Index = (props) => {
               <div className="carousel-inner">
                 {dataItem?.carousel_images?.map((item, i) => (
                   <div class={`carousel-item ${i === 0 ? 'active' : ''}`} key={item?.id || i}>
-                    <img
-                      className="d-block w-100 img-fluid"
+                    <Image
                       src={item}
                       alt="Jasa Pembuatan Website | ZRDevelopers"
+                      layout="responsive"
+                      width={395} // Replace with actual width
+                      height={303} // Replace with actual height
+                      className="d-block w-100 img-fluid"
+                      loading="lazy"
                     />
                   </div>
                 ))}
@@ -95,7 +101,7 @@ const Index = (props) => {
                   className="custom-btn btn-big grad-style-ef"
                   target="_blank"
                 >
-                  LAUNCH WEBSITE
+                  SITUS WEB
                 </a>
               )}
             </div>

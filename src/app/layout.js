@@ -5,7 +5,7 @@ import '@/assets/styles/miniline.css';
 import '@/assets/styles/vendor/bootstrap.min.css';
 import '@/assets/styles/vendor/slick.css';
 import '@/assets/styles/vendor/slick-theme.css';
-import '@/assets/styles/vendor/magnific-popup.css';
+// import '@/assets/styles/vendor/magnific-popup.css';
 import '@/assets/styles/main.css';
 import '@/assets/styles/responsive.css';
 
@@ -14,7 +14,12 @@ import '@/assets/styles/responsive.css';
 import Heads from '@/components/head';
 import Scripts from '@/components/scripts';
 const ReduxProvider = dynamic(() => import('@/redux/provider'), {
-  ssr: false
+  ssr: false,
+  loading: () => (
+    <div className="loader">
+      <img src="/assets/images/192x192.png" alt={metadata.title} loading="lazy" />
+    </div>
+  )
 });
 
 export const metadata = {
@@ -32,8 +37,10 @@ export const metadata = {
   title: 'Jasa Pembuatan Website | ZRDevelopers',
   description:
     'ZRDevelopers adalah penyedia pembuatan website yang akan membantu Anda mewujudkan keinginan dan kebutuhan tanpa perlu melakukan coding sendiri.',
-  url: 'https://zrdevelopers.github.io',
-  image: '/assets/images/512x512.png'
+  openGraph: {
+    url: 'https://zrdevelopers.github.io',
+    images: 'https://zrdevelopers.github.io/assets/images/meta.png'
+  }
 };
 
 export const viewport = {
@@ -50,8 +57,8 @@ export default function RootLayout({ children }) {
         keywords={metadata.keywords}
         themecolor={viewport.themeColor}
         manifest={metadata.manifest}
-        url={metadata.url}
-        image={metadata.image}
+        url={metadata.openGraph.url}
+        image={metadata.openGraph.images}
       />
       <body>
         <ReduxProvider>
