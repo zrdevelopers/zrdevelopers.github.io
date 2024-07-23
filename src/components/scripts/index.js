@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <Fragment>
       {/* <!-- jQuery --> */}
-      <Script src="/assets/js/vendor/jquery-3.3.1.min.js" strategy="lazyOnload" />
+      {/* <Script src="/assets/js/vendor/jquery-3.3.1.min.js" strategy="lazyOnload" /> */}
       <Script src="/assets/js/vendor/jquery-migrate.min.js" strategy="lazyOnload" />
       {/* <!-- Bootstrap js --> */}
       <Script src="/assets/js/vendor/bootstrap.bundle.min.js" strategy="lazyOnload" />

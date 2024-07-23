@@ -34,6 +34,18 @@ export default function Home() {
     dispatch(getListFloatingWhatsapp());
   };
 
+  // Load Jquery
+  const loadJquery = () => {
+    const existingScript = document.getElementById('jquery-script');
+    if (!existingScript) {
+      const gaScript = document.createElement('script');
+      gaScript.src = '/assets/js/vendor/jquery-3.3.1.min.js';
+      gaScript.id = 'jquery-script'; // Set an ID to avoid duplicate scripts
+      gaScript.async = true;
+      document.head.appendChild(gaScript);
+    }
+  };
+
   // Load Google Analytics
   const loadGoogleAnalytics = () => {
     const gaScript = document.createElement('script');
@@ -122,6 +134,7 @@ export default function Home() {
   };
 
   useEffect(() => {
+    loadJquery();
     loadGoogleAnalytics();
     loadGoogleTagManager();
     loadFacebookPixel();
