@@ -2376,11 +2376,13 @@ h1 {
 }
 
 .featured-project-carousel .carousel-control-prev-icon {
-  background: url(/assets/images/icon/short-arrow-left.png) center center no-repeat;
+  /* background: url(/assets/images/icon/short-arrow-left.png) center center no-repeat; */
+  background: url(/assets/images/icon/slick-arrow-left.png) center center no-repeat;
 }
 
 .featured-project-carousel .carousel-control-next-icon {
-  background: url(/assets/images/icon/short-arrow-right.png) center center no-repeat;
+  /* background: url(/assets/images/icon/short-arrow-right.png) center center no-repeat; */
+  background: url(/assets/images/icon/slick-arrow-right.png) center center no-repeat;
 }
 
 .featured-project-modal .custom-btn {

@@ -6,7 +6,11 @@ const nextConfig = {
     unoptimized: true,
     loader: 'akamai',
     path: ''
-  }
+  },
+  webpack: (config) => {
+    // Customize Webpack configuration if needed
+    return config;
+  },
 };
 
 export default nextConfig;
