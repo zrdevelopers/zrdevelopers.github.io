@@ -36,14 +36,10 @@ export default function Home() {
 
   // Load Jquery
   const loadJquery = () => {
-    const existingScript = document.getElementById('jquery-script');
-    if (!existingScript) {
-      const gaScript = document.createElement('script');
-      gaScript.src = '/assets/js/vendor/jquery-3.3.1.min.js';
-      gaScript.id = 'jquery-script'; // Set an ID to avoid duplicate scripts
-      gaScript.async = true;
-      document.head.appendChild(gaScript);
-    }
+    const script = document.createElement('script');
+    script.src = '/assets/js/vendor/jquery-3.3.1.min.js';
+    script.async = true;
+    document.head.appendChild(script);
   };
 
   // Load Google Analytics
