@@ -17,7 +17,7 @@ const ReduxProvider = dynamic(() => import('@/redux/provider'), {
   ssr: false,
   loading: () => (
     <div className="loader">
-      <img src="/assets/images/192x192.png" alt={metadata.title} />
+      <img src="/assets/images/192x192.png" alt={metadata.title} loading="lazy" />
     </div>
   )
 });

@@ -70,7 +70,7 @@ const Index = () => {
               {/* <!-- End of .case-study-slider --> */}
             </div>
             <div className="img-container col-lg-6">
-              <img src={caseStudyList?.image} alt="case study image" className="img-fluid" />
+              <img src={caseStudyList?.image} alt="Jasa Pembuatan Website | ZRDevelopers" className="img-fluid" loading="lazy" />
             </div>
           </div>
         </div>

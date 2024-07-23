@@ -81,6 +81,7 @@ const Index = (props) => {
                 src="/assets/images/case-study/modal-img-1.jpg"
                 alt="case study modal image"
                 className="img-fluid"
+                loading="lazy"
               />
             </div>
           </div>
@@ -123,6 +124,7 @@ const Index = (props) => {
                 src="/assets/images/case-study/modal-img-1.jpg"
                 alt="case study modal image"
                 className="img-fluid"
+                loading="lazy"
               />
             </div>
           </div>

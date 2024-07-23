@@ -56,6 +56,7 @@ const Index = (props) => {
                       className="d-block w-100 img-fluid"
                       src={item}
                       alt="Jasa Pembuatan Website | ZRDevelopers"
+                      loading="lazy"
                     />
                   </div>
                 ))}

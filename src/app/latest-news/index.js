@@ -47,6 +47,7 @@ const Index = () => {
                       src={item.banner}
                       alt="Jasa Pembuatan Website | ZRDevelopers"
                       className="img-fluid"
+                      loading="lazy"
                     />
                   </div>
                   {/* <!-- End of .img-container --> */}

@@ -63,6 +63,7 @@ const Index = (props) => {
               alt="Jasa Pembuatan Website | ZRDevelopers"
               className="img-fluid modal-feat-img w-100"
               style={{ maxHeight: '425px' }}
+              loading="lazy"
             />
           </div>
           <h3>
