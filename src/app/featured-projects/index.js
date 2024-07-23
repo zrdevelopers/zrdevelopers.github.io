@@ -105,12 +105,6 @@ const Index = () => {
                     onClick={() => handleProjectModal(item)}
                   >
                     <div className="img-container">
-                      {/* <img
-                        src={item.banner}
-                        alt="Jasa Pembuatan Website | ZRDevelopers"
-                        className="img-fluid"
-                        loading="lazy"
-                      /> */}
                       <Image
                         src={item.banner}
                         alt="Jasa Pembuatan Website | ZRDevelopers"
