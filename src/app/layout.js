@@ -14,7 +14,12 @@ import '@/assets/styles/responsive.css';
 import Heads from '@/components/head';
 import Scripts from '@/components/scripts';
 const ReduxProvider = dynamic(() => import('@/redux/provider'), {
-  ssr: false
+  ssr: false,
+  loading: () => (
+    <div className="loader">
+      <img src="/assets/images/192x192.png" alt={metadata.title} />
+    </div>
+  )
 });
 
 export const metadata = {
