@@ -45,7 +45,7 @@ export default function Home() {
       document.head.appendChild(gaScript);
     }
   };
-
+  
   // Load Google Analytics
   const loadGoogleAnalytics = () => {
     const gaScript = document.createElement('script');
