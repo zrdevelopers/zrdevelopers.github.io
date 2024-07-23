@@ -1,5 +1,7 @@
 'use client';
 
+import Image from 'next/image';
+
 import React, { Fragment, useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getListFeaturedProjects } from '@/redux/action/featured-projects/creator';
@@ -103,9 +105,18 @@ const Index = () => {
                     onClick={() => handleProjectModal(item)}
                   >
                     <div className="img-container">
-                      <img
+                      {/* <img
                         src={item.banner}
                         alt="Jasa Pembuatan Website | ZRDevelopers"
+                        className="img-fluid"
+                        loading="lazy"
+                      /> */}
+                      <Image
+                        src={item.banner}
+                        alt="Jasa Pembuatan Website | ZRDevelopers"
+                        layout="responsive"
+                        width={395} // Replace with actual width
+                        height={303} // Replace with actual height
                         className="img-fluid"
                         loading="lazy"
                       />
