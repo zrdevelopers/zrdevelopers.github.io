@@ -4,8 +4,8 @@
     "filter": "a1",
     "category": "Website",
     "title": "RealSmartLog",
-    "banner": "/assets/images/featured-projects/realsmartlog.png",
-    "carousel_images": ["/assets/images/featured-projects/realsmartlog.png"],
+    "banner": "/assets/images/featured-projects/realsmartlog.webp",
+    "carousel_images": ["/assets/images/featured-projects/realsmartlog.webp"],
     "description": "<p>Domestics - International Freight Forwarding and Global Logistics</p>",
     "launch_website": "http://realsmartlog.com"
   },
@@ -14,8 +14,8 @@
     "filter": "a1",
     "category": "Website",
     "title": "Mekanik Elektro",
-    "banner": "/assets/images/featured-projects/mekanik-elektro.png",
-    "carousel_images": ["/assets/images/featured-projects/mekanik-elektro.png"],
+    "banner": "/assets/images/featured-projects/mekanik-elektro.webp",
+    "carousel_images": ["/assets/images/featured-projects/mekanik-elektro.webp"],
     "description": "<p>Teknisi Listrik / Tukang Listrik Panggilan yg melayani jasa perbaikan Listrik untuk Rumah, Ruko, Kantor, &amp; Industri.</p>",
     "launch_website": "#"
   },
@@ -24,8 +24,8 @@
     "filter": "a1",
     "category": "Website",
     "title": "VandZ15",
-    "banner": "/assets/images/featured-projects/vandz15.png",
-    "carousel_images": ["/assets/images/featured-projects/vandz15.png"],
+    "banner": "/assets/images/featured-projects/vandz15.webp",
+    "carousel_images": ["/assets/images/featured-projects/vandz15.webp"],
     "description": "Jual Makanan Ringan",
     "launch_website": null
   }
