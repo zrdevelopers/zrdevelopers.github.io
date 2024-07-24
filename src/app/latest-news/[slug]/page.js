@@ -18,7 +18,7 @@ export async function generateMetadata({ params }) {
   const data = DataLatestNews.find((item) => item.slug === slug);
 
   return {
-    title: `${data?.title} | Jasa Pembuatan Website`,
+    title: `${data?.title} | ZRDevelopers`,
     description: data?.meta_description,
     openGraph: {
       url: `https://zrdevelopers.github.io/latest-news/${slug}`,
