@@ -15,7 +15,8 @@ const nextConfig = {
 
     // Customize Webpack configuration if needed
     return config;
-  }
+  },
+  generateMetadata: true,
 };
 
 export default nextConfig;
