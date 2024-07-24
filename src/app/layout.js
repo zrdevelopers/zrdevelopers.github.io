@@ -9,6 +9,9 @@ import '@/assets/styles/vendor/slick-theme.css';
 import '@/assets/styles/main.css';
 import '@/assets/styles/responsive.css';
 
+// js
+import 'jquery/dist/jquery.min';
+
 // layout.js
 // Components
 import Heads from '@/components/head';
