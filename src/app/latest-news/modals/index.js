@@ -9,13 +9,13 @@ const Index = (props) => {
 
   return (
     <Modals
-      classModal={`news-modal ${slug && "show"} ${dataItem?.id}`}
+      classModal={`news-modal ${slug && 'show'} ${dataItem?.id}`}
       idModal={'news-modal' + dataItem?.id}
       modalBg={null}
       modalHeading={null}
       btnClose={false}
       onClose={onClose}
-      style={slug && {display: "block", overflowX: "hidden", overflowY: "auto"}}
+      style={slug && { display: 'block', overflowX: 'hidden', overflowY: 'auto' }}
       modalHeader={
         <Fragment>
           <svg

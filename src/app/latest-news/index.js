@@ -77,11 +77,15 @@ const Index = (props) => {
         {/* <!-- End of .news-slider --> */}
       </section>
 
-      {showModal && <NewsModal dataItem={dataItem} 
-      onClose={() => { 
-        setShowModal(false), 
-        setDataItem({})
-      }} slug={slug} />}
+      {showModal && (
+        <NewsModal
+          dataItem={dataItem}
+          onClose={() => {
+            setShowModal(false), setDataItem({});
+          }}
+          slug={slug}
+        />
+      )}
     </Fragment>
   );
 };

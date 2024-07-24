@@ -1,6 +1,15 @@
 const Index = (props) => {
-  const { classModal, idModal, modalHeader, modalBg, modalHeading, modalBody, btnClose, onClose, style } =
-    props;
+  const {
+    classModal,
+    idModal,
+    modalHeader,
+    modalBg,
+    modalHeading,
+    modalBody,
+    btnClose,
+    onClose,
+    style
+  } = props;
 
   return (
     <div
