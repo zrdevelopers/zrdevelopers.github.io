@@ -31,7 +31,7 @@ import {
   loadGoogleAnalytics,
   loadGoogleTagManager,
   loadFacebookPixel,
-  loadTiktokPixel,
+  loadTiktokPixel
 } from '@/lib/loadAnalytic';
 
 export default function Home(props) {

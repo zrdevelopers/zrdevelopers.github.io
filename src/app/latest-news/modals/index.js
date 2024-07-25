@@ -67,7 +67,7 @@ const Index = (props) => {
             <LazyLoadImage
               src={dataItem?.image}
               alt="Jasa Pembuatan Website | ZRDevelopers"
-              className="img-fluid modal-feat-img w-100"
+              className="img-fluid modal-feat-img" //w-100
               style={{ maxHeight: '425px' }}
             />
           </div>

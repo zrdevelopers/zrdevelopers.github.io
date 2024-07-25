@@ -15,7 +15,9 @@ export const loadJquery = () => {
 export const loadGoogleAnalytics = () => {
   loadScript('https://www.googletagmanager.com/gtag/js?id=G-8Z94W6TM1Y', 'ga'); // Replace G-XXXXXX with your GA ID
   window.dataLayer = window.dataLayer || [];
-  function gtag(){window.dataLayer.push(arguments);}
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
   gtag('js', new Date());
   gtag('config', 'G-8Z94W6TM1Y'); // Replace G-8Z94W6TM1Y with your GA ID
 };
@@ -27,14 +29,19 @@ export const loadGoogleTagManager = () => {
 export const loadFacebookPixel = () => {
   loadScript('https://connect.facebook.net/en_US/fbevents.js', 'fb-pixel');
   // Initialize Facebook Pixel
-  window.fbq = window.fbq || ((...args) => {
-    if (!window.fbq.queue) window.fbq.queue = [];
-    window.fbq.queue.push(args);
-  });
+  window.fbq =
+    window.fbq ||
+    ((...args) => {
+      if (!window.fbq.queue) window.fbq.queue = [];
+      window.fbq.queue.push(args);
+    });
   window.fbq('init', '488966464627479'); // Replace with your Facebook Pixel ID
   window.fbq('track', 'PageView');
 };
 
 export const loadTiktokPixel = () => {
-  loadScript('https://analytics.tiktok.com/i18n/pixel/sdk.js?sdkid=CQCCUQJC77U89M86NUT0', 'tt-pixel'); // Replace with your TikTok Pixel ID
+  loadScript(
+    'https://analytics.tiktok.com/i18n/pixel/sdk.js?sdkid=CQCCUQJC77U89M86NUT0',
+    'tt-pixel'
+  ); // Replace with your TikTok Pixel ID
 };

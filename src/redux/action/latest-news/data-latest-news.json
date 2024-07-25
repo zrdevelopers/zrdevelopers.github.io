@@ -1,8 +1,8 @@
 [
   {
     "id": 1,
-    "banner": "/assets/images/news/news-3.jpg",
-    "image": "/assets/images/news/news-modal-1.jpg",
+    "banner": "/assets/images/news/news-3.webp",
+    "image": "/assets/images/news/news-3.webp",
     "date": "13 July 2024",
     "title": "Jasa Pembuatan Website: Solusi Tepat untuk Bisnis Anda",
     "slug": "jasa-pembuatan-website",
@@ -11,8 +11,8 @@
   },
   {
     "id": 2,
-    "banner": "/assets/images/news/news-5.jpg",
-    "image": "/assets/images/news/news-modal-1.jpg",
+    "banner": "/assets/images/news/news-5.webp",
+    "image": "/assets/images/news/news-5.webp",
     "date": "26 Juni 2024",
     "title": "Bagaimana Cara Muncul di Halaman #1 Google",
     "slug": "cara-muncul-di-halaman-1-google",
@@ -21,12 +21,22 @@
   },
   {
     "id": 3,
-    "banner": "/assets/images/news/news-2.jpg",
-    "image": "/assets/images/news/news-modal-1.jpg",
+    "banner": "/assets/images/news/news-2.webp",
+    "image": "/assets/images/news/news-2.webp",
     "date": "15 Feb 2024",
     "title": "3 Alasan Kenapa Kamu Harus Membuat Website",
     "slug": "3-alasan-membuat-website",
     "meta_description": "Di era digital ini, memiliki website telah menjadi keharusan bagi setiap bisnis.",
     "description": "<p>Di era digital ini, memiliki website telah menjadi keharusan bagi setiap bisnis. Berikut adalah beberapa alasan kuat mengapa kamu perlu mempertimbangkan untuk membuat website untuk bisnismu:</p>\n\n<h6>1. Menampilkan Informasi yang Lebih Lengkap</h6>\n<p>Website tidak hanya sebagai platform untuk melakukan penjualan online, tetapi juga sebagai media untuk menyajikan informasi yang lengkap kepada calon konsumen. Kamu bisa memberikan detail tentang produk atau jasa yang ditawarkan, testimoni pelanggan, kontak perusahaan, dan informasi lain yang relevan. Dengan informasi yang lengkap ini, calon konsumen dapat membuat keputusan yang lebih baik sebelum melakukan pembelian.</p>\n\n<h6>2. Meningkatkan Kredibilitas</h6>\n<p>Di zaman di mana orang lebih sering mencari informasi secara online sebelum membeli produk atau menggunakan jasa, memiliki website bisa meningkatkan kredibilitas bisnismu. Sebuah website yang profesional dan informatif membuat calon pelanggan percaya bahwa bisnismu adalah pilihan yang dapat diandalkan. Informasi yang disajikan secara transparan dan terstruktur dapat memperkuat kesan positif terhadap bisnismu.</p>\n\n<h6>3. Sebagai Media Promosi yang Efektif</h6>\n<p>Website tidak hanya sebagai alat untuk memperkenalkan bisnismu, tetapi juga sebagai media promosi yang efektif. Website bisa aktif bekerja selama 24 jam penuh, tanpa henti. Potensial pelanggan bisa mengakses informasi tentang bisnismu kapan saja dan di mana saja, bahkan ketika kamu sedang tidak aktif atau tidak online. Dengan strategi pemasaran yang tepat, website bisa membantu menjangkau target pasar yang lebih luas secara efisien.</p>\n\n<p>Membuat website bukan hanya tentang kebutuhan, tetapi juga tentang investasi untuk pertumbuhan bisnismu di era digital ini. Dengan website yang baik, kamu bisa meningkatkan visibilitas online, menarik lebih banyak pelanggan potensial, dan meningkatkan konversi penjualan.</p>\n\n<p>Apakah kamu siap untuk membawa bisnismu ke level berikutnya? <a href='/' class='button'>Hubungi jasa pembuatan website</a> sekarang juga dan wujudkan website impianmu!</p>\n"
+  },
+  {
+    "id": 4,
+    "banner": "/assets/images/news/news-6.webp",
+    "image": "/assets/images/news/news-6.webp",
+    "date": "26 July 2024",
+    "title": "Cara Amankan Website: 5 Langkah Penting yang Harus Kamu Lakukan",
+    "slug": "cara-amankan-website-5-langkah-penting-yang-harus-kamu-lakukan",
+    "meta_description": "Mengamankan website adalah hal yang krusial untuk melindungi data dan menjaga kredibilitas bisnismu.",
+    "description": "<p>Mengamankan website adalah hal yang krusial untuk melindungi data dan menjaga kredibilitas bisnismu. Berikut adalah beberapa langkah yang dapat kamu lakukan untuk meningkatkan keamanan website:</p><h6>Gunakan HTTPS </h6><p>Menggunakan HTTPS dengan SSL/TLS certificate adalah langkah pertama untuk mengamankan website. HTTPS mengenkripsi data yang dikirimkan antara pengguna dan server, sehingga melindungi informasi sensitif seperti detail login dan data pribadi.</p><h6>Perbarui Software Secara Berkala </h6><p>Pastikan semua perangkat lunak yang digunakan, termasuk CMS, plugin, dan tema, selalu diperbarui ke versi terbaru. Pembaruan sering kali mencakup perbaikan keamanan yang penting untuk melindungi dari eksploitasi.</p><h6>Gunakan Kata Sandi yang Kuat dan Unik </h6><p>Gunakan kata sandi yang kuat dan unik untuk semua akun yang berhubungan dengan website, termasuk akun hosting, database, dan CMS. Kata sandi yang kuat biasanya terdiri dari kombinasi huruf besar, huruf kecil, angka, dan simbol.</p><h6>Backup Data Secara Rutin </h6><p>Selalu lakukan backup data secara rutin dan simpan salinan backup di lokasi yang aman. Backup dapat membantu memulihkan website jika terjadi serangan atau kegagalan sistem.</p><h6>Gunakan Plugin Keamanan </h6><p>Instal plugin keamanan yang dapat membantu mendeteksi dan mencegah serangan. Plugin seperti Wordfence, Sucuri, atau iThemes Security menawarkan fitur seperti firewall, pemindai malware, dan proteksi brute force.</p><h6>Bonus: Tips Tambahan untuk Keamanan Website</h6><h6>Monitor Aktivitas Website </h6><p>Pantau aktivitas website untuk mendeteksi anomali atau aktivitas mencurigakan. Banyak plugin keamanan menyediakan fitur pemantauan dan notifikasi real-time.</p><h6>Hindari Penggunaan Plugin dan Tema Tidak Terpercaya </h6><p>Hanya gunakan plugin dan tema dari sumber yang terpercaya. Hindari mengunduh plugin atau tema bajakan, karena bisa mengandung malware.</p><h6>Implementasi Two-Factor Authentication (2FA) </h6><p>Terapkan 2FA untuk menambahkan lapisan keamanan ekstra pada proses login. 2FA memerlukan dua bentuk verifikasi, biasanya kata sandi dan kode yang dikirimkan ke perangkat lain.</p><p>Mengamankan website adalah proses berkelanjutan yang memerlukan perhatian dan tindakan proaktif. Dengan menerapkan langkah-langkah di atas, kamu dapat mengurangi risiko serangan dan menjaga data serta integritas bisnismu tetap aman.</p><p>#KeamananWebsite #WebsiteSecurity #CyberSecurity #HTTPS #SSL #BackupData #JasaPembuatanWebsite</p>"
   }
 ]
