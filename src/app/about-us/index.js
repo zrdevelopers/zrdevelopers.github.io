@@ -47,10 +47,16 @@ const Index = () => {
       <div className="container">
         <div className="row">
           <div className="col-md-6 ml-auto">
-            <h2>{aboutUsList.title}</h2>
-            <div dangerouslySetInnerHTML={{ __html: aboutUsList.description }}></div>
+            <h2 data-aos="fade-right" data-aos-delay="0">
+              {aboutUsList.title}
+            </h2>
+            <div
+              data-aos="fade-right"
+              data-aos-delay="100"
+              dangerouslySetInnerHTML={{ __html: aboutUsList.description }}
+            ></div>
             <div className="counter-wrapper d-flex justify-content-between">
-              <div className="inner-block">
+              <div className="inner-block" data-aos="fade-right" data-aos-delay="200">
                 <div className="counter-block d-block txt-grad-ef">
                   <span className="counter">{aboutUsList.happy_clients}</span>+
                 </div>
@@ -58,7 +64,7 @@ const Index = () => {
                 <br />
                 BAHAGIA
               </div>
-              <div className="inner-block">
+              <div className="inner-block" data-aos="fade-right" data-aos-delay="300">
                 <div className="counter-block d-block txt-grad-ab">
                   <span className="counter">{aboutUsList.projects_completed}</span>+
                 </div>
@@ -66,7 +72,7 @@ const Index = () => {
                 <br />
                 SELESAI
               </div>
-              <div className="inner-block">
+              <div className="inner-block" data-aos="fade-right" data-aos-delay="400">
                 <div className="counter-block d-block txt-grad-cd">
                   <span className="counter">{aboutUsList.running_projects}</span>+
                 </div>

@@ -38,14 +38,21 @@ const Index = (props) => {
     <Fragment>
       <section className="latest-news section-padding light-grey-grad" id="news">
         <div className="container">
-          <h2>Artikel Terbaru</h2>
+          <h2 data-aos="fade-left" data-aos-delay="0">
+            Artikel Terbaru
+          </h2>
         </div>
         {/* <!-- End of .container --> */}
 
         <div className="news-slider common-slider">
           <div className="carousel-container equalHeightWrapper">
             {latestNewsList.map((item, i) => (
-              <div className="item" key={item?.id || i}>
+              <div
+                className="item"
+                key={item?.id || i}
+                data-aos="fade-left"
+                data-aos-delay={i * 100}
+              >
                 <a
                   href={`/latest-news/${item?.slug}`}
                   className="news-content-block content-block"

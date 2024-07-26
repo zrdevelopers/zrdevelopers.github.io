@@ -25,7 +25,12 @@ const Index = () => {
       <div className="container">
         <div className="row justify-content-center clients-wrapper">
           {partnersList.map((item, i) => (
-            <div className="client" key={item?.id || i}>
+            <div
+              className="client"
+              key={item?.id || i}
+              data-aos="fade-down"
+              data-aos-delay={i * 100}
+            >
               <LazyLoadImage
                 effect="blur"
                 alt={item.alt}

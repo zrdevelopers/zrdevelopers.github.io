@@ -34,6 +34,9 @@ import {
   loadTiktokPixel
 } from '@/lib/loadAnalytic';
 
+import AOS from 'aos';
+import 'aos/dist/aos.css';
+
 export default function Home(props) {
   const { slug } = props;
 
@@ -45,6 +48,7 @@ export default function Home(props) {
   };
 
   useEffect(() => {
+    AOS.init();
     loadJquery();
     loadGoogleAnalytics();
     loadGoogleTagManager();

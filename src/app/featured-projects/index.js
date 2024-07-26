@@ -97,7 +97,12 @@ const Index = () => {
             <div className="grid row equalHeightWrapper">
               {/* More Items can be added. --> */}
               {featuredProjectsList.map((item, i) => (
-                <div key={item?.id || i} className="a1 grid-item col-md-6 col-lg-4">
+                <div
+                  key={item?.id || i}
+                  className="a1 grid-item col-md-6 col-lg-4"
+                  data-aos="fade-down"
+                  data-aos-delay={i * 100}
+                >
                   <a
                     href="#"
                     className="featured-content-block content-block"
@@ -126,6 +131,8 @@ const Index = () => {
             <a
               href="https://bit.ly/Chat-ZRDevelopers"
               className="custom-btn btn-big grad-style-ef btn-full"
+              data-aos="fade-down"
+              data-aos-delay={`${featuredProjectsList?.length}00`}
             >
               Buatkan Saya Website
             </a>

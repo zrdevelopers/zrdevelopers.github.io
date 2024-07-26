@@ -27,8 +27,12 @@ const Index = () => {
                 <span className="icon-container grad-style-cd-light">
                   <i className={item.image}></i>
                 </span>
-                <h5 className="text-center">{item.title}</h5>
-                <p>{item.description}</p>
+                <h5 className="text-center" data-aos="fade-down" data-aos-delay="0">
+                  {item.title}
+                </h5>
+                <p data-aos="fade-down" data-aos-delay="100">
+                  {item.description}
+                </p>
               </div>
             </div>
           ))}

@@ -30,11 +30,20 @@ const Index = () => {
                 <span className="icon-container grad-style-cd-light">
                   <i className="txt-grad-cd">0{i + 1}</i>
                 </span>
-                <small>{item.type}</small>
-                <div className="price txt-grad-ef">{item.price}</div>
+                <small data-aos="fade-down" data-aos-delay={i * 100}>
+                  {item.type}
+                </small>
+                <div className="price txt-grad-ef" data-aos="fade-down" data-aos-delay={i * 100}>
+                  {item.price}
+                </div>
                 <div className="facilities">
-                  {item.features.map((feat, i) => (
-                    <div key={feat?.id || i} dangerouslySetInnerHTML={{ __html: feat }}></div>
+                  {item.features.map((feat, idx) => (
+                    <div
+                      data-aos="fade-down"
+                      data-aos-delay={i * 100}
+                      key={feat?.id || idx}
+                      dangerouslySetInnerHTML={{ __html: feat }}
+                    ></div>
                   ))}
                 </div>
                 {/* <!-- End of .facilities --> */}
@@ -42,6 +51,8 @@ const Index = () => {
                   href={item.cta_link}
                   className="custom-btn btn-big grad-style-ef"
                   target="_blank"
+                  data-aos="fade-down"
+                  data-aos-delay={`${pricingList?.length}00`}
                 >
                   {item.cta_text}
                 </a>

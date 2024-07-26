@@ -43,10 +43,10 @@ jQuery(
     });
 
     //affixed nav with scrollspy
-    $('body').scrollspy({
-      target: '.onepage-navbar',
-      offset: 100
-    });
+    // $('body').scrollspy({
+    //   target: '.onepage-navbar',
+    //   offset: 100
+    // });
 
     //Tab nav
     var _navLink = $('.service-process-tab');
