@@ -1,4 +1,6 @@
 /** @type {import('next').NextConfig} */
+import webpack from 'webpack';
+
 const nextConfig = {
   // basePath: "/",
   output: "export",
@@ -12,6 +14,12 @@ const nextConfig = {
     config.optimization.splitChunks = {
       chunks: 'all',
     };
+
+    // Provide jQuery globally
+    config.plugins.push(new webpack.ProvidePlugin({
+      $: 'jquery',
+      jQuery: 'jquery',
+    }));
 
     // Customize Webpack configuration if needed
     return config;
