@@ -6,11 +6,11 @@ const Index = () => {
     <Fragment>
       {/* <!-- jQuery --> */}
       {/* <Script src="/assets/js/vendor/jquery-3.3.1.min.js" strategy="lazyOnload" /> */}
-      <Script
+      {/* <Script
         src="/assets/js/vendor/jquery-migrate.min.js"
         strategy="lazyOnload"
         type="text/javascript"
-      />
+      /> */}
       {/* <!-- Bootstrap js --> */}
       <Script
         src="/assets/js/vendor/bootstrap.bundle.min.js"
@@ -35,11 +35,11 @@ const Index = () => {
       {/* <!-- Slick carousel js --> */}
       <Script src="/assets/js/vendor/slick.min.js" strategy="lazyOnload" type="text/javascript" />
       {/* <!-- Magnific popup --> */}
-      <Script
+      {/* <Script
         src="/assets/js/vendor/jquery.magnific-popup.min.js"
         strategy="lazyOnload"
         type="text/javascript"
-      />
+      /> */}
       {/* <Script src="/assets/js/vendor/isotope.pkgd.min.js" strategy="lazyOnload" /> */}
       {/* <!-- scroll magic --> */}
       {/* <Script src="/assets/js/vendor/jquery.ScrollMagic.min.js" strategy="lazyOnload" /> */}
