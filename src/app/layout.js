@@ -3,10 +3,8 @@ import dynamic from 'next/dynamic';
 // css
 import '@/assets/styles/miniline.css';
 import '@/assets/styles/vendor/bootstrap.min.css';
-// import '@/assets/styles/vendor/slick.css';
-// import '@/assets/styles/vendor/slick-theme.css';
-import 'slick-carousel/slick/slick.css';
-import 'slick-carousel/slick/slick-theme.css';
+import '@/assets/styles/vendor/slick.css';
+import '@/assets/styles/vendor/slick-theme.css';
 // import '@/assets/styles/vendor/magnific-popup.css';
 import '@/assets/styles/main.css';
 import '@/assets/styles/responsive.css';
