@@ -1,5 +1,6 @@
-jQuery(
-  (function ($) {
+// jQuery(
+//   (function ($) {
+jQuery(document).ready(function ($) {
     /*-- Strict mode enabled --*/
     'use strict';
 
@@ -342,5 +343,6 @@ jQuery(
           .trigger('click');
       }
     });
-  })(jQuery)
-);
+//   })(jQuery)
+// );
+});
