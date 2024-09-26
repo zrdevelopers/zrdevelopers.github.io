@@ -9,6 +9,9 @@
     "export": "next export",
     "deploy": "next build && next export && npx gh-pages -d out",
     "lint": "next lint",
+    "lint:fix": "eslint ./ --ext ts,js,tsx,jsx --fix",
+    "lint:cache": "eslint ./ --ext ts,js,tsx,jsx --cache --fix",
+    
     "format": "prettier --write './**/*.{js,scss,css, md,json}' --config ./.prettierrc",
     "host": "next dev -H 192.168.1.18",
     "postbuild": "next-sitemap"
