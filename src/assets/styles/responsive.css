@@ -186,12 +186,12 @@
     width: 100%;
     padding: 0 10%;
   }
-  .pricing-wrapper {
+  /* .pricing-wrapper {
     -webkit-box-pack: center;
     -ms-flex-pack: center;
     justify-content: center;
-    /* Firefox 20+, Opera 12.10, IE Not supported. */
-  }
+    Firefox 20+, Opera 12.10, IE Not supported.
+  } */
   .pricing-block {
     height: auto;
     margin-bottom: 102px;

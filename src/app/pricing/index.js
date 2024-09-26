@@ -23,9 +23,9 @@ const Index = () => {
         {pricingList.subtitle && (
           <p className="section-subheading text-center">{pricingList.subtitle}</p>
         )}
-        <div className="row pricing-wrapper">
+        <div className="flex-row pricing-wrapper d-flex" style={{ overflowX: 'auto' }}>
           {pricingList?.plans?.map((item, i) => (
-            <div key={item?.id || i} className="col-lg-4 col-md-6">
+            <div key={item?.id || i} className="col-lg-4 col-md-6 col-11">
               <div className="pricing-block text-center content-block">
                 <span className="icon-container grad-style-cd-light">
                   <i className="txt-grad-cd">0{i + 1}</i>

@@ -16,8 +16,6 @@ const Index = () => {
     fetchTeamList();
   }, []);
 
-  console.log('teem', teamList);
-
   return (
     <section className="team section-padding" id="team">
       <div className="trigger-team"></div>

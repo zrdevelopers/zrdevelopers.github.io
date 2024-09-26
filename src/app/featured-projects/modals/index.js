@@ -96,7 +96,7 @@ const Index = (props) => {
               {dataItem?.launch_website && (
                 <a
                   href={dataItem?.launch_website}
-                  className="custom-btn btn-big grad-style-ef"
+                  className="custom-btn btn-big grad-style-ef mb-3 mb-sm-0"
                   target="_blank"
                 >
                   SITUS WEB

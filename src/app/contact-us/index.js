@@ -97,7 +97,8 @@ const Index = () => {
                 </div>
                 {/* <!-- End of .form-wrapper --> */}
 
-                <div className="map-wrapper" data-aos="fade-left" data-aos-delay="0">
+                <div className="map-wrapper">
+                  {/* data-aos="fade-left" data-aos-delay="0" */}
                   <iframe
                     src={contactUsList.embed_google_map}
                     width="600"
@@ -117,10 +118,12 @@ const Index = () => {
             {/* <!-- End of .col-md-6 --> */}
             <div className="col-md-3 offset-md-1">
               <div className="contact-info m-b-70">
-                <h3 data-aos="fade-right" data-aos-delay="0">
+                <h3>
+                  {/* data-aos="fade-right" data-aos-delay="0" */}
                   Kontak Kami
                 </h3>
-                <p className="address" data-aos="fade-right" data-aos-delay="100">
+                <p className="address">
+                  {/* data-aos="fade-right" data-aos-delay="100" */}
                   No Whatsapp
                   <a href={contactUsList.link_whatsapp} target="_blank">
                     {contactUsList.no_whatsapp}
@@ -128,7 +131,8 @@ const Index = () => {
                 </p>
                 {/* <!-- End of .address --> */}
 
-                <p className="address" data-aos="fade-right" data-aos-delay="200">
+                <p className="address">
+                  {/* data-aos="fade-right" data-aos-delay="200" */}
                   Email
                   <a href="mailto:zikriramdani.developer@gmail.com" target="_blank">
                     {contactUsList.email}
@@ -136,19 +140,22 @@ const Index = () => {
                 </p>
                 {/* <!-- End of .address --> */}
 
-                <p className="address" data-aos="fade-right" data-aos-delay="300">
+                <p className="address">
+                  {/* data-aos="fade-right" data-aos-delay="300" */}
                   Alamat
                   <span dangerouslySetInnerHTML={{ __html: contactUsList.address }}></span>
                 </p>
                 {/* <!-- End of .address --> */}
 
                 <div className="social-icons-wrapper">
-                  <p data-aos="fade-right" data-aos-delay="400">
+                  <p>
+                    {/* data-aos="fade-right" data-aos-delay="400" */}
                     Ikuti kami di
                   </p>
                   <ul className="social-icons">
                     {contactUsList?.social_media?.map((item, i) => (
-                      <li key={item?.id || i} data-aos="fade-right" data-aos-delay="500">
+                      <li key={item?.id || i}>
+                        {/* data-aos="fade-right" data-aos-delay="500" */}
                         <a href={item.link_social} target="_blank" rel="noopener">
                           <i className={'fab ' + item.icon_class}></i>
                         </a>

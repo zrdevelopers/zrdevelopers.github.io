@@ -33,7 +33,7 @@ export const metadata = {
   // Page Title
   title: 'Jasa Pembuatan Website | ZRDevelopers',
   description:
-    'ZRDevelopers adalah penyedia pembuatan website yang akan membantu Anda mewujudkan keinginan dan kebutuhan tanpa perlu melakukan coding sendiri.',
+    'Penyedia pembuatan website yang akan membantu mewujudkan keinginan dan kebutuhan Anda.',
   openGraph: {
     url: 'https://zrdevelopers.github.io',
     images: 'https://zrdevelopers.github.io/assets/images/meta.png'

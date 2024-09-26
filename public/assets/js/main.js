@@ -79,8 +79,24 @@ jQuery(document).ready(function ($) {
   //   }
   // });
 
-  //script for page scroll to top and bottom
-  $('.page-scroll').on('click', function () {
+  // Function to handle scrolling
+  function scrollToTarget(target) {
+    var targetElement = $(target);
+    if (targetElement.length) {
+      $('html, body').animate(
+        {
+          scrollTop: targetElement.offset().top - 80
+        },
+        700,
+        'easeInOutExpo'
+      );
+    }
+  }
+
+  // Click event for page scrolling links
+  $('.page-scroll').on('click', function (e) {
+    e.preventDefault(); // Prevent the default action
+
     if (
       location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
       location.hostname == this.hostname
@@ -88,25 +104,15 @@ jQuery(document).ready(function ($) {
       var target = $(this.hash);
       target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
       if (target.length) {
-        if (_window.width() < 768) {
-          $('html, body').animate(
-            {
-              scrollTop: target.offset().top - 80
-            },
-            1000,
-            'easeInOutExpo'
-          );
-        } else {
-          $('html, body').animate(
-            {
-              scrollTop: target.offset().top - 80
-            },
-            1000,
-            'easeInOutExpo'
-          );
-        }
-        return false;
+        scrollToTarget(this.hash);
       }
+    }
+  });
+
+  // Check if there's a hash in the URL on page load
+  $(document).ready(function () {
+    if (window.location.hash) {
+      scrollToTarget(window.location.hash);
     }
   });
 
@@ -117,52 +123,52 @@ jQuery(document).ready(function ($) {
   // });
 
   // Team slider
-  $('.common-slider .carousel-container').slick({
-    dots: true,
-    infinite: true,
-    speed: 200,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    autoplay: true,
-    autoplaySpeed: 2000,
-    responsive: [
-      {
-        breakpoint: 1199,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 991,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1,
-          infinite: true,
-          dots: true
-        }
-      },
-      {
-        breakpoint: 800,
-        settings: {
-          slidesToShow: 2,
-          slidesToScroll: 1
-        }
-      },
-      {
-        breakpoint: 767,
-        settings: {
-          slidesToShow: 1,
-          slidesToScroll: 1
-        }
-      }
-      // You can unslick at a given breakpoint now by adding:
-      // settings: "unslick"
-      // instead of a settings object
-    ]
-  });
+  // $('.common-slider .carousel-container').slick({
+  //   dots: true,
+  //   infinite: false,
+  //   speed: 200,
+  //   slidesToShow: 4,
+  //   slidesToScroll: 1,
+  //   autoplay: true,
+  //   autoplaySpeed: 2000,
+  //   responsive: [
+  //     {
+  //       breakpoint: 1199,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 1,
+  //         infinite: false,
+  //         dots: true
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 991,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 1,
+  //         infinite: false,
+  //         dots: true
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 800,
+  //       settings: {
+  //         slidesToShow: 2,
+  //         slidesToScroll: 1
+  //       }
+  //     },
+  //     {
+  //       breakpoint: 767,
+  //       settings: {
+  //         slidesToShow: 1,
+  //         slidesToScroll: 1
+  //       }
+  //     }
+  //     // You can unslick at a given breakpoint now by adding:
+  //     // settings: "unslick"
+  //     // instead of a settings object
+  //   ]
+  // });
 
   // $('.case-study-slider').slick({
   //   dots: true,
@@ -304,6 +310,7 @@ jQuery(document).ready(function ($) {
   //Change navbar style on scroll
   _window.on('scroll', function () {
     if (_window.scrollTop() >= 100) {
+      // 100
       $('.navbar').addClass('scrolled');
     } else {
       $('.navbar').removeClass('scrolled');

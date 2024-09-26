@@ -1,5 +1,6 @@
 'use client';
 
+import './styles.scss';
 import React, { Fragment, useEffect, useState } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getListLatestNews } from '@/redux/action/latest-news/creator';
@@ -8,6 +9,8 @@ import NewsModal from '@/app/latest-news/modals';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
+
+import Link from 'next/link';
 
 const Index = (props) => {
   const { slug } = props;
@@ -44,11 +47,15 @@ const Index = (props) => {
         </div>
         {/* <!-- End of .container --> */}
 
-        <div className="news-slider common-slider">
-          <div className="carousel-container equalHeightWrapper">
-            {latestNewsList.map((item, i) => (
+        <div className="news-slider container">
+          {/* <div className="news-slider common-slider"> */}
+          <div
+            className="carousel-container equalHeightWrapper d-flex"
+            style={{ overflowX: 'auto' }}
+          >
+            {latestNewsList?.slice(0, 7)?.map((item, i) => (
               <div
-                className="item"
+                className={`item col-11 col-sm-4 ${i < 1 ? 'pl-0' : ''}`}
                 key={item?.id || i}
                 data-aos="fade-left"
                 data-aos-delay={i * 100}
@@ -69,15 +76,35 @@ const Index = (props) => {
                     />
                   </div>
                   {/* <!-- End of .img-container --> */}
-                  <h5 className="equalHeight">
-                    <span className="content-block__sub-title">{item.date}</span>
-                    {item.title}
+                  <h5 className="equalHeight" title={item?.title?.length > 20 ? item.title : ''}>
+                    {/* <span className="content-block__sub-title">{item.date}</span> */}
+                    <span className="two-lines">{item?.title}</span>
                   </h5>
                 </a>
                 {/* <!-- End of .featured-content-block --> */}
               </div>
             ))}
             {/* <!-- End of .item --> */}
+            {/* Display "Selengkapnya" for the 8th item */}
+            {latestNewsList?.length > 7 && (
+              <div
+                className="item col-11 col-sm-4"
+                data-aos="fade-left"
+                data-aos-delay={latestNewsList?.length > 7 * 100}
+              >
+                <Link href="/latest-news" className="news-content-block content-block">
+                  <div className="img-container">
+                    <LazyLoadImage
+                      effect="blur"
+                      alt="Read More Articles"
+                      src="/assets/images/logozr.webp" // Provide a default image or leave it out
+                      className="img-fluid"
+                    />
+                  </div>
+                  <h5 className="equalHeight">Lihat Lebih Banyak</h5>
+                </Link>
+              </div>
+            )}
           </div>
           {/* <!-- End of .carousel-container --> */}
         </div>

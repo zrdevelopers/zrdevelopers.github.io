@@ -94,12 +94,12 @@ const Index = () => {
             </div> */}
             {/* <!-- filter-button-group ends --> */}
 
-            <div className="grid row equalHeightWrapper">
+            <div className="grid d-flex equalHeightWrapper" style={{ overflowX: 'auto' }}>
               {/* More Items can be added. --> */}
               {featuredProjectsList.map((item, i) => (
                 <div
                   key={item?.id || i}
-                  className="a1 grid-item col-md-6 col-lg-4"
+                  className="a1 grid-item col-md-6 col-lg-4 col-11"
                   data-aos="fade-down"
                   data-aos-delay={i * 100}
                 >
