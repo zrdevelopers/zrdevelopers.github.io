@@ -803,3 +803,18 @@
     padding-top: 9.3rem;
   }
 }
+
+/* For devices with a max width of 768px (up to tablets) */
+@media screen and (max-width: 768px) {
+  .d-xs-flex {
+    display: flex; /* Apply flex display */
+  }
+}
+
+/* For devices wider than 768px */
+@media screen and (min-width: 769px) {
+  .sm-row {
+    display: flex;
+    flex-wrap: wrap;
+  }
+}

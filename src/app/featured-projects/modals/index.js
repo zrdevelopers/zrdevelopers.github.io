@@ -1,4 +1,5 @@
 import Modals from '@/components/modals';
+import { Fragment } from 'react';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -54,7 +55,11 @@ const Index = (props) => {
               </ol>
               <div className="carousel-inner">
                 {dataItem?.carousel_images?.map((item, i) => (
-                  <div class={`carousel-item ${i === 0 ? 'active' : ''}`} key={item?.id || i}>
+                  <div
+                    class={`carousel-item ${i === 0 ? 'active' : ''}`}
+                    key={item?.id || i}
+                    style={{ maxHeight: '300px', overflowY: 'auto' }}
+                  >
                     <LazyLoadImage
                       effect="blur"
                       alt="Jasa Pembuatan Website | ZRDevelopers"
@@ -64,24 +69,28 @@ const Index = (props) => {
                   </div>
                 ))}
               </div>
-              <a
-                className="carousel-control-prev"
-                href="#featured-project-carousel"
-                role="button"
-                data-slide="prev"
-              >
-                <span className="carousel-control-prev-icon" aria-hidden="true"></span>
-                <span className="sr-only">Previous</span>
-              </a>
-              <a
-                className="carousel-control-next"
-                href="#featured-project-carousel"
-                role="button"
-                data-slide="next"
-              >
-                <span className="carousel-control-next-icon" aria-hidden="true"></span>
-                <span className="sr-only">Next</span>
-              </a>
+              {dataItem?.carousel_images?.length > 1 && (
+                <Fragment>
+                  <a
+                    className="carousel-control-prev"
+                    href="#featured-project-carousel"
+                    role="button"
+                    data-slide="prev"
+                  >
+                    <span className="carousel-control-prev-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Previous</span>
+                  </a>
+                  <a
+                    className="carousel-control-next"
+                    href="#featured-project-carousel"
+                    role="button"
+                    data-slide="next"
+                  >
+                    <span className="carousel-control-next-icon" aria-hidden="true"></span>
+                    <span className="sr-only">Next</span>
+                  </a>
+                </Fragment>
+              )}
             </div>
             {/* <!-- End of .featured-project-carousel --> */}
           </div>
@@ -90,7 +99,7 @@ const Index = (props) => {
           <div className="col-lg-6">
             <div className="text-content">
               <h3>
-                <span>{dataItem.category}</span> {dataItem.title}
+                <span>{dataItem?.service}</span> {dataItem.title}
               </h3>
               <div dangerouslySetInnerHTML={{ __html: dataItem.description }}></div>
               {dataItem?.launch_website && (

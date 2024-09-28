@@ -1,0 +1,26 @@
+.card-link:after {
+  -webkit-animation: minus 0.8s;
+  animation: minus 0.8s;
+}
+.card-link.collapsed:after {
+  -webkit-animation: plus 0.8s;
+  animation: plus 0.8s;
+}
+
+@keyframes minus {
+  0% {
+    transform: rotate(360deg);
+  }
+  0% {
+    -webkit-transform: rotate(360deg);
+  }
+}
+
+@keyframes plus {
+  0% {
+    transform: rotate(-360deg);
+  }
+  0% {
+    -webkit-transform: rotate(-360deg);
+  }
+}

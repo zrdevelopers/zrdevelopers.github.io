@@ -3,42 +3,33 @@
 import React, { Fragment, useEffect } from 'react';
 
 // Components
-import Navbar from '@/components/navbar';
-import Header from '@/components/header';
-import Footer from '@/components/footer';
+import Navbar from '@/app/jasa-pembuatan-website/components/navbar';
+import Header from '@/app/jasa-pembuatan-website/components/header';
+import Footer from '@/app/jasa-pembuatan-website/components/footer';
 
 // Page
-import Services from '@/app/services';
-import Aboutus from '@/app/about-us';
-import FeaturedProjects from '@/app/featured-projects';
-import CaseStudy from '@/app/case-study';
-// import Team from '@/app/team';
-import Pricing from '@/app/pricing';
-import Partners from '@/app/partners';
-import LatestNews from '@/app/latest-news';
-import Contactus from '@/app/contact-us';
-
-import PrivacyModal from '@/app/modals/privacy-modal';
-import TermsModal from '@/app/modals/terms-modal';
+import Testimonial from '@/app/jasa-pembuatan-website/components/testimonial';
+import Aboutus from '@/app/jasa-pembuatan-website/components/about-us';
+import FeaturedProjects from '@/app/jasa-pembuatan-website/components/featured-projects';
+import CaseStudy from '@/app/jasa-pembuatan-website/components/case-study';
+// import Team from '@/app/jasa-pembuatan-website/components/team';
+import Pricing from '@/app/jasa-pembuatan-website/components/pricing';
+import Partners from '@/app/jasa-pembuatan-website/components/partners';
+// import LatestNews from '@/app/jasa-pembuatan-website/components/latest-news';
+// import Contactus from '@/app/jasa-pembuatan-website/components/contact-us';
+import BidangBisnis from '@/app/jasa-pembuatan-website/components/bidang-bisnis';
+import FAQ from '@/app/jasa-pembuatan-website/components/faq';
 
 import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { getListFloatingWhatsapp } from '@/redux/action/floating-whatsapp/creator';
 
-import {
-  loadJquery,
-  loadGoogleAnalytics,
-  loadGoogleTagManager,
-  loadFacebookPixel,
-  loadTiktokPixel
-} from '@/lib/loadAnalytic';
-
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-export default function Page(props) {
-  const { slug } = props;
+export default function Page() {
+  // const { slug } = props;
 
   const floatingWhatsappList = useSelector((state) => state.floatingWhatsapp.floatingWhatsappList);
   const dispatch = useDispatch();
@@ -49,42 +40,27 @@ export default function Page(props) {
 
   useEffect(() => {
     AOS.init();
-    loadJquery();
-    loadGoogleAnalytics();
-    loadGoogleTagManager();
-    loadFacebookPixel();
-    loadTiktokPixel();
     fetchFloatingWhatsapp();
   }, []);
 
   return (
     <Fragment>
-      {/* <!-- Google Tag Manager (noscript) --> */}
-      <noscript>
-        <iframe
-          src="https://www.googletagmanager.com/ns.html?id=GTM-59BFX4S"
-          height="0"
-          width="0"
-          style="display:none;visibility:hidden"
-        ></iframe>
-      </noscript>
-      {/* <!-- End Google Tag Manager (noscript) --> */}
-
       <Navbar page="jasa-pembuatan-website" />
       <Header />
-      <Services />
-      <Aboutus />
-      <FeaturedProjects />
-      <CaseStudy />
-      {/* <Team /> */}
-      <Pricing />
       <Partners />
-      <LatestNews slug={slug} />
-      <Contactus />
-      <Footer />
+      <Testimonial />
+      <FeaturedProjects />
+      <Aboutus />
 
-      <PrivacyModal />
-      <TermsModal />
+      {/* <Team /> */}
+      <BidangBisnis />
+      <Pricing />
+      <CaseStudy />
+      <FAQ />
+
+      {/* <LatestNews slug={slug} /> */}
+      {/* <Contactus /> */}
+      <Footer />
 
       <FloatingWhatsApp
         avatar={floatingWhatsappList?.avatar}

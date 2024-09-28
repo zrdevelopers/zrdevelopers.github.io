@@ -1,5 +1,4 @@
-// jQuery(
-//   (function ($) {
+// eslint-disable-next-line no-undef
 jQuery(document).ready(function ($) {
   /*-- Strict mode enabled --*/
   'use strict';

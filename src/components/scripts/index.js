@@ -5,7 +5,7 @@ const Index = () => {
   return (
     <Fragment>
       {/* <!-- jQuery --> */}
-      <Script src="/assets/js/vendor/jquery-3.3.1.min.js" strategy="lazyOnload" />
+      <Script src="/assets/js/vendor/jquery-3.3.1.min.js" type="text/javascript" />
       {/* <Script
         src="/assets/js/vendor/jquery-migrate.min.js"
         strategy="lazyOnload"
@@ -33,7 +33,7 @@ const Index = () => {
       {/* <!-- ImagesLoaded js --> */}
       {/* <Script src="/assets/js/vendor/imagesloaded.pkgd.min.js" strategy="lazyOnload" /> */}
       {/* <!-- Slick carousel js --> */}
-      <Script src="/assets/js/vendor/slick.min.js" strategy="lazyOnload" type="text/javascript" />
+      {/* <Script src="/assets/js/vendor/slick.min.js" strategy="lazyOnload" type="text/javascript" /> */}
       {/* <!-- Magnific popup --> */}
       {/* <Script
         src="/assets/js/vendor/jquery.magnific-popup.min.js"

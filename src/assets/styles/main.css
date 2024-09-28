@@ -3990,3 +3990,7 @@ h1 {
     left: -10px;
   }
 }
+
+.cursor-pointer {
+  cursor: pointer;
+}

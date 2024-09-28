@@ -37,7 +37,7 @@ import {
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
-export default function Home(props) {
+const Home = (props) => {
   const { slug } = props;
 
   const floatingWhatsappList = useSelector((state) => state.floatingWhatsapp.floatingWhatsappList);
@@ -109,4 +109,6 @@ export default function Home(props) {
       />
     </Fragment>
   );
-}
+};
+
+export default Home;

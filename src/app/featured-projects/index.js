@@ -120,7 +120,7 @@ const Index = () => {
                     </div>
                     {/* <!-- End of .img-container --> */}
                     <h5 className="equalHeight">
-                      <span className="content-block__sub-title">{item.category}</span>
+                      <span className="content-block__sub-title">{item?.service}</span>
                       {item.title}
                     </h5>
                   </a>

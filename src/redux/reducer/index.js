@@ -13,6 +13,11 @@ import { latestNewsReducer } from '@/redux/reducer/latest-news/reducer';
 import { contactUsReducer } from '@/redux/reducer/contact-us/reducer';
 import { floatingWhatsappReducer } from '@/redux/reducer/floating-whatsapp/reducer';
 
+// Landing Page
+import { testimonialReducer } from '@/redux/reducer/testimonial/reducer';
+import { bidangBisnisReducer } from '@/redux/reducer/bidang-bisnis/reducer';
+import { faqReducer } from '@/redux/reducer/faq/reducer';
+
 const rootReducer = combineReducers({
   aboutUs: aboutUsReducer,
   services: servicesReducer,
@@ -24,7 +29,12 @@ const rootReducer = combineReducers({
   partners: partnersReducer,
   latestNews: latestNewsReducer,
   contactUs: contactUsReducer,
-  floatingWhatsapp: floatingWhatsappReducer
+  floatingWhatsapp: floatingWhatsappReducer,
+
+  // Landing Page
+  testimonial: testimonialReducer,
+  bidangBisnis: bidangBisnisReducer,
+  faq: faqReducer
 });
 
 export default rootReducer;
