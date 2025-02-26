@@ -227,7 +227,7 @@ const Index = () => {
                     onChange={handleChange}
                   ></textarea>
                 </div>
-                <div className="btn-wrapper text-center">
+                <div className="btn-wrapper text-center mb-4">
                   <button type="submit" className="custom-btn btn-big grad-style-ef">
                     Pemesanan via WhatsApp
                   </button>
