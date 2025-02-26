@@ -18,7 +18,8 @@
         "Gratis Maintenance 3 Bulan"
       ],
       "cta_text": "Pesan Sekarang",
-      "cta_link": "https://tinyurl.com/BasicProZRDevelopers"
+      "cta_link": "https://tinyurl.com/BasicProZRDevelopers",
+      "no_wa": 6281228883616
     },
     {
       "id": 2,
@@ -37,7 +38,8 @@
         "Gratis Maintenance 6 Bulan"
       ],
       "cta_text": "Pesan Sekarang",
-      "cta_link": "https://tinyurl.com/PremiumProZRDevelopers"
+      "cta_link": "https://tinyurl.com/PremiumProZRDevelopers",
+      "no_wa": 6281228883616
     },
     {
       "id": 3,
@@ -56,7 +58,8 @@
         "Gratis Maintenance 1 Tahun"
       ],
       "cta_text": "Pesan Sekarang",
-      "cta_link": "https://tinyurl.com/CustomProZRDevelopers"
+      "cta_link": "https://tinyurl.com/CustomProZRDevelopers",
+      "no_wa": 6281228883616
     }
   ]
 }
