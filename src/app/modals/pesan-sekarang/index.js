@@ -46,13 +46,7 @@ const Index = () => {
     const domain = 'https://zrdevelopers.github.io';
 
     const pesanWhatsApp = `Halo ${domain}, saya ingin memesan jasa pembuatan website dengan detail berikut:\n
-    Nama: ${formData.nama}
-    Email: ${formData.email}
-    No WhatsApp: ${formData.no_whatsapp}
-    Layanan: ${formData.layanan}
-    Nama Bisnis: ${formData.nama_bisnis}
-    Referensi Website: ${formData.referensi_website || '-'}
-    Deskripsi Singkat Bisnis: ${formData.pesan || '-'}\n\nMohon informasi lebih lanjut. Terima kasih!`;
+    Nama: ${formData.nama}\nEmail: ${formData.email}\nNo WhatsApp: ${formData.no_whatsapp}\nLayanan: ${formData.layanan}\nNama Bisnis: ${formData.nama_bisnis}\nReferensi Website: ${formData.referensi_website || '-'}\nDeskripsi Singkat Bisnis: ${formData.pesan || '-'}\n\nMohon informasi lebih lanjut. Terima kasih!`;
 
     const noAdmin = '6281228883616';
     const urlWhatsApp = `https://wa.me/${noAdmin}?text=${encodeURIComponent(pesanWhatsApp)}`;
