@@ -1,6 +1,6 @@
 'use client';
 
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 
 // Components
 import Navbar from '@/app/jasa-pembuatan-website/components/navbar';
@@ -28,14 +28,22 @@ import { getListFloatingWhatsapp } from '@/redux/action/floating-whatsapp/creato
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
+import PesanSekarangModal from '@/app/modals/pesan-sekarang';
+
 export default function Page() {
   // const { slug } = props;
 
   const floatingWhatsappList = useSelector((state) => state.floatingWhatsapp.floatingWhatsappList);
   const dispatch = useDispatch();
 
+  const [dataProducts, setDataProducts] = useState({});
+
   const fetchFloatingWhatsapp = async () => {
     dispatch(getListFloatingWhatsapp());
+  };
+
+  const handlePesanSekarang = async (e, products) => {
+    setDataProducts(products);
   };
 
   useEffect(() => {
@@ -54,13 +62,15 @@ export default function Page() {
 
       {/* <Team /> */}
       <BidangBisnis />
-      <Pricing />
+      <Pricing handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />
       <CaseStudy />
       <FAQ />
 
       {/* <LatestNews slug={slug} /> */}
       {/* <Contactus /> */}
       <Footer />
+
+      <PesanSekarangModal dataProducts={dataProducts} />
 
       <FloatingWhatsApp
         avatar={floatingWhatsappList?.avatar}

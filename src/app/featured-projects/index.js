@@ -11,7 +11,8 @@ import 'react-lazy-load-image-component/src/effects/blur.css';
 
 import IconScroll from '@/components/iconScroll';
 
-const Index = () => {
+const Index = (props) => {
+  const { handlePesanSekarang } = props;
   const featuredProjectsList = useSelector((state) => state.featuredProjects.featuredProjectsList);
   const dispatch = useDispatch();
   // const [groupFeaturedProjectsList, setGroupFeaturedProjectsList] = useState([]);
@@ -146,7 +147,11 @@ const Index = () => {
             )}
             {/* <!-- End of .grid --> */}
             <a
-              href="https://bit.ly/Chat-ZRDevelopers"
+              // href="https://bit.ly/Chat-ZRDevelopers"
+              href="#"
+              data-toggle="modal"
+              data-target="#pesan-sekarang"
+              onClick={(e) => handlePesanSekarang(e, null)}
               className="custom-btn btn-big grad-style-ef btn-full"
               data-aos="fade-down"
               data-aos-delay={`${featuredProjectsList?.length}00`}

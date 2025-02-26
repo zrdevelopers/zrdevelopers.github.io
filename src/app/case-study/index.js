@@ -9,7 +9,9 @@ import { getListCaseStudy } from '@/redux/action/case-study/creator';
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
 
-const Index = () => {
+const Index = (props) => {
+  const { handlePesanSekarang } = props;
+
   const caseStudyList = useSelector((state) => state.caseStudy.caseStudyList);
   const dispatch = useDispatch();
   // const [dataItem, setDataItem] = useState({});
@@ -57,8 +59,12 @@ const Index = () => {
                     </p>
                     <div className="btn-container" data-aos="fade-left" data-aos-delay="200">
                       <a
-                        href={item.link_whatsapp}
-                        target="_blank"
+                        // href={item.link_whatsapp}
+                        // target="_blank"
+                        href="#"
+                        data-toggle="modal"
+                        data-target="#pesan-sekarang"
+                        onClick={(e) => handlePesanSekarang(e, null)}
                         className="custom-btn btn-big grad-style-ab"
 
                         // data-toggle="modal"

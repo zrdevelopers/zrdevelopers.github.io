@@ -20,7 +20,7 @@
     "banner": "/assets/images/featured-projects/mekanik-elektro.webp",
     "carousel_images": ["/assets/images/featured-projects/fullpage/fullpage-mekanik.webp"],
     "description": "<p>Teknisi Listrik / Tukang Listrik Panggilan yg melayani jasa perbaikan Listrik untuk Rumah, Ruko, Kantor, &amp; Industri.</p>",
-    "launch_website": "#",
+    "launch_website": null,
     "service": "Pembuatan Website"
   },
   {
@@ -44,7 +44,7 @@
     "banner": "/assets/images/featured-projects/vandz15.webp",
     "carousel_images": ["/assets/images/featured-projects/fullpage/fullpage-vandz.webp"],
     "description": "Jual Makanan Ringan",
-    "launch_website": null,
+    "launch_website": "https://zrdevelopers.github.io/berkah-ramadhan",
     "service": "Pembuatan Website"
   }
 ]

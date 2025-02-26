@@ -6,7 +6,9 @@ import { getListPricing } from '@/redux/action/pricing/creator';
 
 import IconScroll from '@/components/iconScroll';
 
-const Index = () => {
+const Index = (props) => {
+  const { handlePesanSekarang } = props;
+
   const pricingList = useSelector((state) => state.pricing.pricingList);
   const dispatch = useDispatch();
 
@@ -58,9 +60,13 @@ const Index = () => {
                 </div>
                 {/* <!-- End of .facilities --> */}
                 <a
-                  href={item.cta_link}
+                  // href={item.cta_link}
+                  href="#"
+                  data-toggle="modal"
+                  data-target="#pesan-sekarang"
+                  onClick={(e) => handlePesanSekarang(e, item)}
                   className="custom-btn btn-big grad-style-ef"
-                  target="_blank"
+                  // target="_blank"
                   data-aos="fade-down"
                   data-aos-delay={`${pricingList?.length}00`}
                 >

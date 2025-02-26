@@ -4,7 +4,8 @@ import React, { useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getListContactUs } from '@/redux/action/contact-us/creator';
 
-const Index = () => {
+const Index = (props) => {
+  const { handlePesanSekarang } = props;
   const contactUsList = useSelector((state) => state.contactUs.contactUsList);
   const dispatch = useDispatch();
 
@@ -125,7 +126,13 @@ const Index = () => {
                 <p className="address">
                   {/* data-aos="fade-right" data-aos-delay="100" */}
                   No Whatsapp
-                  <a href={contactUsList.link_whatsapp} target="_blank">
+                  <a
+                    // href={contactUsList.link_whatsapp} target="_blank"
+                    href="#"
+                    data-toggle="modal"
+                    data-target="#pesan-sekarang"
+                    onClick={(e) => handlePesanSekarang(e, null)}
+                  >
                     {contactUsList.no_whatsapp}
                   </a>
                 </p>

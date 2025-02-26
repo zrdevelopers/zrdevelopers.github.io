@@ -1,6 +1,6 @@
 'use client';
 
-import React, { Fragment, useEffect } from 'react';
+import React, { Fragment, useEffect, useState } from 'react';
 
 // Components
 import Navbar from '@/components/navbar';
@@ -26,6 +26,8 @@ import { FloatingWhatsApp } from 'react-floating-whatsapp';
 import { useSelector, useDispatch } from 'react-redux';
 import { getListFloatingWhatsapp } from '@/redux/action/floating-whatsapp/creator';
 
+import PesanSekarangModal from '@/app/modals/pesan-sekarang';
+
 import {
   loadJquery,
   loadGoogleAnalytics,
@@ -43,8 +45,14 @@ const Home = (props) => {
   const floatingWhatsappList = useSelector((state) => state.floatingWhatsapp.floatingWhatsappList);
   const dispatch = useDispatch();
 
+  const [dataProducts, setDataProducts] = useState({});
+
   const fetchFloatingWhatsapp = async () => {
     dispatch(getListFloatingWhatsapp());
+  };
+
+  const handlePesanSekarang = async (e, products) => {
+    setDataProducts(products);
   };
 
   useEffect(() => {
@@ -74,15 +82,16 @@ const Home = (props) => {
       <Header />
       <Services />
       <Aboutus />
-      <FeaturedProjects />
-      <CaseStudy />
+      <FeaturedProjects handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />
+      <CaseStudy handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />
       {/* <Team /> */}
-      <Pricing />
+      <Pricing handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />
       <Partners />
       <LatestNews slug={slug} />
-      <Contactus />
+      <Contactus handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />
       <Footer />
 
+      <PesanSekarangModal dataProducts={dataProducts} />
       <PrivacyModal />
       <TermsModal />
 
