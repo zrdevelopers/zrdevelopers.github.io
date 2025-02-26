@@ -163,10 +163,12 @@ const Index = () => {
                     required
                   >
                     <option value="">Pilih Layanan</option>
+                    <option value="Pembuatan Website Personal">
+                      Pembuatan Website Personal
+                    </option>
                     <option value="Pembuatan Website Perusahaan">
                       Pembuatan Website Perusahaan
                     </option>
-
                     <option value="Pembuatan Website Instansi & Pemerintah">
                       Pembuatan Website Instansi & Pemerintah
                     </option>
