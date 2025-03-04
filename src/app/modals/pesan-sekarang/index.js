@@ -1,5 +1,6 @@
 import Modals from '@/components/modals';
 import { Fragment, useState } from 'react';
+import { formatRupiah, unFormatRupiah } from '@/helper/utils'
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -7,15 +8,30 @@ const Index = () => {
     email: '',
     no_whatsapp: '',
     layanan: '',
+    domainStatus: '',
     nama_bisnis: '',
     referensi_website: '',
-    pesan: ''
+    pesan: '',
+    budget: ''
   });
 
   const [errors, setErrors] = useState({});
 
   const handleChange = (e) => {
-    setFormData({ ...formData, [e.target.name]: e.target.value });
+    const { name, value } = e.target;
+
+    let newValue = value;
+
+    // Jika field adalah `budget`, hapus titik dan ubah ke angka
+    if (name === 'budget') {
+      newValue = unFormatRupiah(value);
+    }
+
+    setFormData((prev) => ({
+      ...prev,
+      [name]: newValue
+    }));
+    // setFormData({ ...formData, [e.target.name]: e.target.value });
     setErrors({ ...errors, [e.target.name]: '' }); // Reset error saat pengguna mengetik
   };
 
@@ -32,6 +48,13 @@ const Index = () => {
       newErrors.no_whatsapp = 'No WhatsApp harus minimal 10 digit';
     }
 
+    if (!/^\d+$/.test(formData.budget)) {
+      newErrors.budget = 'Budget hanya boleh berisi angka';
+    } 
+    // else if (formData.budget < 1000000) { // Minimum budget for website creation (e.g., 1 million IDR)
+    //   newErrors.budget = 'Budget minimal untuk pembuatan website adalah Rp 1.000.000';
+    // }
+
     setErrors(newErrors);
     return Object.keys(newErrors).length === 0;
   };
@@ -45,7 +68,7 @@ const Index = () => {
 
     const domain = 'https://zrdevelopers.github.io';
 
-    const pesanWhatsApp = `Halo ${domain}, saya ingin memesan jasa pembuatan website dengan detail berikut:\n\nNama: ${formData.nama}\nEmail: ${formData.email}\nNo WhatsApp: ${formData.no_whatsapp}\nLayanan: ${formData.layanan}\nNama Bisnis: ${formData.nama_bisnis}\nReferensi Website: ${formData.referensi_website || '-'}\nDeskripsi Singkat Bisnis: ${formData.pesan || '-'}\n\nMohon informasi lebih lanjut. Terima kasih!`;
+    const pesanWhatsApp = `Halo ${domain}, saya ingin memesan dengan detail berikut:\n\nNama: ${formData.nama}\nEmail: ${formData.email}\nNo WhatsApp: ${formData.no_whatsapp}\nLayanan: ${formData.layanan}\nSudah Memiliki Domain: ${formData.domainStatus}\nNama Bisnis: ${formData.nama_bisnis}\nReferensi Website: ${formData.referensi_website || '-'}\nDeskripsi Singkat Bisnis: ${formData.pesan || '-'}\nBudget: Rp ${formatRupiah(formData.budget)}\n\nMohon informasi lebih lanjut. Terima kasih!`;
 
     const noAdmin = '6281228883616';
     const urlWhatsApp = `https://wa.me/${noAdmin}?text=${encodeURIComponent(pesanWhatsApp)}`;
@@ -78,9 +101,11 @@ const Index = () => {
       email: '',
       no_whatsapp: '',
       layanan: '',
+      domainStatus: '',
       nama_bisnis: '',
       referensi_website: '',
-      pesan: ''
+      pesan: '',
+      budget: ''
     });
     setErrors({});
   };
@@ -161,10 +186,10 @@ const Index = () => {
                     onChange={handleChange}
                     required
                   >
-                    <option value="">Pilih Layanan</option>
-                    <option value="Pembuatan Website Personal">
-                      Pembuatan Website Personal
+                    <option value="" disabled={true}>
+                      Pilih Layanan
                     </option>
+                    <option value="Pembuatan Website Personal">Pembuatan Website Personal</option>
                     <option value="Pembuatan Website Perusahaan">
                       Pembuatan Website Perusahaan
                     </option>
@@ -193,6 +218,21 @@ const Index = () => {
                   </select>
                 </div>
                 <div className="col-md-12 col-lg-4 mb-4">
+                  <select
+                    className="mb-0"
+                    name="domainStatus"
+                    value={formData.domainStatus}
+                    onChange={handleChange}
+                    required
+                  >
+                    <option value="" disabled={true}>
+                      Sudah Memiliki Domain?
+                    </option>
+                    <option value="Ya">Ya</option>
+                    <option value="Belum">Belum</option>
+                  </select>
+                </div>
+                <div className="col-md-12 col-lg-4 mb-4">
                   <input
                     className="mb-0"
                     type="text"
@@ -203,7 +243,7 @@ const Index = () => {
                     required
                   />
                 </div>
-                <div className="col-md-12 col-lg-4 mb-4">
+                <div className="col-md-12 col-lg-12 mb-4">
                   <input
                     className="mb-0"
                     type="url"
@@ -221,6 +261,18 @@ const Index = () => {
                     value={formData.pesan}
                     onChange={handleChange}
                   ></textarea>
+                </div>
+                <div className="col-md-12 col-lg-12 mb-4">
+                  <input
+                    className="mb-0"
+                    type="text"
+                    name="budget"
+                    placeholder="Budget yag Disiapkan"
+                    value={formData.budget ? formatRupiah(formData.budget):"" }
+                    onChange={handleChange}
+                    required
+                  />
+                {errors.budget && <small className="text-danger">{errors.budget}</small>}
                 </div>
                 <div className="btn-wrapper text-center mb-4">
                   <button type="submit" className="custom-btn btn-big grad-style-ef">
