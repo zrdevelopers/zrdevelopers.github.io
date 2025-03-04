@@ -27,6 +27,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getListFloatingWhatsapp } from '@/redux/action/floating-whatsapp/creator';
 
 import PesanSekarangModal from '@/app/modals/pesan-sekarang';
+import TerimaKasihModal from '@/app/modals/terima-kasih';
 
 import {
   loadJquery,
@@ -92,6 +93,7 @@ const Home = (props) => {
       <Footer />
 
       <PesanSekarangModal dataProducts={dataProducts} />
+      <TerimaKasihModal />
       <PrivacyModal />
       <TermsModal />
 

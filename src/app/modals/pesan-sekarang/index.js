@@ -76,6 +76,7 @@ const Index = () => {
 
     handleClose();
     closeModal();
+    showTerimaKasih();
   };
 
   const closeModal = async () => {
@@ -109,6 +110,13 @@ const Index = () => {
     });
     setErrors({});
   };
+  const showTerimaKasih = async() => {
+    const modalElement = document.getElementById('terima-kasih');
+    if (modalElement) {
+      modalElement.classList.add('show'); // Tambahkan class untuk menampilkan modal
+      modalElement.style.display = 'block'; // Pastikan modal terlihat
+    }
+  }
 
   return (
     <Modals
