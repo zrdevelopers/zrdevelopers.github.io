@@ -6,4 +6,4 @@ Allow: /
 Host: https://zrdevelopers.github.io
 
 # Sitemaps
-Sitemap: https://zrdevelopers.github.io/sitemap.xml
+Sitemap: https://zrdevelopers.github.io/sitemap-0.xml
