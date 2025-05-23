@@ -54,7 +54,7 @@ const TermsConditions = () => {
       }
       modalBody={
         <Fragment>
-          <h3>Syarat & Ketentuan ZRDigitalTech</h3>
+          <h3>Syarat & Ketentuan</h3>
 
           <p>
             Selamat datang di ZRDigitalTech. Dengan menggunakan layanan pembuatan website kami, Anda

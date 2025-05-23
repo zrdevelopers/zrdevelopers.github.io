@@ -54,7 +54,7 @@ const Index = () => {
       }
       modalBody={
         <Fragment>
-          <h3>Kebijakan Privasi ZRDigitalTech</h3>
+          <h3>Kebijakan Privasi</h3>
           <p className='mb-0'>
             ZRDigitalTech adalah penyedia layanan pembuatan website yang berkomitmen untuk membantu
             mewujudkan keinginan dan kebutuhan Anda dalam dunia digital.
