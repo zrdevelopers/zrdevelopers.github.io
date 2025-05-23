@@ -23,7 +23,7 @@ const Index = () => {
     <div className="clients light-grey-bg" id="clients">
       {/* light-grey-bg */}
       <div className="container">
-        <h6 className="text-center mb-0">ZRDevelopers sudah dipercaya brand</h6>
+        <h6 className="text-center mb-0">ZRDigitalTech sudah dipercaya brand</h6>
         <div className="row justify-content-center clients-wrapper pt-0">
           {partnersList.map((item, i) => (
             <div

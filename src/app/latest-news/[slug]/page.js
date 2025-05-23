@@ -18,11 +18,11 @@ export async function generateMetadata({ params }) {
   const data = DataLatestNews.find((item) => item.slug === slug);
 
   return {
-    title: `${data?.title} | ZRDevelopers`,
+    title: `${data?.title} | ZRDigitalTech`,
     description: data?.meta_description,
     openGraph: {
-      url: `https://zrdevelopers.github.io/latest-news/${slug}`,
-      images: `https://zrdevelopers.github.io${data?.banner}`
+      url: `https://ZRDigitalTech.github.io/latest-news/${slug}`,
+      images: `https://ZRDigitalTech.github.io${data?.banner}`
     }
   };
 }

@@ -68,14 +68,14 @@ const Index = (props) => {
           <div className="text-center">
             <LazyLoadImage
               src={dataItem?.image}
-              alt="Jasa Pembuatan Website | ZRDevelopers"
+              alt="Jasa Pembuatan Website | ZRDigitalTech"
               className="img-fluid modal-feat-img" //w-100
               style={{ maxHeight: '425px' }}
             />
           </div>
           <ShareButtons
             title={dataItem?.title}
-            url={`https://zrdevelopers.github.io/latest-news/${dataItem?.slug}`}
+            url={`https://ZRDigitalTech.github.io/latest-news/${dataItem?.slug}`}
           />
           <h3>
             {/* <span>{dataItem.date}</span>  */}

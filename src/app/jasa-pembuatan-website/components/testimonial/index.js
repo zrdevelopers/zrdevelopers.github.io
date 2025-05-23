@@ -28,7 +28,7 @@ const Index = () => {
         <div className="text-center">
           <h2 className="mb-0">
             Ingin tahu pengalaman klien kami dengan <br />
-            <span className="txt-grad-ef">Jasa Website ZRDevelopers</span>
+            <span className="txt-grad-ef">Jasa Website ZRDigitalTech</span>
           </h2>
           <p className="">Ini dia beberapa cerita dari mereka…</p>
         </div>

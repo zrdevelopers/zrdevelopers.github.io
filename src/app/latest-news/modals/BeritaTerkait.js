@@ -42,7 +42,7 @@ const BeritaTerkait = (props) => {
                 <div className="img-container">
                   <LazyLoadImage
                     effect="blur"
-                    alt="Jasa Pembuatan Website | ZRDevelopers"
+                    alt="Jasa Pembuatan Website | ZRDigitalTech"
                     src={item.banner}
                     className="img-fluid"
                   />

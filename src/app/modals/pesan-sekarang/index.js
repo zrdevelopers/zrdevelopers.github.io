@@ -66,7 +66,7 @@ const Index = () => {
       return;
     }
 
-    const domain = 'https://zrdevelopers.github.io';
+    const domain = 'https://ZRDigitalTech.github.io';
 
     const pesanWhatsApp = `Halo ${domain}, saya ingin memesan dengan detail berikut:\n\nNama: ${formData.nama}\nEmail: ${formData.email}\nNo WhatsApp: ${formData.no_whatsapp}\nLayanan: ${formData.layanan}\nSudah Memiliki Domain: ${formData.domainStatus}\nNama Bisnis: ${formData.nama_bisnis}\nReferensi Website: ${formData.referensi_website || '-'}\nDeskripsi Singkat Bisnis: ${formData.pesan || '-'}\nBudget: Rp ${formatRupiah(formData.budget)}\n\nMohon informasi lebih lanjut. Terima kasih!`;
 

@@ -2,7 +2,7 @@ import React from 'react';
 
 const ShareButtons = ({ title, url }) => {
   const shareLinks = {
-    whatsapp: `https://api.whatsapp.com/send?text=${encodeURIComponent(`Lihat artikel ini: *${title} | ZRDevelopers* - ${url}`)}`,
+    whatsapp: `https://api.whatsapp.com/send?text=${encodeURIComponent(`Lihat artikel ini: *${title} | ZRDigitalTech* - ${url}`)}`,
     facebook: `https://www.facebook.com/sharer/sharer.php?u=${encodeURIComponent(url)}`,
     linkedin: `https://www.linkedin.com/shareArticle?mini=true&url=${encodeURIComponent(url)}&title=${encodeURIComponent(title)}`
   };

@@ -21,22 +21,22 @@ const ReduxProvider = dynamic(() => import('@/redux/provider'), {
 
 export const metadata = {
   // Basic metas
-  authors: [{ name: 'ZRDevelopers' }],
+  authors: [{ name: 'ZRDigitalTech' }],
   keywords: [
     'Jasa Pembuatan Website Tangerang',
     'Jasa Pembuatan Website Profesional',
     'Jasa Pembuatan Website Murah',
-    'ZRDevelopers',
+    'ZRDigitalTech',
     'Zikri Ramdani'
   ],
   manifest: '/manifest.json',
   // Page Title
-  title: 'Jasa Pembuatan Website | ZRDevelopers',
+  title: 'Jasa Pembuatan Website | ZRDigitalTech',
   description:
     'Penyedia pembuatan website yang akan membantu mewujudkan keinginan dan kebutuhan Anda.',
   openGraph: {
-    url: 'https://zrdevelopers.github.io',
-    images: 'https://zrdevelopers.github.io/assets/images/meta.png'
+    url: 'https://zrdigitaltech.github.io',
+    images: 'https://zrdigitaltech.github.io/assets/images/meta.png'
   }
 };
 

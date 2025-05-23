@@ -48,7 +48,7 @@ const Index = () => {
         <div className="container">
           <h2 className="text-center mb-0">
             Penasaran? Sebagus apa sih{' '}
-            <span className="txt-grad-ef">Website Buatan ZRDevelopers?</span>
+            <span className="txt-grad-ef">Website Buatan ZRDigitalTech?</span>
           </h2>
           <p className="text-center mb-0">
             Yuk, intip hasil karya kami dan lihat sendiri kualitasnya:
@@ -70,7 +70,7 @@ const Index = () => {
                       >
                         <LazyLoadImage
                           effect="blur"
-                          alt="Jasa Pembuatan Website | ZRDevelopers"
+                          alt="Jasa Pembuatan Website | ZRDigitalTech"
                           src={item?.fullpage}
                           className="img-fluid"
                         />

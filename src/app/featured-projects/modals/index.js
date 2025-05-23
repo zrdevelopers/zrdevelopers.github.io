@@ -62,7 +62,7 @@ const Index = (props) => {
                   >
                     <LazyLoadImage
                       effect="blur"
-                      alt="Jasa Pembuatan Website | ZRDevelopers"
+                      alt="Jasa Pembuatan Website | ZRDigitalTech"
                       src={item}
                       className="d-block w-100 img-fluid"
                     />

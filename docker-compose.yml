@@ -1,6 +1,6 @@
 services:
   app:
-    container_name: web_zrdevelopers
+    container_name: web_zrdigitaltech
     build:
       context: .
       dockerfile: Dockerfile

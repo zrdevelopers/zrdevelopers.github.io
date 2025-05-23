@@ -5,7 +5,7 @@ const Index = () => {
     <footer className="page-footer">
       <div className="container">
         <div className="d-flex footer-content justify-content-center">
-          <p>&copy; 2019 - {currentYear} ZRDevelopers | All rights reserved</p>
+          <p>&copy; 2019 - {currentYear} ZRDigitalTech | All rights reserved</p>
         </div>
         {/* <!-- End of .footer-content --> */}
       </div>

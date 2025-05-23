@@ -6,7 +6,7 @@ const Index = (props) => {
     <nav className="navbar onepage-navbar navbar-expand-lg">
       <div className="container">
         <Link className="navbar-brand page-scroll" href="#top">
-          <h3>ZRDevelopers</h3>
+          <h3>ZRDigitalTech</h3>
           {/* <!-- <img src="http://placehold.it/204x57" alt="Brand Logo" className="img-fluid"> --> */}
           {/* <!-- images/brand-logo.png --> */}
         </Link>

@@ -86,7 +86,7 @@ const Index = (props) => {
             <div className="img-container col-lg-6">
               <LazyLoadImage
                 effect="blur"
-                alt="Jasa Pembuatan Website | ZRDevelopers"
+                alt="Jasa Pembuatan Website | ZRDigitalTech"
                 src={caseStudyList?.image}
                 className="img-fluid"
               />

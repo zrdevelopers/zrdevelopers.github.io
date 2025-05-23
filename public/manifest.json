@@ -1,6 +1,6 @@
 {
-  "short_name": "ZRDevelopers",
-  "name": "ZRDevelopers",
+  "short_name": "ZRDigitalTech",
+  "name": "ZRDigitalTech",
   "icons": [
     {
       "src": "/assets/images/512x512.png",
@@ -21,8 +21,8 @@
   "theme_color": "#ffffff",
   "shortcuts": [
     {
-      "name": "ZRDevelopers",
-      "short_name": "ZRDevelopers",
+      "name": "ZRDigitalTech",
+      "short_name": "ZRDigitalTech",
       "description": "Jasa Pembuatan Website",
       "url": "/today?source=pwa",
       "icons": [

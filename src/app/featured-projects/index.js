@@ -82,7 +82,7 @@ const Index = (props) => {
                   <a
                     className="filter-button is-checked"
                     data-filter="*"
-                    alt="Jasa Pembuatan Website | ZRDevelopers"
+                    alt="Jasa Pembuatan Website | ZRDigitalTech"
                     href="javascript:void(0)"
                   >
                     All Work
@@ -123,7 +123,7 @@ const Index = (props) => {
                     <div className="img-container">
                       <LazyLoadImage
                         effect="blur"
-                        alt="Jasa Pembuatan Website | ZRDevelopers"
+                        alt="Jasa Pembuatan Website | ZRDigitalTech"
                         src={item.banner}
                         className="img-fluid"
                       />
@@ -147,7 +147,7 @@ const Index = (props) => {
             )}
             {/* <!-- End of .grid --> */}
             <a
-              // href="https://bit.ly/Chat-ZRDevelopers"
+              // href="https://bit.ly/Chat-ZRDigitalTech"
               href="#"
               data-toggle="modal"
               data-target="#pesan-sekarang"

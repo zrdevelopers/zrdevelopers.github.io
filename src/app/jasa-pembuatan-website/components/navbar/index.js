@@ -12,7 +12,7 @@ const Index = () => {
         >
           {/* <h3 className='mb-0'>Jasa Pembuatan Website
           </h3> */}
-          <h3>ZRDevelopers</h3>
+          <h3>ZRDigitalTech</h3>
         </Link>
       </div>
       {/* <!-- End of .container --> */}
