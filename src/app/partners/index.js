@@ -29,8 +29,7 @@ const Index = () => {
               className="client"
               key={item?.id || i}
               data-aos="fade-down"
-              data-aos-delay={i * 100}
-            >
+              data-aos-delay={i * 100}>
               <LazyLoadImage
                 effect="blur"
                 alt={item.alt}

@@ -17,8 +17,7 @@ const Index = (props) => {
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           width="379px"
-          height="369px"
-        >
+          height="369px">
           <defs>
             <linearGradient id="PSgrad_012" x1="70.711%" x2="0%" y1="70.711%" y2="0%">
               <stop offset="0%" stopColor="rgb(237,247,255)" stopOpacity="1" />
@@ -40,8 +39,7 @@ const Index = (props) => {
             <div
               id="featured-project-carousel"
               className="carousel slide featured-project-carousel"
-              data-ride="carousel"
-            >
+              data-ride="carousel">
               <ol className="carousel-indicators">
                 {dataItem?.carousel_images?.length > 1 &&
                   dataItem?.carousel_images?.map((item, i) => (
@@ -49,8 +47,7 @@ const Index = (props) => {
                       key={item?.id || i}
                       data-target="#featured-project-carousel"
                       data-slide-to={i}
-                      class={`${i === 0 ? 'active' : ''}`}
-                    ></li>
+                      class={`${i === 0 ? 'active' : ''}`}></li>
                   ))}
               </ol>
               <div className="carousel-inner">
@@ -58,14 +55,22 @@ const Index = (props) => {
                   <div
                     class={`carousel-item ${i === 0 ? 'active' : ''}`}
                     key={item?.id || i}
-                    style={{ maxHeight: '300px', overflowY: 'auto' }}
-                  >
-                    <LazyLoadImage
-                      effect="blur"
-                      alt="Jasa Pembuatan Website | ZRDigitalTech"
-                      src={item}
-                      className="d-block w-100 img-fluid"
-                    />
+                    style={{ maxHeight: '300px', overflowY: 'auto' }}>
+                    {dataItem?.launch_website ? (
+                      <iframe
+                        src={dataItem?.launch_website}
+                        width="100%"
+                        height="300"
+                        frameborder="0"
+                        allowfullscreen></iframe>
+                    ) : (
+                      <LazyLoadImage
+                        effect="blur"
+                        alt="Jasa Pembuatan Website | ZRDigitalTech"
+                        src={item}
+                        className="d-block w-100 img-fluid"
+                      />
+                    )}
                   </div>
                 ))}
               </div>
@@ -75,8 +80,7 @@ const Index = (props) => {
                     className="carousel-control-prev"
                     href="#featured-project-carousel"
                     role="button"
-                    data-slide="prev"
-                  >
+                    data-slide="prev">
                     <span className="carousel-control-prev-icon" aria-hidden="true"></span>
                     <span className="sr-only">Previous</span>
                   </a>
@@ -84,8 +88,7 @@ const Index = (props) => {
                     className="carousel-control-next"
                     href="#featured-project-carousel"
                     role="button"
-                    data-slide="next"
-                  >
+                    data-slide="next">
                     <span className="carousel-control-next-icon" aria-hidden="true"></span>
                     <span className="sr-only">Next</span>
                   </a>
@@ -106,8 +109,7 @@ const Index = (props) => {
                 <a
                   href={dataItem?.launch_website}
                   className="custom-btn btn-big grad-style-ef mb-3 mb-sm-0"
-                  target="_blank"
-                >
+                  target="_blank">
                   SITUS WEB
                 </a>
               )}

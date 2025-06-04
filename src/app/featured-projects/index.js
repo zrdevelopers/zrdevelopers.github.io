@@ -57,8 +57,7 @@ const Index = (props) => {
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           width="779px"
-          height="759px"
-        >
+          height="759px">
           <defs>
             <linearGradient id="PSgrad_03" x1="70.711%" x2="0%" y1="70.711%" y2="0%">
               <stop offset="0%" stopColor="rgb(237,247,255)" stopOpacity="1" />
@@ -103,23 +102,20 @@ const Index = (props) => {
             <div
               ref={scrollContainerRef}
               className="grid d-flex equalHeightWrapper"
-              style={{ overflowX: 'auto', scrollBehavior: 'smooth' }}
-            >
+              style={{ overflowX: 'auto', scrollBehavior: 'smooth' }}>
               {/* More Items can be added. --> */}
               {featuredProjectsList.map((item, i) => (
                 <div
                   key={item?.id || i}
                   className="a1 grid-item col-md-6 col-lg-4 col-11"
                   data-aos="fade-left"
-                  data-aos-delay={i * 100}
-                >
+                  data-aos-delay={i * 100}>
                   <a
                     href="#"
                     className="featured-content-block content-block"
                     data-toggle="modal"
                     data-target={'#featured-project-modal' + item?.id}
-                    onClick={() => handleProjectModal(item)}
-                  >
+                    onClick={() => handleProjectModal(item)}>
                     <div className="img-container">
                       <LazyLoadImage
                         effect="blur"
@@ -154,8 +150,7 @@ const Index = (props) => {
               onClick={(e) => handlePesanSekarang(e, null)}
               className="custom-btn btn-big grad-style-ef btn-full"
               data-aos="fade-down"
-              data-aos-delay={`${featuredProjectsList?.length}00`}
-            >
+              data-aos-delay={`${featuredProjectsList?.length}00`}>
               Buatkan Saya Website
             </a>
           </div>
