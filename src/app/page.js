@@ -23,8 +23,8 @@ import TermsModal from '@/app/modals/terms-modal';
 
 // import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
-import { useSelector, useDispatch } from 'react-redux';
-import { getListFloatingWhatsapp } from '@/redux/action/floating-whatsapp/creator';
+// import { useSelector, useDispatch } from 'react-redux';
+// import { getListFloatingWhatsapp } from '@/redux/action/floating-whatsapp/creator';
 
 import PesanSekarangModal from '@/app/modals/pesan-sekarang';
 import TerimaKasihModal from '@/app/modals/terima-kasih';
