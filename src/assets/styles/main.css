@@ -1418,7 +1418,7 @@ p {
   font-family: 'Hind Vadodara', sans-serif;
   font-size: 1.8rem;
   line-height: 3rem;
-  color: #69798d;
+  color: #111; /*#69798d;*/
   font-weight: 300;
 }
 
@@ -3564,7 +3564,7 @@ h1 {
 }
 
 .footer-content p a {
-  color: #69798d;
+  color: #111; /*#69798d;*/
   text-decoration: none;
   -webkit-transition: all 0.5s;
   -o-transition: all 0.5s;
