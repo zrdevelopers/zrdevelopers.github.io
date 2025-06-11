@@ -18,8 +18,13 @@ const Index = () => {
         type="text/javascript"
       />
       {/* <!-- font awesome --> */}
-      <Script
+      {/* <Script
         src="/assets/js/vendor/fontawesome-all.min.js"
+        strategy="lazyOnload"
+        type="text/javascript"
+      /> */}
+      <Script
+        src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.1/js/all.min.js"
         strategy="lazyOnload"
         type="text/javascript"
       />
