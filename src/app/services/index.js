@@ -36,7 +36,7 @@ const Index = () => {
                 <span className="icon-container grad-style-cd-light">
                   <i className={item.image}></i>
                 </span>
-                <h3
+                <h2
                   className="text-center"
                   data-aos="fade-down"
                   data-aos-delay={i * 100}
@@ -45,7 +45,7 @@ const Index = () => {
                     fontWeight: '700'
                   }}>
                   {item.title}
-                </h3>
+                </h2>
                 <p data-aos="fade-down" data-aos-delay={i * 200}>
                   {item.description}
                 </p>

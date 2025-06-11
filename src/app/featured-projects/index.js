@@ -125,7 +125,7 @@ const Index = (props) => {
                       />
                     </div>
                     {/* <!-- End of .img-container --> */}
-                    <h4
+                    <h3
                       className="equalHeight"
                       style={{
                         fontSize: '2.4rem',
@@ -133,7 +133,7 @@ const Index = (props) => {
                       }}>
                       <span className="content-block__sub-title">{item?.service}</span>
                       {item.title}
-                    </h4>
+                    </h3>
                   </a>
                 </div>
               ))}
