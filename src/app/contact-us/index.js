@@ -160,7 +160,11 @@ const Index = (props) => {
                     {contactUsList?.social_media?.map((item, i) => (
                       <li key={item?.id || i}>
                         {/* data-aos="fade-right" data-aos-delay="500" */}
-                        <a href={item.link_social} target="_blank" rel="noopener">
+                        <a
+                          href={item.link_social}
+                          target="_blank"
+                          rel="noopener"
+                          aria-label={`Kunjungi ${item.name} kami`}>
                           <i className={'fab ' + item.icon_class}></i>
                         </a>
                       </li>
