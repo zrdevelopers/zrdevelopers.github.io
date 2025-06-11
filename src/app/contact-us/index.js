@@ -104,7 +104,9 @@ const Index = (props) => {
                     height="450"
                     style={{ border: '0' }}
                     allowFullScreen
-                    title="Lokasi ZRDigitalTech di Google Maps"></iframe>
+                    title="Lokasi ZRDigitalTech di Google Maps"
+                    loading="lazy"
+                    referrerPolicy="no-referrer-when-downgrade"></iframe>
                 </div>
                 {/* <!-- End of .map-wrapper --> */}
                 {/* <a href="#" className="view-map-btn">
