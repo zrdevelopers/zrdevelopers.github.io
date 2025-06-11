@@ -28,8 +28,7 @@ const Index = () => {
         <div
           className="d-flex scrollX"
           ref={scrollContainerRef}
-          style={{ overflowX: 'auto', scrollBehavior: 'smooth' }}
-        >
+          style={{ overflowX: 'auto', scrollBehavior: 'smooth' }}>
           {servicesList.map((item, i) => (
             <div key={item?.id || i} className="col-lg-4 col-md-6 m-b-30 col-11">
               <div className="service-box text-center content-block">
@@ -37,9 +36,16 @@ const Index = () => {
                 <span className="icon-container grad-style-cd-light">
                   <i className={item.image}></i>
                 </span>
-                <h5 className="text-center" data-aos="fade-down" data-aos-delay={i * 100}>
+                <h3
+                  className="text-center"
+                  data-aos="fade-down"
+                  data-aos-delay={i * 100}
+                  style={{
+                    fontSize: '2.4rem',
+                    fontWeight: '700'
+                  }}>
                   {item.title}
-                </h5>
+                </h3>
                 <p data-aos="fade-down" data-aos-delay={i * 200}>
                   {item.description}
                 </p>

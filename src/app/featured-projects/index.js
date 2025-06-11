@@ -125,10 +125,15 @@ const Index = (props) => {
                       />
                     </div>
                     {/* <!-- End of .img-container --> */}
-                    <h5 className="equalHeight">
+                    <h4
+                      className="equalHeight"
+                      style={{
+                        fontSize: '2.4rem',
+                        fontWeight: '700'
+                      }}>
                       <span className="content-block__sub-title">{item?.service}</span>
                       {item.title}
-                    </h5>
+                    </h4>
                   </a>
                 </div>
               ))}
