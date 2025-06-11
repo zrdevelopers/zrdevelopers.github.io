@@ -108,7 +108,14 @@ const Index = (props) => {
                       className="img-fluid"
                     />
                   </div>
-                  <h5 className="equalHeight">Lihat Lebih Banyak</h5>
+                  <h4
+                    className="equalHeight"
+                    style={{
+                      fontSize: '2.4rem',
+                      fontWeight: '700'
+                    }}>
+                    Lihat Lebih Banyak
+                  </h4>
                 </Link>
               </div>
             )}
