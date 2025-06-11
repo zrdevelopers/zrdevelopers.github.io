@@ -64,6 +64,23 @@ const Home = (props) => {
     loadFacebookPixel();
     loadTiktokPixel();
     fetchFloatingWhatsapp();
+
+    const observer = new MutationObserver(() => {
+      const chatRoot = document.querySelector('[aria-hidden="true"]');
+      if (chatRoot) {
+        const focusables = chatRoot.querySelectorAll('button, a, input, textarea, select');
+        focusables.forEach((el) => el.setAttribute('tabindex', '-1'));
+      }
+    });
+
+    observer.observe(document.body, {
+      childList: true,
+      subtree: true
+    });
+
+    return () => {
+      observer.disconnect();
+    };
   }, []);
 
   return (
@@ -74,8 +91,7 @@ const Home = (props) => {
           src="https://www.googletagmanager.com/ns.html?id=GTM-59BFX4S"
           height="0"
           width="0"
-          style="display:none;visibility:hidden"
-        ></iframe>
+          style="display:none;visibility:hidden"></iframe>
       </noscript>
       {/* <!-- End Google Tag Manager (noscript) --> */}
 
@@ -97,27 +113,23 @@ const Home = (props) => {
       <PrivacyModal />
       <TermsModal />
 
-      <FloatingWhatsApp
-        avatar={floatingWhatsappList?.avatar}
-        phoneNumber={floatingWhatsappList?.phone_number}
-        accountName={floatingWhatsappList?.account_name}
-        chatMessage={floatingWhatsappList?.chat_message}
-        statusMessage={floatingWhatsappList?.status_message}
-        darkMode={true}
-        // allowEsc={true}
-        // allowClickAway
-        // notification
-        // notificationDelay={60000} // 1 minute
-        // notificationSound
-        styles={{
-          position: 'fixed',
-          bottom: '15px',
-          height: '0px !important',
-          border: '0'
-        }}
-        className="custom-whatsapp-button"
-        placeholder="Ketik pesan..."
-      />
+      {floatingWhatsappList && (
+        <FloatingWhatsApp
+          avatar={floatingWhatsappList.avatar}
+          phoneNumber={floatingWhatsappList.phone_number}
+          accountName={floatingWhatsappList.account_name}
+          chatMessage={floatingWhatsappList.chat_message}
+          statusMessage={floatingWhatsappList.status_message}
+          darkMode={true}
+          styles={{
+            position: 'fixed',
+            bottom: '15px',
+            border: '0'
+          }}
+          className="custom-whatsapp-button"
+          placeholder="Ketik pesan..."
+        />
+      )}
     </Fragment>
   );
 };
