@@ -317,21 +317,21 @@ jQuery(document).ready(function ($) {
   });
 
   //show/hide map
-  var _contactWrapper = $('.contact-wrapper'),
-    _txt = 'VIEW MAP <i class="ml-symone-2-arrow-left-right-up-down-increase-decrease"></i>',
-    _alterTxt = '<i class="ml-symone-1-arrow-left-right-up-down-increase-decrease"></i> CONTACT US';
+  // var _contactWrapper = $('.contact-wrapper'),
+  //   _txt = 'VIEW MAP <i class="ml-symone-2-arrow-left-right-up-down-increase-decrease"></i>',
+  //   _alterTxt = '<i class="ml-symone-1-arrow-left-right-up-down-increase-decrease"></i> CONTACT US';
 
-  $.fn.extend({
-    toggleText: function (a, b) {
-      return this.html(this.html() === b ? a : b);
-    }
-  });
+  // $.fn.extend({
+  //   toggleText: function (a, b) {
+  //     return this.html(this.html() === b ? a : b);
+  //   }
+  // });
 
-  _document.on('click', '.contact-wrapper .view-map-btn', function (e) {
-    e.preventDefault();
-    _contactWrapper.toggleClass('show-map');
-    $(this).toggleText(_txt, _alterTxt);
-  });
+  // _document.on('click', '.contact-wrapper .view-map-btn', function (e) {
+  //   e.preventDefault();
+  //   _contactWrapper.toggleClass('show-map');
+  //   $(this).toggleText(_txt, _alterTxt);
+  // });
 
   //Service process tab
   var _serviceProcessTab = $('.service-process-tab');
