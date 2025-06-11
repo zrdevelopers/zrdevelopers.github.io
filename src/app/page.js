@@ -34,7 +34,8 @@ import {
   loadGoogleAnalytics,
   loadGoogleTagManager,
   loadFacebookPixel,
-  loadTiktokPixel
+  loadTiktokPixel,
+  loadStyle
 } from '@/lib/loadAnalytic';
 
 import AOS from 'aos';

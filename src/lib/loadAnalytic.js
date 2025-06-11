@@ -45,3 +45,9 @@ export const loadTiktokPixel = () => {
     'tt-pixel'
   ); // Replace with your TikTok Pixel ID
 };
+export function loadStyle(href) {
+  const link = document.createElement('link');
+  link.rel = 'stylesheet';
+  link.href = href;
+  document.head.appendChild(link);
+}
