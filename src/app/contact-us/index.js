@@ -26,8 +26,7 @@ const Index = (props) => {
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           width="779px"
-          height="759px"
-        >
+          height="759px">
           <defs>
             <linearGradient id="PSgrad_07" x1="70.711%" x2="0%" y1="70.711%" y2="0%">
               <stop offset="0%" stopColor="rgb(237,247,255)" stopOpacity="1" />
@@ -46,8 +45,7 @@ const Index = (props) => {
           xmlns="http://www.w3.org/2000/svg"
           xmlnsXlink="http://www.w3.org/1999/xlink"
           width="779px"
-          height="759px"
-        >
+          height="759px">
           <defs>
             <linearGradient id="PSgrad_08" x1="70.711%" x2="0%" y1="70.711%" y2="0%">
               <stop offset="0%" stopColor="rgb(237,247,255)" stopOpacity="1" />
@@ -106,7 +104,7 @@ const Index = (props) => {
                     height="450"
                     style={{ border: '0' }}
                     allowFullScreen
-                  ></iframe>
+                    title="Lokasi ZRDigitalTech di Google Maps"></iframe>
                 </div>
                 {/* <!-- End of .map-wrapper --> */}
                 {/* <a href="#" className="view-map-btn">
@@ -131,8 +129,7 @@ const Index = (props) => {
                     href="#"
                     data-toggle="modal"
                     data-target="#pesan-sekarang"
-                    onClick={(e) => handlePesanSekarang(e, null)}
-                  >
+                    onClick={(e) => handlePesanSekarang(e, null)}>
                     {contactUsList.no_whatsapp}
                   </a>
                 </p>
