@@ -56,22 +56,19 @@ const Index = (props) => {
           <div
             ref={scrollContainerRef}
             className="carousel-container equalHeightWrapper d-flex"
-            style={{ overflowX: 'auto', scrollBehavior: 'smooth' }}
-          >
+            style={{ overflowX: 'auto', scrollBehavior: 'smooth' }}>
             {latestNewsList?.slice(0, 7)?.map((item, i) => (
               <div
                 className={`item col-11 col-sm-4 ${i < 1 ? 'pl-0' : ''}`}
                 key={item?.id || i}
                 data-aos="fade-left"
-                data-aos-delay={i * 100}
-              >
+                data-aos-delay={i * 100}>
                 <a
                   href={`/latest-news/${item?.slug}`}
                   className="news-content-block content-block"
                   data-toggle="modal"
                   data-target={'#news-modal' + item?.id}
-                  onClick={() => handleNewsModal(item)}
-                >
+                  onClick={() => handleNewsModal(item)}>
                   <div className="img-container">
                     <LazyLoadImage
                       effect="blur"
@@ -81,10 +78,16 @@ const Index = (props) => {
                     />
                   </div>
                   {/* <!-- End of .img-container --> */}
-                  <h5 className="equalHeight" title={item?.title?.length > 20 ? item.title : ''}>
+                  <h3
+                    className="equalHeight"
+                    title={item?.title?.length > 20 ? item.title : ''}
+                    style={{
+                      fontSize: '2.4rem',
+                      fontWeight: '700'
+                    }}>
                     {/* <span className="content-block__sub-title">{item.date}</span> */}
                     <span className="two-lines">{item?.title}</span>
-                  </h5>
+                  </h3>
                 </a>
                 {/* <!-- End of .featured-content-block --> */}
               </div>
@@ -95,8 +98,7 @@ const Index = (props) => {
               <div
                 className="item col-11 col-sm-4"
                 data-aos="fade-left"
-                data-aos-delay={latestNewsList?.length > 7 * 100}
-              >
+                data-aos-delay={latestNewsList?.length > 7 * 100}>
                 <Link href="/latest-news" className="news-content-block content-block">
                   <div className="img-container">
                     <LazyLoadImage
