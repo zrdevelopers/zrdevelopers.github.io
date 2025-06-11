@@ -21,7 +21,7 @@ import Contactus from '@/app/contact-us';
 import PrivacyModal from '@/app/modals/privacy-modal';
 import TermsModal from '@/app/modals/terms-modal';
 
-import { FloatingWhatsApp } from 'react-floating-whatsapp';
+// import { FloatingWhatsApp } from 'react-floating-whatsapp';
 
 import { useSelector, useDispatch } from 'react-redux';
 import { getListFloatingWhatsapp } from '@/redux/action/floating-whatsapp/creator';
@@ -43,14 +43,14 @@ import 'aos/dist/aos.css';
 const Home = (props) => {
   const { slug } = props;
 
-  const floatingWhatsappList = useSelector((state) => state.floatingWhatsapp.floatingWhatsappList);
-  const dispatch = useDispatch();
+  // const floatingWhatsappList = useSelector((state) => state.floatingWhatsapp.floatingWhatsappList);
+  // const dispatch = useDispatch();
 
   const [dataProducts, setDataProducts] = useState({});
 
-  const fetchFloatingWhatsapp = async () => {
-    dispatch(getListFloatingWhatsapp());
-  };
+  // const fetchFloatingWhatsapp = async () => {
+  //   dispatch(getListFloatingWhatsapp());
+  // };
 
   const handlePesanSekarang = async (e, products) => {
     setDataProducts(products);
@@ -63,24 +63,7 @@ const Home = (props) => {
     loadGoogleTagManager();
     loadFacebookPixel();
     loadTiktokPixel();
-    fetchFloatingWhatsapp();
-
-    const observer = new MutationObserver(() => {
-      const chatRoot = document.querySelector('[aria-hidden="true"]');
-      if (chatRoot) {
-        const focusables = chatRoot.querySelectorAll('button, a, input, textarea, select');
-        focusables.forEach((el) => el.setAttribute('tabindex', '-1'));
-      }
-    });
-
-    observer.observe(document.body, {
-      childList: true,
-      subtree: true
-    });
-
-    return () => {
-      observer.disconnect();
-    };
+    // fetchFloatingWhatsapp();
   }, []);
 
   return (
@@ -113,7 +96,7 @@ const Home = (props) => {
       <PrivacyModal />
       <TermsModal />
 
-      {floatingWhatsappList && (
+      {/* {floatingWhatsappList && (
         <FloatingWhatsApp
           avatar={floatingWhatsappList.avatar}
           phoneNumber={floatingWhatsappList.phone_number}
@@ -129,7 +112,7 @@ const Home = (props) => {
           className="custom-whatsapp-button"
           placeholder="Ketik pesan..."
         />
-      )}
+      )} */}
     </Fragment>
   );
 };
