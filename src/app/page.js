@@ -33,8 +33,8 @@ import {
   loadJquery,
   loadGoogleAnalytics,
   loadGoogleTagManager,
-  loadFacebookPixel,
-  loadTiktokPixel
+  loadFacebookPixel
+  // loadTiktokPixel
 } from '@/lib/loadAnalytic';
 
 import AOS from 'aos';
