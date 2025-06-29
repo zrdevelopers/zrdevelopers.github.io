@@ -62,7 +62,7 @@ const Home = (props) => {
     loadGoogleAnalytics();
     loadGoogleTagManager();
     loadFacebookPixel();
-    loadTiktokPixel();
+    // loadTiktokPixel();
     // fetchFloatingWhatsapp();
   }, []);
 
