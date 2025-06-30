@@ -5,7 +5,10 @@ const Index = () => {
     <footer className="page-footer">
       <div className="container">
         <div className="footer-content d-flex justify-content-between">
-          <p>&copy; 2019 - {currentYear} {/* PT Zikrada Digital Tech */}ZRDigitalTech | All rights reserved</p>
+          <p>
+            &copy; 2019 - {currentYear} {/* PT Zikrada Digital Tech */}ZRDigitalTech | Hak cipta
+            dilindungi
+          </p>
           <p>
             <a href="#" data-toggle="modal" data-target="#privacy-modal">
               Kebijakan Privasi
