@@ -32,8 +32,8 @@ import TerimaKasihModal from '@/app/modals/terima-kasih';
 import {
   loadJquery,
   loadGoogleAnalytics,
-  loadGoogleTagManager,
-  loadFacebookPixel
+  loadGoogleTagManager
+  // loadFacebookPixel
   // loadTiktokPixel
 } from '@/lib/loadAnalytic';
 
@@ -61,7 +61,7 @@ const Home = (props) => {
     loadJquery();
     loadGoogleAnalytics();
     loadGoogleTagManager();
-    loadFacebookPixel();
+    // loadFacebookPixel();
     // loadTiktokPixel();
     // fetchFloatingWhatsapp();
   }, []);
