@@ -1,7 +1,7 @@
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   // basePath: "/",
-  output: "export",
+  output: 'export',
   swcMinify: true,
   images: {
     unoptimized: true,
@@ -11,13 +11,13 @@ const nextConfig = {
   webpack: (config) => {
     // Optimize and reduce bundle size
     config.optimization.splitChunks = {
-      chunks: 'all',
+      chunks: 'all'
     };
 
     // Customize Webpack configuration if needed
     return config;
-  },
-  generateMetadata: true,
+  }
+  // generateMetadata: true,
 };
 
 export default nextConfig;
