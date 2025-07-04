@@ -12,6 +12,16 @@ export const loadJquery = () => {
   loadScript('/assets/js/vendor/jquery-3.3.1.min.js', 'jquery');
 };
 
+export const loadGoogleAnalyticsZRDigitalTech = () => {
+  loadScript('https://www.googletagmanager.com/gtag/js?id=G-9Y84MQE6Z5', 'ga'); // Replace G-XXXXXX with your GA ID
+  window.dataLayer = window.dataLayer || [];
+  function gtag() {
+    window.dataLayer.push(arguments);
+  }
+  gtag('js', new Date());
+  gtag('config', 'G-9Y84MQE6Z5'); // Replace G-9Y84MQE6Z5 with your GA ID
+};
+
 export const loadGoogleAnalytics = () => {
   loadScript('https://www.googletagmanager.com/gtag/js?id=G-8Z94W6TM1Y', 'ga'); // Replace G-XXXXXX with your GA ID
   window.dataLayer = window.dataLayer || [];

@@ -32,7 +32,8 @@ import TerimaKasihModal from '@/app/modals/terima-kasih';
 import {
   loadJquery,
   loadGoogleAnalytics,
-  loadGoogleTagManager
+  loadGoogleTagManager,
+  loadGoogleAnalyticsZRDigitalTech
   // loadFacebookPixel
   // loadTiktokPixel
 } from '@/lib/loadAnalytic';
@@ -59,6 +60,7 @@ const Home = (props) => {
   useEffect(() => {
     AOS.init();
     loadJquery();
+    loadGoogleAnalyticsZRDigitalTech();
     loadGoogleAnalytics();
     loadGoogleTagManager();
     // loadFacebookPixel();
