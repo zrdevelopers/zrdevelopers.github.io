@@ -1,0 +1,9 @@
+# *
+User-agent: *
+Allow: /
+
+# Host
+Host: https://zrdigitaltech.github.io
+
+# Sitemaps
+Sitemap: https://zrdigitaltech.github.io/sitemap.xml
