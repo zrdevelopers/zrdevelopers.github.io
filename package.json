@@ -4,9 +4,9 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
+    "build": "next build && npx gh-pages -d out",
     "start": "npx serve out",
-    "deploy": "next build && next export && npx gh-pages -d out",
+    "deploy": "next build && npx gh-pages -d out",
     "lint": "next lint",
     "lint:fix": "eslint ./ --ext ts,js,tsx,jsx --fix",
     "lint:cache": "eslint ./ --ext ts,js,tsx,jsx --cache --fix",
