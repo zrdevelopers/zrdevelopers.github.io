@@ -4,9 +4,10 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build && npx gh-pages -d out",
+    "build": "next build",
     "start": "npx serve out",
-    "deploy": "next build && npx gh-pages -d out",
+    "deploy": "npx gh-pages -d out",
+    "postbuild": "touch out/.nojekyll",
     "lint": "next lint",
     "lint:fix": "eslint ./ --ext ts,js,tsx,jsx --fix",
     "lint:cache": "eslint ./ --ext ts,js,tsx,jsx --cache --fix",
