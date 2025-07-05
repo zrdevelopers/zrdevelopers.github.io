@@ -7,7 +7,6 @@
     "build": "next build",
     "start": "npx serve out",
     "deploy": "npx gh-pages -d out",
-    "postbuild": "touch out/.nojekyll",
     "lint": "next lint",
     "lint:fix": "eslint ./ --ext ts,js,tsx,jsx --fix",
     "lint:cache": "eslint ./ --ext ts,js,tsx,jsx --cache --fix",
