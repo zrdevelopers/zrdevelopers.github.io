@@ -51,11 +51,11 @@ const Index = () => {
               data-aos="fade-down"
               data-aos-delay="0"></h1>
           )}
-          <p
+          <div
             className="section-subheading"
             dangerouslySetInnerHTML={{ __html: headerList.description }}
             data-aos="fade-down"
-            data-aos-delay="100"></p>
+            data-aos-delay="100"></div>
           <a
             href="#projects"
             className="custom-btn btn-big grad-style-ef page-scroll"
