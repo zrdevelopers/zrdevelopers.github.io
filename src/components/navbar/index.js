@@ -34,7 +34,7 @@ const Index = (props) => {
             <li className="nav-item active">
               <a
                 className={`nav-link ${page === 'artikel' ? '' : 'page-scroll'}`}
-                href={`${page === 'artikel' ? '/services' : '#services'}`}>
+                href={`${page === 'artikel' ? '/layanan' : '#layanan'}`}>
                 Layanan
                 <span className="sr-only">(current)</span>
               </a>

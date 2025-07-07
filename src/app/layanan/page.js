@@ -1,9 +1,9 @@
 import React from 'react';
-import TentangKamiPage from './tentangKamiPage';
+import LayananPage from './layananPage';
 
 export async function generateMetadata() {
   return {
-    title: `Tentang Kami | ZRDigitalTech`,
+    title: `Layanan | ZRDigitalTech`,
     description: `Butuh jasa pembuatan website profesional? ZRDigitalTech siap bantu wujudkan website bisnis yang menarik, cepat, dan SEO friendly. Gratis revisi & bayar setelah jadi!`,
     openGraph: {
       url: `https://zrdigitaltech.github.io/tentang-kami`,
@@ -15,5 +15,5 @@ export async function generateMetadata() {
 }
 
 export default function Page() {
-  return <TentangKamiPage />;
+  return <LayananPage />;
 }

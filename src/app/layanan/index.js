@@ -23,7 +23,7 @@ const Index = () => {
   }, []);
 
   return (
-    <section className="services" id="services">
+    <section className="services" id="layanan">
       <div className="container position-relative">
         <div
           className="d-flex scrollX"

@@ -8,7 +8,7 @@ import Header from '@/app/[slug]/components/header';
 import Footer from '@/components/footer';
 
 // Page
-import Services from '@/app/services';
+import Services from '@/app/layanan';
 import Aboutus from '@/app/[slug]/components/about-us';
 import FeaturedProjects from '@/app/featured-projects';
 import CaseStudy from '@/app/case-study';
