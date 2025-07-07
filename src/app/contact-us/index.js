@@ -140,7 +140,7 @@ const Index = (props) => {
                 <p className="address">
                   {/* data-aos="fade-right" data-aos-delay="200" */}
                   Email
-                  <a href="mailto:zikriramdani.developer@gmail.com" target="_blank">
+                  <a href="mailto:hello@zrdigitaltech.com" target="_blank">
                     {contactUsList.email}
                   </a>
                 </p>
