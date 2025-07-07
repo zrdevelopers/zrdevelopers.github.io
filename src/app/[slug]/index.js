@@ -45,7 +45,7 @@ const Index = (props) => {
 
   return (
     <Fragment>
-      <Navbar />
+      <Navbar page="artikel" />
       <Header kota={kota} handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />
       <Services />
       <Aboutus kota={kota} />

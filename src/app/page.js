@@ -9,7 +9,7 @@ import Footer from '@/components/footer';
 
 // Page
 import Services from '@/app/services';
-import Aboutus from '@/app/about-us';
+import Aboutus from '@/app/tentang-kami';
 import FeaturedProjects from '@/app/featured-projects';
 import CaseStudy from '@/app/case-study';
 // import Team from '@/app/team';

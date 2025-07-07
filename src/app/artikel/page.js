@@ -62,7 +62,7 @@ const Page = (props) => {
 
   return (
     <Fragment>
-      <Navbar page="latest-news" />
+      <Navbar page="artikel" />
       <div className="latest-news pb-0">
         <Banners />
         <div className="container pt-5">

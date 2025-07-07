@@ -1,7 +1,11 @@
+'use client';
 import Link from 'next/link';
+import { usePathname } from 'next/navigation';
 
 const Index = (props) => {
   const { page } = props;
+  const pathname = usePathname();
+  const isHome = pathname === '/';
   return (
     <nav className="navbar onepage-navbar navbar-expand-lg">
       <div className="container">
@@ -17,8 +21,7 @@ const Index = (props) => {
           data-target="#navbarNav"
           aria-controls="navbarNav"
           aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
+          aria-label="Toggle navigation">
           <span className="navbar-toggler-icon"></span>
           <span className="custom-toggler-icon bar1"></span>
           <span className="custom-toggler-icon bar2"></span>
@@ -30,58 +33,52 @@ const Index = (props) => {
           <ul className="navbar-nav ml-md-auto typo-color-c align-items-center">
             <li className="nav-item active">
               <a
-                className={`nav-link ${page === 'latest-news' ? '' : 'page-scroll'}`}
-                href={`${page === 'latest-news' ? '/#services' : '#services'}`}
-              >
+                className={`nav-link ${page === 'artikel' ? '' : 'page-scroll'}`}
+                href={`${page === 'artikel' ? '/services' : '#services'}`}>
                 Layanan
                 <span className="sr-only">(current)</span>
               </a>
             </li>
             <li className="nav-item">
               <a
-                className={`nav-link ${page === 'latest-news' ? '' : 'page-scroll'}`}
-                href={`${page === 'latest-news' ? '/#about-us' : '#about-us'}`}
-              >
+                className={`nav-link ${page === 'artikel' ? '' : 'page-scroll'}`}
+                href={`${page === 'artikel' ? '/tentang-kami' : '#about-us'}`}>
                 Tentang kami
               </a>
             </li>
             <li className="nav-item">
               <a
-                className={`nav-link ${page === 'latest-news' ? '' : 'page-scroll'}`}
-                href={`${page === 'latest-news' ? '/#projects' : '#projects'}`}
-              >
+                className={`nav-link ${page === 'artikel' ? '' : 'page-scroll'}`}
+                href={`${page === 'artikel' ? '/projects' : '#projects'}`}>
                 Portofolio
               </a>
             </li>
             {/* <li className="nav-item">
-              <a className={`nav-link ${page === 'latest-news' ? "": "page-scroll"}`} href="#case-studies">
+              <a className={`nav-link ${page === 'artikel' ? "": "page-scroll"}`} href="#case-studies">
                 Case Studies
               </a>
             </li> */}
             {/* <!-- <li className="nav-item">
-                  <a className={`nav-link ${page === 'latest-news' ? "": "page-scroll"}`} href="#team">Team</a>
+                  <a className={`nav-link ${page === 'artikel' ? "": "page-scroll"}`} href="#team">Team</a>
               </li> --> */}
             <li className="nav-item">
               <a
-                className={`nav-link ${page === 'latest-news' ? '' : 'page-scroll'}`}
-                href={`${page === 'latest-news' ? '/#pricing' : '#pricing'}`}
-              >
+                className={`nav-link ${page === 'artikel' ? '' : 'page-scroll'}`}
+                href={`${page === 'artikel' ? '/pricing' : '#pricing'}`}>
                 Harga
               </a>
             </li>
             <li className="nav-item">
               <a
-                className={`nav-link ${page === 'latest-news' ? '' : 'page-scroll'}`}
-                href={`${page === 'latest-news' ? '/#news' : '#news'}`}
-              >
+                className={`nav-link ${page === 'artikel' ? '' : 'page-scroll'}`}
+                href={`${page === 'artikel' ? '/news' : '#news'}`}>
                 Artikel
               </a>
             </li>
             <li className="nav-item">
               <Link
                 className="nav-link custom-btn btn-mid grad-style-cd page-scroll"
-                href="#contact"
-              >
+                href="#contact">
                 Kontak Kami
               </Link>
             </li>
