@@ -36,9 +36,8 @@ const BeritaTerkait = (props) => {
           ?.map((item, i) => (
             <div
               className={`col-lg-4 col-sm-4 col-11 mb-5 ${i < 1 ? 'pl-0' : ''}`}
-              key={item?.id || i}
-            >
-              <a href={`/latest-news/${item?.slug}`} className="news-content-block content-block">
+              key={item?.id || i}>
+              <a href={`/artikel/${item?.slug}`} className="news-content-block content-block">
                 <div className="img-container">
                   <LazyLoadImage
                     effect="blur"
@@ -51,8 +50,7 @@ const BeritaTerkait = (props) => {
                 <h5
                   className="equalHeight"
                   style={{ padding: '2rem 2rem 2rem' }}
-                  title={item?.title?.length > 20 ? item.title : ''}
-                >
+                  title={item?.title?.length > 20 ? item.title : ''}>
                   {/* <span className="content-block__sub-title">{item.date}</span> */}
                   <span className="two-lines">{item?.title}</span>
                 </h5>

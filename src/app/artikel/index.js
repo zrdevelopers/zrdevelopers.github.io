@@ -5,7 +5,7 @@ import React, { Fragment, useEffect, useState, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getListLatestNews } from '@/redux/action/latest-news/creator';
 
-import NewsModal from '@/app/latest-news/modals';
+import NewsModal from '@/app/artikel/modals';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -64,7 +64,7 @@ const Index = (props) => {
                 data-aos="fade-left"
                 data-aos-delay={i * 100}>
                 <a
-                  href={`/latest-news/${item?.slug}`}
+                  href={`/artikel/${item?.slug}`}
                   className="news-content-block content-block"
                   data-toggle="modal"
                   data-target={'#news-modal' + item?.id}

@@ -26,8 +26,7 @@ const Index = (props) => {
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             width="379px"
-            height="369px"
-          >
+            height="369px">
             <defs>
               <linearGradient id="PSgrad_014" x1="70.711%" x2="0%" y1="70.711%" y2="0%">
                 <stop offset="0%" stopColor="rgb(237,247,255)" stopOpacity="1" />
@@ -46,8 +45,7 @@ const Index = (props) => {
             xmlns="http://www.w3.org/2000/svg"
             xmlnsXlink="http://www.w3.org/1999/xlink"
             width="379px"
-            height="369px"
-          >
+            height="369px">
             <defs>
               <linearGradient id="PSgrad_015" x1="70.711%" x2="0%" y1="70.711%" y2="0%">
                 <stop offset="0%" stopColor="rgb(237,247,255)" stopOpacity="1" />
@@ -75,7 +73,7 @@ const Index = (props) => {
           </div>
           <ShareButtons
             title={dataItem?.title}
-            url={`https://ZRDigitalTech.github.io/latest-news/${dataItem?.slug}`}
+            url={`https://ZRDigitalTech.github.io/artikel/${dataItem?.slug}`}
           />
           <h3>
             {/* <span>{dataItem.date}</span>  */}

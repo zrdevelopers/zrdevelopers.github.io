@@ -10,8 +10,8 @@ import Navbar from '@/components/navbar';
 import Contactus from '@/app/contact-us';
 import Footer from '@/components/footer';
 
-import Banners from '@/app/latest-news/components/banners';
-import NewsModal from '@/app/latest-news/modals';
+import Banners from '@/app/artikel/components/banners';
+import NewsModal from '@/app/artikel/modals';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -86,18 +86,16 @@ const Page = (props) => {
             </div>
           </div>
           <div
-            className={`row ${filteredNewsList.length < 4 ? 'd-flex justify-content-center' : ''}`}
-          >
+            className={`row ${filteredNewsList.length < 4 ? 'd-flex justify-content-center' : ''}`}>
             {filteredNewsList?.length > 0 ? (
               filteredNewsList.slice(0, visibleItems).map((item, i) => (
                 <div className="col-sm-3 col-6 mb-5" key={item?.id || i}>
                   <a
-                    href={`/latest-news/${item?.slug}`}
+                    href={`/artikel/${item?.slug}`}
                     className="news-content-block content-block"
                     data-toggle="modal"
                     data-target={'#news-modal' + item?.id}
-                    onClick={() => handleNewsModal(item)}
-                  >
+                    onClick={() => handleNewsModal(item)}>
                     <div className="img-container">
                       <LazyLoadImage
                         effect="blur"
@@ -109,8 +107,7 @@ const Page = (props) => {
                     <h5
                       className="equalHeight"
                       style={{ padding: '2rem 2rem 2rem' }}
-                      title={item?.title?.length > 20 ? item.title : ''}
-                    >
+                      title={item?.title?.length > 20 ? item.title : ''}>
                       <span className="two-lines">{item?.title}</span>
                     </h5>
                   </a>
@@ -129,8 +126,7 @@ const Page = (props) => {
               <button
                 className="custom-btn btn-big grad-style-ef btn-full"
                 onClick={handleLoadMore}
-                disabled={loadingMore}
-              >
+                disabled={loadingMore}>
                 {loadingMore ? 'Sedang Memuat...' : 'Lihat Lebih Banyak'}
               </button>
             </div>

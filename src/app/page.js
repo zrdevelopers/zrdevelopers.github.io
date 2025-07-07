@@ -15,7 +15,7 @@ import CaseStudy from '@/app/case-study';
 // import Team from '@/app/team';
 import Pricing from '@/app/pricing';
 import Partners from '@/app/partners';
-import LatestNews from '@/app/latest-news';
+import LatestNews from '@/app/artikel';
 import Contactus from '@/app/contact-us';
 
 import PrivacyModal from '@/app/modals/privacy-modal';
