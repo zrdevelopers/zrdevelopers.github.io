@@ -41,7 +41,7 @@ export const metadata = {
     'Penyedia pembuatan website yang akan membantu mewujudkan keinginan dan kebutuhan Anda.',
   openGraph: {
     url: 'https://zrdigitaltech.github.io',
-    images: 'https://zrdigitaltech.github.io/assets/images/meta.png'
+    images: 'https://zrdigitaltech.github.io/assets/images/featured-projects/featured-project-1.jpg'
   }
 };
 

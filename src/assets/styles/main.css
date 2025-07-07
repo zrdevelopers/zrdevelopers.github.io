@@ -1851,7 +1851,8 @@ textarea:focus {
 }
 
 .banner::after {
-  background: #fff url(/assets/images/banner/banner-round-img.webp) center center no-repeat;
+  background: #fff var(--bgAfter) center center no-repeat;
+  /* background: #fff url(/assets/images/banner/banner-round-img.webp) center center no-repeat; */
   /* background: #fff url(/assets/images/banner/banner-round-img.png) center center no-repeat; */
   background-size: cover;
   top: -46%;
@@ -2301,7 +2302,8 @@ h1 {
   border-bottom-right-radius: 350px;
   background-color: #fff;
   /* background-image: url(/assets/images/about-imgOld.webp); */
-  background-image: url(/assets/images/about-img.webp);
+  /* background-image: url(/assets/images/about-img.webp); */
+  background-image: var(--bgAfter);
   background-position: center top;
   background-repeat: no-repeat;
   background-size: cover;

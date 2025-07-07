@@ -9,7 +9,7 @@ import Footer from '@/components/footer';
 
 // Page
 import Services from '@/app/services';
-import Aboutus from '@/app/about-us';
+import Aboutus from '@/app/[slug]/components/about-us';
 import FeaturedProjects from '@/app/featured-projects';
 import CaseStudy from '@/app/case-study';
 // import Team from '@/app/team';
@@ -48,7 +48,7 @@ const Index = (props) => {
       <Navbar />
       <Header kota={kota} handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />
       <Services />
-      <Aboutus />
+      <Aboutus kota={kota} />
       <FeaturedProjects handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />
       <CaseStudy handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />
       {/* <Team /> */}

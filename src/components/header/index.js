@@ -17,7 +17,12 @@ const Index = () => {
   }, []);
 
   return (
-    <header className="banner" id="top">
+    <header
+      className="banner"
+      id="top"
+      style={{
+        '--bgAfter': `url(/assets/images/banner/banner-round-img.webp)`
+      }}>
       {/* <svg
       className="bg-shape shape-home-banner reveal-from-right"
       xmlns="http://www.w3.org/2000/svg"

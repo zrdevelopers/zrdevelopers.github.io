@@ -23,8 +23,7 @@ const Index = () => {
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
         width="779px"
-        height="759px"
-      >
+        height="759px">
         <defs>
           <linearGradient id="PSgrad_02" x1="70.711%" x2="0%" y1="70.711%" y2="0%">
             <stop offset="0%" stopColor="rgb(237,247,255)" stopOpacity="1" />
@@ -38,7 +37,9 @@ const Index = () => {
         />
       </svg>
 
-      <div className="video-play-bg grad-style-cd">
+      <div
+        className="video-play-bg grad-style-cd"
+        style={{ '--bgAfter': `url('/assets/images/about-img.webp')` }}>
         {/* <a href="http://www.youtube.com/watch?v=F85Az1VXbvg" className="video-play-btn video-popup">
           <i className="fas fa-play"></i>
       </a>  */}
@@ -53,8 +54,7 @@ const Index = () => {
             <div
               data-aos="fade-right"
               data-aos-delay="100"
-              dangerouslySetInnerHTML={{ __html: aboutUsList.description }}
-            ></div>
+              dangerouslySetInnerHTML={{ __html: aboutUsList.description }}></div>
             <div className="counter-wrapper d-flex justify-content-between">
               <div className="inner-block" data-aos="fade-right" data-aos-delay="200">
                 <div className="counter-block d-block txt-grad-ef">
