@@ -38,17 +38,13 @@ const Index = () => {
                 </span>
                 <h2
                   className="text-center"
-                  data-aos="fade-down"
-                  data-aos-delay={i * 100}
                   style={{
                     fontSize: '2.4rem',
                     fontWeight: '700'
                   }}>
                   {item.title}
                 </h2>
-                <p data-aos="fade-down" data-aos-delay={i * 200}>
-                  {item.description}
-                </p>
+                <p>{item.description}</p>
               </div>
             </div>
           ))}

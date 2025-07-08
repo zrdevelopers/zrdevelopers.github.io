@@ -105,11 +105,7 @@ const Index = (props) => {
               style={{ overflowX: 'auto', scrollBehavior: 'smooth' }}>
               {/* More Items can be added. --> */}
               {featuredProjectsList.map((item, i) => (
-                <div
-                  key={item?.id || i}
-                  className="a1 grid-item col-md-6 col-lg-4 col-11"
-                  data-aos="fade-left"
-                  data-aos-delay={i * 100}>
+                <div key={item?.id || i} className="a1 grid-item col-md-6 col-lg-4 col-11">
                   <a
                     href="#"
                     className="featured-content-block content-block"
@@ -153,9 +149,7 @@ const Index = (props) => {
               data-toggle="modal"
               data-target="#pesan-sekarang"
               onClick={(e) => handlePesanSekarang(e, null)}
-              className="custom-btn btn-big grad-style-ef btn-full"
-              data-aos="fade-down"
-              data-aos-delay={`${featuredProjectsList?.length}00`}>
+              className="custom-btn btn-big grad-style-ef btn-full">
               Buatkan Saya Website
             </a>
           </div>
