@@ -38,7 +38,7 @@ export default function Page({ params }) {
 
 export async function generateStaticParams() {
   const cities = [
-    // ✅ Wilayah sekitar Tangerang
+    // Sekitar Tangerang
     'ciledug',
     'cipondoh',
     'cikupa',
@@ -50,7 +50,7 @@ export async function generateStaticParams() {
     'alam-sutera',
     'gading-serpong',
 
-    // ✅ Wilayah sekitar Tangsel (Tangerang Selatan)
+    // Sekitar Tangsel
     'pamulang',
     'ciputat',
     'ciputat-timur',
@@ -60,7 +60,7 @@ export async function generateStaticParams() {
     'jombang',
     'pondok-cabe',
 
-    // ✅ Jabodetabek utama
+    // Jabodetabek utama
     'jakarta',
     'jakarta-pusat',
     'jakarta-utara',
@@ -74,7 +74,66 @@ export async function generateStaticParams() {
     'bekasi',
     'kabupaten-bekasi',
     'kabupaten-bogor',
-    'kabupaten-tangerang'
+    'kabupaten-tangerang',
+
+    // Jawa Barat
+    'bandung',
+    'cimahi',
+    'cirebon',
+    'garut',
+    'tasikmalaya',
+    'sukabumi',
+
+    // Jawa Tengah
+    'semarang',
+    'solo',
+    'surakarta',
+    'magelang',
+    'purwokerto',
+    'pekalongan',
+    'kudus',
+
+    // Jawa Timur
+    'surabaya',
+    'malang',
+    'kediri',
+    'madiun',
+    'sidoarjo',
+    'pasuruan',
+    'probolinggo',
+    'blitar',
+
+    // Yogyakarta
+    'yogyakarta',
+
+    // Sumatera
+    'medan',
+    'padang',
+    'palembang',
+    'pekanbaru',
+    'jambi',
+    'banda-aceh',
+    'batam',
+
+    // Kalimantan
+    'balikpapan',
+    'samarinda',
+    'banjarmasin',
+    'pontianak',
+
+    // Sulawesi
+    'makassar',
+    'manado',
+    'kendari',
+    'gorontalo',
+
+    // Bali & NTB
+    'denpasar',
+    'mataram',
+
+    // Papua & Maluku
+    'jayapura',
+    'ambon'
   ];
 
   return cities.map((city) => ({
