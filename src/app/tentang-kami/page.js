@@ -4,7 +4,7 @@ import TentangKamiPage from './tentangKamiPage';
 export async function generateMetadata() {
   return {
     title: `Tentang Kami | ZRDigitalTech`,
-    description: `Butuh jasa pembuatan website profesional? ZRDigitalTech siap bantu wujudkan website bisnis yang menarik, cepat, dan SEO friendly. Gratis revisi & bayar setelah jadi!`,
+    description: `Kenali ZRDigitalTech, penyedia jasa pembuatan website terpercaya yang berkomitmen membantu bisnis dan UMKM tampil profesional secara online. Kami mengutamakan kualitas, kecepatan, dan kepuasan klien.`,
     openGraph: {
       url: `https://zrdigitaltech.github.io/tentang-kami`,
       images: [

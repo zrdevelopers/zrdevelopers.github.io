@@ -1,11 +1,8 @@
 'use client';
 import Link from 'next/link';
-import { usePathname } from 'next/navigation';
 
 const Index = (props) => {
   const { page } = props;
-  const pathname = usePathname();
-  const isHome = pathname === '/';
   return (
     <nav className="navbar onepage-navbar navbar-expand-lg">
       <div className="container">
@@ -32,26 +29,26 @@ const Index = (props) => {
         <div className="collapse navbar-collapse" id="navbarNav">
           <ul className="navbar-nav ml-md-auto typo-color-c align-items-center">
             <li className="nav-item active">
-              <a
+              <Link
                 className={`nav-link ${page === 'artikel' ? '' : 'page-scroll'}`}
                 href={`${page === 'artikel' ? '/layanan' : '#layanan'}`}>
                 Layanan
                 <span className="sr-only">(current)</span>
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
+              <Link
                 className={`nav-link ${page === 'artikel' ? '' : 'page-scroll'}`}
                 href={`${page === 'artikel' ? '/tentang-kami' : '#about-us'}`}>
                 Tentang kami
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
+              <Link
                 className={`nav-link ${page === 'artikel' ? '' : 'page-scroll'}`}
-                href={`${page === 'artikel' ? '/projects' : '#projects'}`}>
+                href={`${page === 'artikel' ? '/portofolio' : '#portofolio'}`}>
                 Portofolio
-              </a>
+              </Link>
             </li>
             {/* <li className="nav-item">
               <a className={`nav-link ${page === 'artikel' ? "": "page-scroll"}`} href="#case-studies">
@@ -62,18 +59,18 @@ const Index = (props) => {
                   <a className={`nav-link ${page === 'artikel' ? "": "page-scroll"}`} href="#team">Team</a>
               </li> --> */}
             <li className="nav-item">
-              <a
+              <Link
                 className={`nav-link ${page === 'artikel' ? '' : 'page-scroll'}`}
-                href={`${page === 'artikel' ? '/pricing' : '#pricing'}`}>
+                href={`${page === 'artikel' ? '/harga' : '#harga'}`}>
                 Harga
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
-              <a
+              <Link
                 className={`nav-link ${page === 'artikel' ? '' : 'page-scroll'}`}
-                href={`${page === 'artikel' ? '/news' : '#news'}`}>
+                href={`${page === 'artikel' ? '/artikel' : '#artikel'}`}>
                 Artikel
-              </a>
+              </Link>
             </li>
             <li className="nav-item">
               <Link

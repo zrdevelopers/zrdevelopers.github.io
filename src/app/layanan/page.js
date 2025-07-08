@@ -3,10 +3,10 @@ import LayananPage from './layananPage';
 
 export async function generateMetadata() {
   return {
-    title: `Layanan | ZRDigitalTech`,
-    description: `Butuh jasa pembuatan website profesional? ZRDigitalTech siap bantu wujudkan website bisnis yang menarik, cepat, dan SEO friendly. Gratis revisi & bayar setelah jadi!`,
+    title: `Layanan Jasa Pembuatan Website Profesional | ZRDigitalTech`,
+    description: `ZRDigitalTech menyediakan layanan pembuatan website untuk UMKM, bisnis, dan personal dengan desain menarik, kecepatan optimal, serta SEO yang mendongkrak visibilitas online Anda. Bayar setelah jadi & garansi revisi!`,
     openGraph: {
-      url: `https://zrdigitaltech.github.io/tentang-kami`,
+      url: `https://zrdigitaltech.github.io/layanan`,
       images: [
         `https://zrdigitaltech.github.io/assets/images/featured-projects/featured-project-1.jpg`
       ] // ganti jika ada banner khusus
