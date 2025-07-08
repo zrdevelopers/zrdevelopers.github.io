@@ -1,14 +1,12 @@
 'use client';
 
 import React from 'react';
+import './heading.scss';
 
 const Index = ({ title }) => {
   return (
     <div>
-      <div
-        style={{
-          padding: '115px 0 0px'
-        }}>
+      <div className="ZR-heading">
         <div
           className="p-5"
           style={{
