@@ -7,7 +7,7 @@ import { getListLatestNews } from '@/redux/action/latest-news/creator';
 
 // Components
 import Navbar from '@/components/navbar';
-import Contactus from '@/app/contact-us';
+import Contactus from '@/app/kontak-kami';
 import Footer from '@/components/footer';
 
 import Banners from '@/app/artikel/components/banners';

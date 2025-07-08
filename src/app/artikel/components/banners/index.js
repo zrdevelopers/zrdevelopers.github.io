@@ -29,7 +29,7 @@ const Index = () => {
                 Jangan lewatkan kesempatan untuk memperdalam pengetahuan Anda.
               </p>
               <div className="mb-0">
-                <Link href="#contact" className="custom-btn btn-big grad-style-ab page-scroll">
+                <Link href="#kontak-kami" className="custom-btn btn-big grad-style-ab page-scroll">
                   Kontak Kami
                 </Link>
               </div>

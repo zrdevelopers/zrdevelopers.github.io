@@ -7,7 +7,7 @@ import Footer from '@/components/footer';
 import Heading from '@/components/heading';
 import PrivacyModal from '@/app/modals/privacy-modal';
 import TermsModal from '@/app/modals/terms-modal';
-import Contactus from '@/app/contact-us';
+import Contactus from '@/app/kontak-kami';
 import TentangKamiPage from './index';
 import PesanSekarangModal from '@/app/modals/pesan-sekarang';
 import TerimaKasihModal from '@/app/modals/terima-kasih';

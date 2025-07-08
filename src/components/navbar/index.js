@@ -75,7 +75,7 @@ const Index = (props) => {
             <li className="nav-item">
               <Link
                 className="nav-link custom-btn btn-mid grad-style-cd page-scroll"
-                href="#contact">
+                href="#kontak-kami">
                 Kontak Kami
               </Link>
             </li>

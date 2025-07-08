@@ -16,7 +16,7 @@ import CaseStudy from '@/app/case-study';
 import Harga from '@/app/harga';
 import Partners from '@/app/partners';
 import Artikel from '@/app/artikel';
-import Contactus from '@/app/contact-us';
+import Contactus from '@/app/kontak-kami';
 
 import PrivacyModal from '@/app/modals/privacy-modal';
 import TermsModal from '@/app/modals/terms-modal';

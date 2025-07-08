@@ -18,7 +18,7 @@ const Index = (props) => {
   }, []);
 
   return (
-    <section className="contact light-grey-bg" id="contact">
+    <section className="contact light-grey-bg" id="kontak-kami">
       <div className="grey-bg">
         <div className="trigger-contact"></div>
         <svg
