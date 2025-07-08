@@ -21,8 +21,8 @@ export async function generateMetadata({ params }) {
     title: `${data?.title} | ZRDigitalTech`,
     description: data?.meta_description,
     openGraph: {
-      url: `https://ZRDigitalTech.github.io/artikel/${slug}`,
-      images: `https://ZRDigitalTech.github.io${data?.banner}`
+      url: `${process.env.SITE_URL}/artikel/${slug}`,
+      images: `${process.env.SITE_URL}${data?.banner}`
     }
   };
 }

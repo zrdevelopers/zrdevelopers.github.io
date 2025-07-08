@@ -1,6 +1,6 @@
 import Modals from '@/components/modals';
 import { Fragment, useState } from 'react';
-import { formatRupiah, unFormatRupiah } from '@/helper/utils'
+import { formatRupiah, unFormatRupiah } from '@/helper/utils';
 
 const Index = () => {
   const [formData, setFormData] = useState({
@@ -50,7 +50,7 @@ const Index = () => {
 
     if (!/^\d+$/.test(formData.budget)) {
       newErrors.budget = 'Budget hanya boleh berisi angka';
-    } 
+    }
     // else if (formData.budget < 1000000) { // Minimum budget for website creation (e.g., 1 million IDR)
     //   newErrors.budget = 'Budget minimal untuk pembuatan website adalah Rp 1.000.000';
     // }
@@ -66,7 +66,7 @@ const Index = () => {
       return;
     }
 
-    const domain = 'https://ZRDigitalTech.github.io';
+    const domain = process.env.SITE_URL;
 
     const pesanWhatsApp = `Halo ${domain}, saya ingin memesan dengan detail berikut:\n\nNama: ${formData.nama}\nEmail: ${formData.email}\nNo WhatsApp: ${formData.no_whatsapp}\nLayanan: ${formData.layanan}\nSudah Memiliki Domain: ${formData.domainStatus}\nNama Bisnis: ${formData.nama_bisnis}\nReferensi Website: ${formData.referensi_website || '-'}\nDeskripsi Singkat Bisnis: ${formData.pesan || '-'}\nBudget: Rp ${formatRupiah(formData.budget)}\n\nMohon informasi lebih lanjut. Terima kasih!`;
 
@@ -110,13 +110,13 @@ const Index = () => {
     });
     setErrors({});
   };
-  const showTerimaKasih = async() => {
+  const showTerimaKasih = async () => {
     const modalElement = document.getElementById('terima-kasih');
     if (modalElement) {
       modalElement.classList.add('show'); // Tambahkan class untuk menampilkan modal
       modalElement.style.display = 'block'; // Pastikan modal terlihat
     }
-  }
+  };
 
   return (
     <Modals
@@ -192,8 +192,7 @@ const Index = () => {
                     name="layanan"
                     value={formData.layanan}
                     onChange={handleChange}
-                    required
-                  >
+                    required>
                     <option value="" disabled={true}>
                       Pilih Layanan
                     </option>
@@ -231,8 +230,7 @@ const Index = () => {
                     name="domainStatus"
                     value={formData.domainStatus}
                     onChange={handleChange}
-                    required
-                  >
+                    required>
                     <option value="" disabled={true}>
                       Sudah Memiliki Domain?
                     </option>
@@ -267,8 +265,7 @@ const Index = () => {
                     name="pesan"
                     placeholder="Deskripsi Singkat Bisnis"
                     value={formData.pesan}
-                    onChange={handleChange}
-                  ></textarea>
+                    onChange={handleChange}></textarea>
                 </div>
                 <div className="col-md-12 col-lg-12 mb-4">
                   <input
@@ -276,11 +273,11 @@ const Index = () => {
                     type="text"
                     name="budget"
                     placeholder="Budget yag Disiapkan"
-                    value={formData.budget ? formatRupiah(formData.budget):"" }
+                    value={formData.budget ? formatRupiah(formData.budget) : ''}
                     onChange={handleChange}
                     required
                   />
-                {errors.budget && <small className="text-danger">{errors.budget}</small>}
+                  {errors.budget && <small className="text-danger">{errors.budget}</small>}
                 </div>
                 <div className="btn-wrapper text-center mb-4">
                   <button type="submit" className="custom-btn btn-big grad-style-ef">

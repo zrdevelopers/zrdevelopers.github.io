@@ -73,7 +73,7 @@ const Index = (props) => {
           </div>
           <ShareButtons
             title={dataItem?.title}
-            url={`https://ZRDigitalTech.github.io/artikel/${dataItem?.slug}`}
+            url={`${process.env.SITE_URL}/artikel/${dataItem?.slug}`}
           />
           <h3>
             {/* <span>{dataItem.date}</span>  */}

@@ -14,11 +14,18 @@ export async function generateMetadata({ params }) {
   return {
     title: `Jasa Pembuatan Website ${kota} | ZRDigitalTech`,
     description: `Butuh jasa pembuatan website profesional di ${kota}? ZRDigitalTech siap bantu wujudkan website bisnis yang menarik, cepat, dan SEO friendly. Gratis revisi & bayar setelah jadi!`,
+    keywords: [
+      `jasa pembuatan website ${kota}`,
+      `jasa website ${kota}`,
+      `bikin website ${kota}`,
+      `website murah ${kota}`,
+      `jasa buat website ${kota}`,
+      `jasa desain website ${kota}`,
+      `developer website ${kota}`
+    ],
     openGraph: {
-      url: `https://zrdigitaltech.github.io/jasa-pembuatan-website-${kotaSlug}`,
-      images: [
-        `https://zrdigitaltech.github.io/assets/images/featured-projects/featured-project-1.jpg`
-      ] // ganti jika ada banner khusus
+      url: `${process.env.SITE_URL}/jasa-pembuatan-website-${kotaSlug}`,
+      images: [`${process.env.SITE_URL}/assets/images/featured-projects/featured-project-1.jpg`] // ganti jika ada banner khusus
     }
   };
 }
