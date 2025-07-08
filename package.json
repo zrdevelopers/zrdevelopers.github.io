@@ -3,7 +3,7 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev",
+    "dev": "next dev --turbopack",
     "build": "NODE_ENV=production next build && npx gh-pages -d out",
     "start": "npx serve out",
     "deploy": "npm run build && npx gh-pages -d out",
