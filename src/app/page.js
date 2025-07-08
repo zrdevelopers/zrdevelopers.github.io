@@ -10,12 +10,12 @@ import Footer from '@/components/footer';
 // Page
 import Services from '@/app/layanan';
 import Aboutus from '@/app/tentang-kami';
-import FeaturedProjects from '@/app/featured-projects';
+import Portofolio from '@/app/portofolio';
 import CaseStudy from '@/app/case-study';
 // import Team from '@/app/team';
-import Pricing from '@/app/pricing';
+import Harga from '@/app/harga';
 import Partners from '@/app/partners';
-import LatestNews from '@/app/artikel';
+import Artikel from '@/app/artikel';
 import Contactus from '@/app/contact-us';
 
 import PrivacyModal from '@/app/modals/privacy-modal';
@@ -84,12 +84,12 @@ const Home = (props) => {
       <Header />
       <Services />
       <Aboutus />
-      <FeaturedProjects handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />
+      <Portofolio handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />
       <CaseStudy handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />
       {/* <Team /> */}
-      <Pricing handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />
+      <Harga handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />
       <Partners />
-      <LatestNews slug={slug} />
+      <Artikel slug={slug} />
       <Contactus handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />
       <Footer />
 

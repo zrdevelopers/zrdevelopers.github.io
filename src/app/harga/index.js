@@ -25,7 +25,7 @@ const Index = (props) => {
   }, []);
 
   return (
-    <section className="pricing section-padding" id="pricing">
+    <section className="pricing section-padding" id="harga">
       <div className="container position-relative">
         <h2 className="text-center">Harga</h2>
         {pricingList.subtitle && (
@@ -34,8 +34,7 @@ const Index = (props) => {
         <div
           ref={scrollContainerRef}
           className="flex-row pricing-wrapper d-flex"
-          style={{ overflowX: 'auto', scrollBehavior: 'smooth' }}
-        >
+          style={{ overflowX: 'auto', scrollBehavior: 'smooth' }}>
           {pricingList?.plans?.map((item, i) => (
             <div key={item?.id || i} className="col-lg-4 col-md-6 col-11">
               <div className="pricing-block text-center content-block">
@@ -54,8 +53,7 @@ const Index = (props) => {
                       data-aos="fade-down"
                       data-aos-delay={i * 100}
                       key={feat?.id || idx}
-                      dangerouslySetInnerHTML={{ __html: feat }}
-                    ></div>
+                      dangerouslySetInnerHTML={{ __html: feat }}></div>
                   ))}
                 </div>
                 {/* <!-- End of .facilities --> */}
@@ -68,8 +66,7 @@ const Index = (props) => {
                   className="custom-btn btn-big grad-style-ef"
                   // target="_blank"
                   data-aos="fade-down"
-                  data-aos-delay={`${pricingList?.length}00`}
-                >
+                  data-aos-delay={`${pricingList?.length}00`}>
                   {item.cta_text}
                 </a>
               </div>

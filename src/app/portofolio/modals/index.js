@@ -47,13 +47,13 @@ const Index = (props) => {
                       key={item?.id || i}
                       data-target="#featured-project-carousel"
                       data-slide-to={i}
-                      class={`${i === 0 ? 'active' : ''}`}></li>
+                      className={`${i === 0 ? 'active' : ''}`}></li>
                   ))}
               </ol>
               <div className="carousel-inner">
                 {dataItem?.carousel_images?.map((item, i) => (
                   <div
-                    class={`carousel-item ${i === 0 ? 'active' : ''}`}
+                    className={`carousel-item ${i === 0 ? 'active' : ''}`}
                     key={item?.id || i}
                     style={{ maxHeight: '300px', overflowY: 'auto' }}>
                     {dataItem?.launch_website ? (
@@ -61,8 +61,8 @@ const Index = (props) => {
                         src={dataItem?.launch_website}
                         width="100%"
                         height="300"
-                        frameborder="0"
-                        allowfullscreen></iframe>
+                        frameBorder="0"
+                        allowFullScreen></iframe>
                     ) : (
                       <LazyLoadImage
                         effect="blur"

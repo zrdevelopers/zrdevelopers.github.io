@@ -10,10 +10,10 @@ import Footer from '@/components/footer';
 // Page
 import Services from '@/app/layanan';
 import Aboutus from '@/app/[slug]/components/about-us';
-import FeaturedProjects from '@/app/featured-projects';
+import FeaturedProjects from '@/app/portofolio';
 import CaseStudy from '@/app/case-study';
 // import Team from '@/app/team';
-import Pricing from '@/app/pricing';
+import Pricing from '@/app/harga';
 import Partners from '@/app/partners';
 import LatestNews from '@/app/artikel';
 import Contactus from '@/app/contact-us';

@@ -43,7 +43,7 @@ const Index = (props) => {
 
   return (
     <Fragment>
-      <section className="latest-news section-padding light-grey-grad" id="news">
+      <section className="latest-news section-padding light-grey-grad" id="artikel">
         <div className="container">
           <h2 data-aos="fade-left" data-aos-delay="0">
             Artikel Terbaru

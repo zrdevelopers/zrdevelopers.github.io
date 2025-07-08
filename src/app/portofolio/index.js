@@ -4,7 +4,7 @@ import React, { Fragment, useEffect, useState, useRef } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 import { getListFeaturedProjects } from '@/redux/action/featured-projects/creator';
 
-import FeaturedProjectsModal from '@/app/featured-projects/modals';
+import FeaturedProjectsModal from '@/app/portofolio/modals';
 
 import { LazyLoadImage } from 'react-lazy-load-image-component';
 import 'react-lazy-load-image-component/src/effects/blur.css';
@@ -51,7 +51,7 @@ const Index = (props) => {
 
   return (
     <Fragment>
-      <section className="featured-projects section-padding" id="projects">
+      <section className="featured-projects section-padding" id="portofolio">
         <svg
           className="bg-shape shape-project reveal-from-left"
           xmlns="http://www.w3.org/2000/svg"
