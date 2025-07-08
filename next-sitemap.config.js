@@ -1,6 +1,8 @@
+require('dotenv').config();
+
 /** @type {import('next-sitemap').IConfig} */
 module.exports = {
-  siteUrl: process.env.SITE_URL || 'https://zrdigitaltech.com',
+  siteUrl: process.env.SITE_URL,
   generateRobotsTxt: true,
   transform: async (config, path) => {
     let priority = 0.7;
