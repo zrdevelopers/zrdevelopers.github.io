@@ -15,6 +15,9 @@ const nextConfig = {
       chunks: 'all'
     };
     return config;
+  },
+  env: {
+    SITE_URL: process.env.SITE_URL
   }
 };
 
