@@ -18,8 +18,8 @@ import Partners from '@/app/partners';
 import Artikel from '@/app/artikel';
 import Contactus from '@/app/kontak-kami';
 
-import PrivacyModal from '@/app/modals/privacy-modal';
-import TermsModal from '@/app/modals/terms-modal';
+import PrivacyModal from '@/app/kebijakan-privasi';
+import TermsModal from '@/app/syarat-dan-ketentuan';
 
 // import { FloatingWhatsApp } from 'react-floating-whatsapp';
 

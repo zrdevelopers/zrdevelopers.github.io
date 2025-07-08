@@ -8,7 +8,7 @@ import Heading from '@/components/heading';
 import PrivacyModal from '@/app/kebijakan-privasi';
 import TermsModal from '@/app/syarat-dan-ketentuan';
 import Contactus from '@/app/kontak-kami';
-import HargaPage from './index';
+import Konten from './konten';
 import PesanSekarangModal from '@/app/modals/pesan-sekarang';
 import TerimaKasihModal from '@/app/modals/terima-kasih';
 
@@ -21,9 +21,9 @@ export default function Page() {
   return (
     <Fragment>
       <Navbar page="artikel" />
-      <Heading title="Harga" />
-      <div className="pt-5">
-        <HargaPage handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />
+      <Heading title="Kebijakan Privasi" />
+      <div className="pt-5 container">
+        <Konten />
       </div>
 
       <Contactus handlePesanSekarang={(e, products) => handlePesanSekarang(e, products)} />

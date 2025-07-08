@@ -18,8 +18,8 @@ import Partners from '@/app/partners';
 import LatestNews from '@/app/artikel';
 import Contactus from '@/app/kontak-kami';
 
-import PrivacyModal from '@/app/modals/privacy-modal';
-import TermsModal from '@/app/modals/terms-modal';
+import PrivacyModal from '@/app/kebijakan-privasi';
+import TermsModal from '@/app/syarat-dan-ketentuan';
 
 import PesanSekarangModal from '@/app/modals/pesan-sekarang';
 import TerimaKasihModal from '@/app/modals/terima-kasih';
