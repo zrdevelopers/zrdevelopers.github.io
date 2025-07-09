@@ -26,7 +26,7 @@ const Index = () => {
 
       <div
         className="video-play-bg grad-style-cd"
-        style={{ '--bgAfter': `url('/assets/images/about-imgOld.webp')` }}>
+        style={{ '--bgAfter': `url('/assets/images/about-img-2.webp')` }}>
         {/* <a href="http://www.youtube.com/watch?v=F85Az1VXbvg" className="video-play-btn video-popup">
           <i className="fas fa-play"></i>
       </a>  */}

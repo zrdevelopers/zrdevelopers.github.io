@@ -8,7 +8,8 @@ const Index = () => {
       className="banner"
       id="top"
       style={{
-        '--bgAfter': `url(/assets/images/banner/banner-round-img-2.webp)`
+        '--bgAfter': `url(/assets/images/banner/banner-round-img-3.webp)`,
+        '--topAfter': `-52%`
       }}>
       <div className="container">
         <div className="banner-content">

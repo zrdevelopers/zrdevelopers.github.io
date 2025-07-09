@@ -1864,7 +1864,7 @@ textarea:focus {
   box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
   background-size: cover;
   background-position: calc(100% - 120px) 394px;
-  top: -46%;
+  top: var(--topAfter, -46%);
   right: -20%;
 }
 
