@@ -26,12 +26,7 @@ const Index = () => {
         <h6 className="text-center mb-0">ZRDigitalTech sudah dipercaya brand</h6>
         <div className="row justify-content-center clients-wrapper pt-0">
           {partnersList.map((item, i) => (
-            <div
-              className="client"
-              key={item?.id || i}
-              // data-aos="fade-down"
-              // data-aos-delay={i * 100}
-            >
+            <div className="client" key={item?.id || i}>
               <LazyLoadImage
                 effect="blur"
                 alt={item.alt}

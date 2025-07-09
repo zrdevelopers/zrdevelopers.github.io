@@ -51,13 +51,9 @@ const Index = (props) => {
               <div className="case-study-slider">
                 {caseStudyList?.case_studies?.map((item, i) => (
                   <div key={item?.id || i} className="item">
-                    <h2 data-aos="fade-left" data-aos-delay="0">
-                      {item.title}
-                    </h2>
-                    <p data-aos="fade-left" data-aos-delay="100">
-                      {item.description}
-                    </p>
-                    <div className="btn-container" data-aos="fade-left" data-aos-delay="200">
+                    <h2>{item.title}</h2>
+                    <p>{item.description}</p>
+                    <div className="btn-container">
                       <a
                         // href={item.link_whatsapp}
                         // target="_blank"

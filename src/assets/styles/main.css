@@ -1854,14 +1854,18 @@ textarea:focus {
   background: #fff var(--bgAfter) center center no-repeat;
   /* background: #fff url(/assets/images/banner/banner-round-img.webp) center center no-repeat; */
   /* background: #fff url(/assets/images/banner/banner-round-img.png) center center no-repeat; */
-  background-size: cover;
+  /* background-size: cover;
   top: -46%;
-  right: -20%;
+  right: -20%; */
   -webkit-transform: rotate(0deg);
   -ms-transform: rotate(0deg);
   transform: rotate(0deg);
   -webkit-box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
   box-shadow: -5px 0 30px rgba(0, 0, 0, 0.1);
+  background-size: cover;
+  background-position: calc(100% - 120px) 394px;
+  top: -46%;
+  right: -20%;
 }
 
 .small-agency-home-header-bg::after {

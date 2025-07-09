@@ -45,22 +45,11 @@ const Index = () => {
 
       <div className="container">
         <div className="banner-content">
-          {headerList?.title && (
-            <h1
-              dangerouslySetInnerHTML={{ __html: headerList.title }}
-              data-aos="fade-down"
-              data-aos-delay="0"></h1>
-          )}
+          {headerList?.title && <h1 dangerouslySetInnerHTML={{ __html: headerList.title }}></h1>}
           <div
             className="section-subheading"
-            dangerouslySetInnerHTML={{ __html: headerList.description }}
-            data-aos="fade-down"
-            data-aos-delay="100"></div>
-          <a
-            href="#projects"
-            className="custom-btn btn-big grad-style-ef page-scroll"
-            data-aos="fade-down"
-            data-aos-delay="200">
+            dangerouslySetInnerHTML={{ __html: headerList.description }}></div>
+          <a href="#portofolio" className="custom-btn btn-big grad-style-ef page-scroll">
             PORTOFOLIO KAMI
           </a>
         </div>

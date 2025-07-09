@@ -5,7 +5,6 @@ export async function generateMetadata({ params }) {
 
   const kotaSlug = slug.replace('jasa-pembuatan-website-', '');
 
-  // Ubah "jakarta-selatan" menjadi "Jakarta Selatan"
   const kota = kotaSlug
     .split('-')
     .map((word) => word.charAt(0).toUpperCase() + word.slice(1))

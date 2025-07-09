@@ -45,9 +45,7 @@ const Index = (props) => {
     <Fragment>
       <section className="latest-news section-padding light-grey-grad" id="artikel">
         <div className="container">
-          <h2 data-aos="fade-left" data-aos-delay="0">
-            Artikel Terbaru
-          </h2>
+          <h2>Artikel Terbaru</h2>
         </div>
         {/* <!-- End of .container --> */}
 
@@ -58,11 +56,7 @@ const Index = (props) => {
             className="carousel-container equalHeightWrapper d-flex"
             style={{ overflowX: 'auto', scrollBehavior: 'smooth' }}>
             {latestNewsList?.slice(0, 7)?.map((item, i) => (
-              <div
-                className={`item col-11 col-sm-4 ${i < 1 ? 'pl-0' : ''}`}
-                key={item?.id || i}
-                data-aos="fade-left"
-                data-aos-delay={i * 100}>
+              <div className={`item col-11 col-sm-4 ${i < 1 ? 'pl-0' : ''}`} key={item?.id || i}>
                 <a
                   href={`/artikel/${item?.slug}`}
                   className="news-content-block content-block"
@@ -95,10 +89,7 @@ const Index = (props) => {
             {/* <!-- End of .item --> */}
             {/* Display "Selengkapnya" for the 8th item */}
             {latestNewsList?.length > 7 && (
-              <div
-                className="item col-11 col-sm-4"
-                data-aos="fade-left"
-                data-aos-delay={latestNewsList?.length > 7 * 100}>
+              <div className="item col-11 col-sm-4">
                 <Link href="/latest-news" className="news-content-block content-block">
                   <div className="img-container">
                     <LazyLoadImage

@@ -10,16 +10,21 @@
   },
   {
     "id": 3,
+    "image": "/assets/images/clients/faimjayamandiri.webp",
+    "alt": "Bengkel Las Fa'im Jaya Mandiri"
+  },
+  {
+    "id": 4,
     "image": "/assets/images/clients/mekanik-elektro.png",
     "alt": "Mekanik Elektro"
   },
   {
-    "id": 4,
+    "id": 5,
     "image": "/assets/images/clients/vandz15.png",
     "alt": "VandZ15"
   },
   {
-    "id": 5,
+    "id": 6,
     "image": "https://placehold.co/300x56/transparent/FFF/png?text=JasaTebangPohon",
     "alt": "Jasa Tebang Pohon"
   }
