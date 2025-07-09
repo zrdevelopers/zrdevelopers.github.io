@@ -3,7 +3,7 @@ User-agent: *
 Allow: /
 
 # Host
-Host: https://ZRDigitalTech.github.io
+Host: https://ZRDigitalTech.com
 
 # Sitemaps
-Sitemap: https://ZRDigitalTech.github.io/sitemap.xml
+Sitemap: https://ZRDigitalTech.com/sitemap.xml
