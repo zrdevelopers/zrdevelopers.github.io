@@ -22,6 +22,7 @@
     "launch_website": "https://puterakembar.com",
     "service": "Pembuatan Website"
   },
+
   {
     "id": 3,
     "filter": "a1",
@@ -48,6 +49,18 @@
   },
   {
     "id": 5,
+    "filter": "a1",
+    "category": "Website",
+    "title": "Bengkel Las Fa'im Jaya Mandiri",
+    "fullpage": "/assets/images/featured-projects/fullpage/fullpage-faimjayamandiri.webp",
+    "banner": "/assets/images/featured-projects/faimjayamandiri.webp",
+    "carousel_images": ["/assets/images/featured-projects/fullpage/fullpage-faimjayamandiri.webp"],
+    "description": "<p>Bengkel Las Fa'im Jaya Mandiri adalah spesialis las terpercaya di Serang.</p>",
+    "launch_website": "https://faimjayamandiri.com",
+    "service": "Pembuatan Website"
+  },
+  {
+    "id": 6,
     "filter": "a1",
     "category": "Website",
     "title": "VandZ15",
