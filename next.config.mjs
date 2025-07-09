@@ -2,6 +2,7 @@
 const nextConfig = {
   swcMinify: true,
   output: 'export',
+  trailingSlash: true,
   images: {
     unoptimized: true,
     loader: 'akamai',
