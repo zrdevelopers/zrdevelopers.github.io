@@ -94,16 +94,26 @@ jQuery(document).ready(function ($) {
 
   // Click event for page scrolling links
   $('.page-scroll').on('click', function (e) {
-    e.preventDefault(); // Prevent the default action
+    const hash = this.hash;
+
+    // Kalau tidak ada hash (contoh: href="/" atau href=""), jangan lakukan apa pun
+    if (!hash) return;
+
+    e.preventDefault();
 
     if (
-      location.pathname.replace(/^\//, '') == this.pathname.replace(/^\//, '') &&
-      location.hostname == this.hostname
+      location.pathname.replace(/^\//, '') === this.pathname.replace(/^\//, '') &&
+      location.hostname === this.hostname
     ) {
-      var target = $(this.hash);
-      target = target.length ? target : $('[name=' + this.hash.slice(1) + ']');
+      var target = $(hash);
+      var hashName = hash.slice(1);
+
+      if (!target.length && hashName) {
+        target = $('[name="' + hashName + '"]');
+      }
+
       if (target.length) {
-        scrollToTarget(this.hash);
+        scrollToTarget(hash);
       }
     }
   });
