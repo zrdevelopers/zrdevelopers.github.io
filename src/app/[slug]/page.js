@@ -24,7 +24,7 @@ export async function generateMetadata({ params }) {
     ],
     openGraph: {
       url: `${process.env.SITE_URL}/jasa-pembuatan-website-${kotaSlug}`,
-      images: [`${process.env.SITE_URL}/assets/images/featured-projects/featured-project-1.jpg`] // ganti jika ada banner khusus
+      images: [`${process.env.SITE_URL}/assets/images/meta-zrdigitaltech.webp`] // ganti jika ada banner khusus
     }
   };
 }

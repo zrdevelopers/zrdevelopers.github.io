@@ -9,7 +9,7 @@ export async function generateMetadata() {
       'kontak jasa pembuatan website, jasa bikin website, hubungi ZRDigitalTech, jasa website Tangerang, jasa website Jakarta, konsultasi website gratis',
     openGraph: {
       url: `${process.env.SITE_URL}/kontak-kami`,
-      images: [`${process.env.SITE_URL}/assets/images/featured-projects/featured-project-1.jpg`] // ganti jika ada banner khusus
+      images: [`${process.env.SITE_URL}/assets/images/meta-zrdigitaltech.webp`] // ganti jika ada banner khusus
     }
   };
 }

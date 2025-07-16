@@ -10,7 +10,7 @@ export async function generateMetadata() {
       title: `Jasa Pembuatan Website Terdekat - ZRDigitalTech`,
       description: `Buat website profesional, cepat, dan terjangkau hanya di ZRDigitalTech.`,
       url: `${process.env.SITE_URL}/jasa-pembuatan-website`,
-      images: [`${process.env.SITE_URL}/assets/images/featured-projects/featured-project-1.jpg`] // ganti jika ada banner khusus
+      images: [`${process.env.SITE_URL}/assets/images/meta-zrdigitaltech.webp`] // ganti jika ada banner khusus
     }
   };
 }
