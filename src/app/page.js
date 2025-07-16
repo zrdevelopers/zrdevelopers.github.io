@@ -33,8 +33,8 @@ import {
   loadJquery,
   loadGoogleAnalytics,
   loadGoogleTagManager,
-  loadGoogleAnalyticsZRDigitalTech
-  // loadFacebookPixel
+  loadGoogleAnalyticsZRDigitalTech,
+  loadFacebookPixel
   // loadTiktokPixel
 } from '@/lib/loadAnalytic';
 
@@ -63,7 +63,7 @@ const Home = (props) => {
     loadGoogleAnalyticsZRDigitalTech();
     loadGoogleAnalytics();
     loadGoogleTagManager();
-    // loadFacebookPixel();
+    loadFacebookPixel();
     // loadTiktokPixel();
     // fetchFloatingWhatsapp();
   }, []);
