@@ -40,8 +40,8 @@ export const metadata = {
   description:
     'Penyedia pembuatan website yang akan membantu mewujudkan keinginan dan kebutuhan Anda.',
   openGraph: {
-    url: '${process.env.SITE_URL}',
-    images: '${process.env.SITE_URL}/assets/images/meta-zrdigitaltech.webp'
+    url: `${process.env.SITE_URL}`,
+    images: [`${process.env.SITE_URL}/assets/images/meta-zrdigitaltech.webp`] // ganti jika ada banner khusus
   }
 };
 

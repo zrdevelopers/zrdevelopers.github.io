@@ -1,8 +1,7 @@
 {
   "short_name": "ZRDigitalTech",
   "name": "ZRDigitalTech",
-  "icons": [
-    {
+  "icons": [{
       "src": "/assets/images/512x512.png",
       "type": "image/png",
       "sizes": "512x512"
@@ -19,34 +18,7 @@
   "display": "standalone",
   "scope": "/",
   "theme_color": "#ffffff",
-  "shortcuts": [
-    {
-      "name": "ZRDigitalTech",
-      "short_name": "ZRDigitalTech",
-      "description": "Jasa Pembuatan Website",
-      "url": "/today?source=pwa",
-      "icons": [
-        {
-          "src": "/assets/images/192x192.png",
-          "type": "image/png",
-          "sizes": "192x192"
-        }
-      ]
-    }
-  ],
+  "shortcuts": [],
   "description": "Jasa Pembuatan Website",
-  "screenshots": [
-    {
-      "src": "/assets/images/featured-project-540.png",
-      "type": "image/png",
-      "sizes": "540x720",
-      "form_factor": "narrow"
-    },
-    {
-      "src": "/assets/images/featured-project-720.png",
-      "type": "image/png",
-      "sizes": "720x540",
-      "form_factor": "wide"
-    }
-  ]
+  "screenshots": []
 }
