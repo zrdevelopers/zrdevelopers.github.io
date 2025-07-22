@@ -50,6 +50,8 @@ const Index = () => {
 
     if (!/^\d+$/.test(formData.budget)) {
       newErrors.budget = 'Budget hanya boleh berisi angka';
+    } else if (parseInt(formData.budget) < 1500000) {
+      newErrors.budget = 'Budget minimal adalah Rp 1.500.000';
     }
     // else if (formData.budget < 1000000) { // Minimum budget for website creation (e.g., 1 million IDR)
     //   newErrors.budget = 'Budget minimal untuk pembuatan website adalah Rp 1.000.000';
@@ -146,7 +148,8 @@ const Index = () => {
       modalBody={
         <Fragment>
           <div className="form-wrapper">
-            <h3>Form Pemesanan</h3>
+            <h3 className="mb-0">Konsultasi Gratis</h3>
+            <p>Isi data berikut & tim kami akan segera menghubungi Anda via WhatsApp.</p>
             <form className="contact-form" onSubmit={handleSubmit}>
               <div className="row">
                 <div className="col-md-12 col-lg-4 mb-4">
@@ -272,7 +275,7 @@ const Index = () => {
                     className="mb-0"
                     type="text"
                     name="budget"
-                    placeholder="Budget yag Disiapkan"
+                    placeholder="Budget yang Disiapkan"
                     value={formData.budget ? formatRupiah(formData.budget) : ''}
                     onChange={handleChange}
                     required
