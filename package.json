@@ -6,7 +6,6 @@
     "dev": "next dev",
     "build": "next build",
     "start": "npx serve out",
-    "deploy": "next build && npx gh-pages -d out",
     "lint": "next lint",
     "lint:fix": "eslint ./ --ext ts,js,tsx,jsx --fix",
     "lint:cache": "eslint ./ --ext ts,js,tsx,jsx --cache --fix",
